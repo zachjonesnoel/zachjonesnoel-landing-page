@@ -1,4 +1,4 @@
-import AnimatedBackground from "../components/AnimatedBackground";
+// import AnimatedBackground from "../components/AnimatedBackground";
 const IntroBackground = () => {
     return (
         <div className="container px-4 mx-auto text-center lg:text-left  Helvetica Neue ">
