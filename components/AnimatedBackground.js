@@ -1,38 +1,66 @@
 import React, { Component } from 'react'
 
-import ParticlesBg from 'particles-bg'
+import Particles from 'react-particles-js';
 
 class AnimatedBackground extends Component {
   render () {
-      let config = {
-          num: [5, 7],
-          rps: 0.1,
-          radius: [5, 40],
-          life: [1.5, 3],
-          v: [2, 9],
-          tha: [-40, 40],
-          // body: "./img/icon.png", // Whether to render pictures
-          rotate: [0, 20],
-          alpha: [0.6, 0],
-          scale: [1, 0.1],
-          position: "center", // all or center or {x:1,y:1,width:100,height:100}
-        //   color: ["#111111", "#ff0000"],
-          cross: "cross", // cross or bround
-          random: 15,  // or null,
-          g: 1,    // gravity
-          // f: [2, -1], // force
-          onParticleUpdate: (ctx, particle) => {
-              ctx.beginPath();
-              ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
-              ctx.fillStyle = particle.color;
-              ctx.fill();
-              ctx.closePath();
+       let config={
+	    "particles": {
+	        "number": {
+	            "value": 120
+	        },
+	        "size": {
+	            "value": 2
+	        },
+	        "color": {
+            "value": "#111",
+            "animation": {
+              "h": {
+                "count": 0,
+                "enable": true,
+                "offset": 0,
+                "speed": 50,
+                "sync": false
+              },
+              "s": {
+                "count": 0,
+                "enable": false,
+                "offset": 0,
+                "speed": 1,
+                "sync": true
+              },
+              "l": {
+                "count": 0,
+                "enable": false,
+                "offset": 0,
+                "speed": 1,
+                "sync": true
+              }
+            }
+          },
+          "links": {
+            "color": {
+              "value": "#888"
+            },
           }
-        };
+	    },
+	    "interactivity": {
+	        "events": {
+	            "onhover": {
+	                "enable": false,
+	                "mode": "repulse"
+	            }
+	        }
+	    },
+	    
+  
+      "fullScreen": {
+        "enable": true,
+        "zIndex": -1
+      },
+	};
     return (
-      <div>
-      <ParticlesBg color="#555555" type="cobweb" config={config} bg={true} />
-      </div>
+      <Particles params={config} />
     )
   }
 }
