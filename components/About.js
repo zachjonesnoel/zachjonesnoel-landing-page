@@ -16,7 +16,7 @@ const About = () => {
                           I'm  <span className="mb-4 font-bold"> Jones Zachariah Noel N</span > a.k.a <span className="mb-4 font-bold"> zachjonesnoel</span>
                         </p>
                         <p className="mb-4">
-                           AWS Serverless Architect | Developer | Technical Writer | Home Chef | Photographer
+                           AWS Community Builder | AWS Serverless Architect | Developer | Technical Writer | Home Chef | Photographer
                         </p>
                         <p className="mb-4">
                            Currently AWS Architect - Serverless / Developer @ <b>Mobil80 Solutions and Services Pvt Ltd.</b> And contributor for <b>AWS ASEAN Community</b>.
