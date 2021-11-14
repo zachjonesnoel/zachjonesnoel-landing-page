@@ -17,7 +17,7 @@ const Footer = () => {
                             Portfolio
                         </a>
                         <a
-                            href="https://twitter.com/ZachjNOEL"
+                            href="https://twitter.com/zachjonesnoel"
                             className={"transition-colors hover:text-red-500"}
                             target="_blank"
                             rel="noreferrer"
