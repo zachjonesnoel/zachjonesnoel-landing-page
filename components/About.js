@@ -25,6 +25,9 @@ const About = () => {
                            Get in touch with me on <a href="https://www.linkedin.com/in/jones-zachariah-noel-n">LinkedIn</a>, <a href="https://twitter.com/ZachjNOEL">Twitter </a> 
                            if you are looking for AWS brainstroming, solution architecting with AWS serverless tech stack, Open source projects with AWS, VueJS, ReactJS.
                         </p>
+                        <p className="mb-4 description">
+                            I have a <a href="http://newsletter.zachjonesnoel.com/">Newsletter : "<b>Everything AWS, Serverless and Architectures ☁️🚀👨‍💻</b></a> where the issues are scheduled for the mid of the month and end of the month, subscribe to my newsletter if you want to stay on top of latest happenings in <i>AWS, Serverless and different architecture patterns</i>.
+                        </p>
                         
                         <div className="flex flex-row align-center justify-center rounded-md mt-6 shadow">
                                 <a
