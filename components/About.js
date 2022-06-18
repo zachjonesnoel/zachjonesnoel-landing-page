@@ -16,10 +16,16 @@ const About = () => {
                           I'm  <span className="mb-4 font-bold"> Jones Zachariah Noel N</span > a.k.a <span className="mb-4 font-bold"> zachjonesnoel</span>.
                         </p>
                         <p className="mb-4 text-center">
-                           AWS Community Builder 🚀 | AWS Serverless Architect ⚡ | Full-Stack Cloud Developer 👨‍💻 | Technical Writer 📜 | Home Chef 👨‍🍳 | Photographer 📷 | Serverless Advocacy 🥑
+                           Developer Relations | AWS Community Builder 🚀 | AWS Serverless Architect ⚡ | Serverless Advocacy 🥑 | Full-Stack Cloud Developer 👨‍💻 | Technical Writer 📜 | Home Chef 👨‍🍳 | Photographer 📷 
                         </p>
-                        <p className="mb-4">
-                           Currently Cloud Architect - Serverless / Developer @ <b>Mobil80 Solutions and Services Pvt Ltd.</b> And contributor for AWS Communities - <b>AWS Community Builder</b>, <b>re:Skill</b>, <b>AWS ASEAN Community</b>.
+                        <p className="mb-4 description">
+                        A <b>Senior Developer Advocate</b> experiencing DevRel ecospace at <b><a href="https://www.freshworks.com/">Freshworks</a></b>. Previous being part of the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless! 
+                        <br/>
+                        An AWS Community Builder who loves to interact with community which has helped me learn and share my knowledge. I write about AWS Serverless and also talk about new features and announcements from AWS.
+                        <br/>
+                        Speaker and contributor at various AWS forums - AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit boosting about Serverless. 
+                        <br/>
+                        Feel free to reach out to me for anything, would love to chat about AWS, Serverless, technology, football and everything else. 
                         </p>
                         <p className="mb-4 description">
                            Get in touch with me on <a href="https://www.linkedin.com/in/jones-zachariah-noel-n">LinkedIn</a>, <a href="https://twitter.com/ZachjNOEL">Twitter </a> 
