@@ -23,7 +23,7 @@ const About = () => {
                         <br/>
                         An AWS Community Builder who loves to interact with community which has helped me learn and share my knowledge. I write about AWS Serverless and also talk about new features and announcements from AWS.
                         <br/>
-                        Speaker and contributor at various AWS forums - AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit boosting about Serverless. 
+                        Speaker and contributor at various AWS forums - <b>AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit India</b> boosting about Serverless. 
                         <br/>
                         Feel free to reach out to me for anything, would love to chat about AWS, Serverless, technology, football and everything else. 
                         </p>
