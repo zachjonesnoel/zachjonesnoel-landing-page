@@ -9,70 +9,144 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          zachjonesnoel
         </p>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+            src="/favicon.ico"
+            alt="zachjonesnoel"
+            width={50}
+            height={50}
+            priority
+          />
         </div>
       </div>
-
+      <div className={styles.gridCenter}>
+        <div className={styles.center}>
+          <Image
+            src="/zachjonesnoel headshot.png"
+            alt="zachjonesnoel"
+            width={580}
+            height={337}
+            priority
+          />
+        </div>
+        <div className={styles.card}>
+          <h2>
+            👋 Hey there!
+          </h2>
+          <div className={inter.className}>
+            I'm <b>Jones Zachariah Noel N</b> a.k.a <b>zachjonesnoel</b>.
+          </div>
+          &nbsp;
+          <div className={styles.description}>
+            <h3>🥑 Developer Relations </h3> &nbsp;
+            <h3>🦸‍♂️ AWS Serverless Hero  </h3> &nbsp;
+            <h3>☁️ AWS Serverless Architect </h3> &nbsp;
+            <h3>🥑 Serverless Advocacy </h3>&nbsp;
+            <h3>👨‍💻 Full-Stack Cloud Developer </h3> &nbsp;
+            <h3>🚀 AWS UG Bengaluru Co-organizer </h3> &nbsp;
+            <h3>📜 Technical Writer  </h3>&nbsp;
+            <h3>🎙️ Speaker </h3>&nbsp;
+            <h3>👨‍🍳 Home Chef  </h3>&nbsp;
+            <h3>📷 Photographer </h3>
+          </div>
+        </div>
+      </div>
+      <div className={styles.center}>
+        <div
+          className={styles.cardCenter}
+        >
+          <div
+            className={styles.longDescription}
+          >
+            <p >
+              A Senior Developer Advocate experiencing DevRel ecospace at <a href="https://www.freshworks.com/">Freshworks</a>. Previous being part of the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless!
+            </p>
+            &nbsp;
+            <p>
+              An <a href="https://aws.amazon.com/developer/community/heroes/jones-zachariah-noel/">AWS Serverless Hero</a> and <a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=jones%2Bzachariah%2Bnoel&cb-cards.q_operator=AND">AWS Community Builder</a> alumni who loves to interact with community which has helped me learn and share my knowledge. I write about AWS Serverless and also talk about new features and announcements from AWS.
+              Speaker and contributor at various AWS forums - <b>AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit India</b> boosting about Serverless.
+              Feel free to reach out to me for anything, would love to chat about AWS, Serverless, technology, football and everything else.
+            </p>
+            &nbsp;
+            <p>
+            Do subscribe to my Newsletter : <a href="https://everythingawsserverless.substack.com/">The Serverless Terminal - Everything AWS, Serverless and Architectures ☁️🚀👨‍💻 </a>if you want to stay on top of latest happenings in AWS, Serverless and different architecture patterns; the issues are scheduled for the mid of the month and end of the month.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.center}>
+        Built with Next.js, Tailwind and AWS Amplify 😍😎
+      </div>
       <div className={styles.grid}>
         <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://portfolio.zachjonesnoel.com/#/"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
+            Portfolio <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://twitter.com/zachjonesnoel"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
+            Twitter <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
         </a>
 
         <a
+          href="https://www.linkedin.com/in/jones-zachariah-noel-n"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={inter.className}>
+            LinkedIn <span>-&gt;</span>
+          </h2>
+        </a>
+
+        <a
+          href="https://github.com/zachjonesnoel"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={inter.className}>
+            GitHub <span>-&gt;</span>
+          </h2>
+        </a>
+
+        <a
+          href="https://dev.to/zachjonesnoel"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={inter.className}>
+            Dev.To <span>-&gt;</span>
+          </h2>
+        </a>
+
+        <a
+          href="https://www.instagram.com/zachariah_jones_noel/"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={inter.className}>
+            Instagram <span>-&gt;</span>
+          </h2>
+        </a>
+
+        {/* <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
@@ -84,7 +158,7 @@ export default function Home() {
           <p className={inter.className}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-        </a>
+        </a> */}
       </div>
     </main>
   )

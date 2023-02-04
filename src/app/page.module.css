@@ -25,6 +25,15 @@
   gap: 0.5rem;
 }
 
+.longDescription a {
+  gap: 0.5rem;
+  font-weight: bolder;
+  font-style: italic;
+  color: #fff;
+}
+.longDescription p {
+font-size: 1rem;
+}
 .description p {
   position: relative;
   margin: 0;
@@ -41,7 +50,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(33%, auto));
+  grid-template-columns: repeat(6, minmax(18%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+}
+
+.gridCenter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -70,6 +86,14 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 34ch;
+}
+
+.cardCenter p {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 94ch;
 }
 
 .center {
@@ -143,11 +167,9 @@
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
+  background: linear-gradient(to bottom right,
+      rgba(var(--tile-start-rgb), 1),
+      rgba(var(--tile-end-rgb), 1));
   background-clip: content-box;
 }
 
@@ -186,6 +208,13 @@
     text-align: center;
   }
 
+  .gridCenter {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
   .card {
     padding: 1rem 2.5rem;
   }
@@ -211,6 +240,12 @@
     padding: 1rem;
   }
 
+  .longDescription a {
+    padding: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+  }
+
   .description p,
   .description div {
     display: flex;
@@ -226,11 +261,9 @@
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
+    background: linear-gradient(to bottom,
+        rgba(var(--background-start-rgb), 1),
+        rgba(var(--callout-rgb), 0.5));
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
@@ -241,11 +274,9 @@
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgb(var(--background-end-rgb)) 40%);
     z-index: 1;
   }
 }
@@ -256,8 +287,8 @@
   }
 
   .logo,
-  .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .center img {
+    filter: drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
@@ -265,6 +296,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }
