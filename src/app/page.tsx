@@ -36,7 +36,7 @@ export default function Home() {
             👋 Hey there!
           </h2>
           <div className={inter.className}>
-            I'm <b>Jones Zachariah Noel N</b> a.k.a <b>zachjonesnoel</b>.
+            <b>Jones Zachariah Noel N</b> a.k.a <b>zachjonesnoel</b> here!
           </div>
           &nbsp;
           <div className={styles.description}>
