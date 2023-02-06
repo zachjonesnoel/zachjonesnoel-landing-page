@@ -31,16 +31,16 @@ export default function Layout({
                     } z-30 transition-all`}
             >
                 <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-                    <Link href="/" className="flex items-center font-display text-2xl">
-                        <Image
-                            src="/favicon.ico"
-                            alt="zachjonesnoel"
-                            width="30"
-                            height="30"
-                            className="mr-2 rounded-sm"
-                        ></Image>
-                        <p>zachjonesnoel</p>
-                    </Link>
+                        <Link href="/" className="flex items-center font-display text-2xl">
+                            <Image
+                                src="/favicon.ico"
+                                alt="zachjonesnoel"
+                                width="30"
+                                height="30"
+                                className="mr-2 rounded-sm"
+                            ></Image>
+                            <p>zachjonesnoel</p>
+                        </Link>
                     <div>
                     </div>
                 </div>
@@ -49,12 +49,12 @@ export default function Layout({
                 {children}
             </main>
             <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
-                <div className="mx-auto mt-6 flex items-center justify-center space-x-5">
+                <div className="mx-auto flex items-center justify-center space-x-5 px-5">
                     <div className={styles.grid}>
 
                         <a
                             href="https://portfolio.zachjonesnoel.com/#/"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -65,7 +65,7 @@ export default function Layout({
 
                         <a
                             href="https://twitter.com/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -76,7 +76,7 @@ export default function Layout({
 
                         <a
                             href="https://www.linkedin.com/in/jones-zachariah-noel-n"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -87,7 +87,7 @@ export default function Layout({
 
                         <a
                             href="https://github.com/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -98,7 +98,7 @@ export default function Layout({
 
                         <a
                             href="https://dev.to/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -109,7 +109,7 @@ export default function Layout({
 
                         <a
                             href="https://www.instagram.com/zachariah_jones_noel/"
-                            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
