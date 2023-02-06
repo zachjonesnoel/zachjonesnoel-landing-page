@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Inter, Stint_Ultra_Condensed } from '@next/font/google'
 import styles from '@/styles/page.module.css'
 import Layout from "@/components/layout";
 import { motion } from "framer-motion";
@@ -30,7 +30,7 @@ export default function Home() {
           className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
-          <Balancer>👋 Hey there!</Balancer>
+          <Balancer>👋  Hey there!</Balancer>
         </motion.h1>
       </motion.div>
       <div className={styles.main}>
