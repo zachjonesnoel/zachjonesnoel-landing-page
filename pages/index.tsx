@@ -37,7 +37,7 @@ export default function Home() {
         <div className={styles.gridCenter}>
           <div className={styles.center}>
             <Image
-              src="/zachjonesnoel headshot.png"
+              src="/zachjonesnoel.png"
               alt="zachjonesnoel"
               width={580}
               height={337}
@@ -137,26 +137,30 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.card}>
-        <div className={styles.cardCenter}>
-          <div className={styles.longDescription}>
-            <p >
-              A Senior Developer Advocate experiencing DevRel ecospace at <a href="https://www.freshworks.com/" target="_blank" rel="noopener noreferrer" >Freshworks</a>. Previous being part of the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless!
-            </p>
-            &nbsp;
-            <p>
-              An <a href="https://aws.amazon.com/developer/community/heroes/jones-zachariah-noel/" target="_blank" rel="noopener noreferrer">AWS Serverless Hero</a> and <a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=jones%2Bzachariah%2Bnoel&cb-cards.q_operator=AND" target="_blank" rel="noopener noreferrer">AWS Community Builder</a> alumni who loves to interact with community which has helped me learn and share my knowledge. I write about AWS Serverless and also talk about new features and announcements from AWS.
-              Speaker and contributor at various AWS forums - <b>AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit India</b> boosting about Serverless.
-            </p>
-            &nbsp;
-            <p>
-              Do subscribe to my Newsletter : <a href="https://everythingawsserverless.substack.com/" target="_blank" rel="noopener noreferrer">The Serverless Terminal - Everything AWS, Serverless and Architectures ☁️🚀👨‍💻 </a>if you want to stay on top of latest happenings in AWS, Serverless and different architecture patterns; the issues are scheduled for the mid of the month and end of the month.
-            </p>
-            &nbsp;
-            <p>
-            Feel free to reach out to me for anything, would love to chat about AWS, Serverless, technology, football and everything else.
-            </p>
+          <div className={styles.cardCenter}>
+            <div className={styles.longDescription}>
+              <p >
+                A Senior Developer Advocate experiencing DevRel ecospace at <a href="https://www.freshworks.com/" target="_blank" rel="noopener noreferrer" >Freshworks</a>. Previous being part of the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless!
+              </p>
+              &nbsp;
+              <p>
+                An <a href="https://aws.amazon.com/developer/community/heroes/jones-zachariah-noel/" target="_blank" rel="noopener noreferrer">AWS Serverless Hero</a> and <a href="https://aws.amazon.com/developer/community/community-builders/community-builders-directory/?cb-cards.sort-by=item.additionalFields.cbName&cb-cards.sort-order=asc&awsf.builder-category=*all&awsf.location=*all&awsf.year=*all&cb-cards.q=jones%2Bzachariah%2Bnoel&cb-cards.q_operator=AND" target="_blank" rel="noopener noreferrer">AWS Community Builder</a> alumni who loves to interact with community which has helped me learn and share my knowledge. I write about AWS Serverless and also talk about new features and announcements from AWS.
+                Speaker and contributor at various AWS forums - <b>AWS UGs, AWS re:Skill, AWS Community Day, AWS Summit India</b> boosting about Serverless.
+              </p>
+              &nbsp;
+              <p>
+                Do subscribe to my Newsletter : <a href="https://www.theserverlessterminal.com/" target="_blank" rel="noopener noreferrer">The Serverless Terminal - Everything AWS, Serverless and Architectures ☁️🚀👨‍💻 </a>if you want to stay on top of latest happenings in AWS, Serverless and different architecture patterns; the issues are scheduled for the mid of the month and end of the month.
+              </p>
+              &nbsp;
+              <p>
+                I co-run <a href="https://www.youtube.com/@thezacsshowtalkingaws" target="_blank" rel="noopener noreferrer">The Zacs&apos; Show Talking AWS </a> along with <a href="https://awsfanboy.com/" target="_blank" rel="noopener noreferrer">Arshad Zackeriya</a> about AWS Cloud, DevOps and Serverless!
+              </p>
+              &nbsp;
+              <p>
+                Feel free to reach out to me for anything, would love to chat about AWS, Serverless, technology, football and everything else.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </Layout>

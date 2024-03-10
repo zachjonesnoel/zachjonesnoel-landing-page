@@ -50,12 +50,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(255, 208, 1, 0.4), rgba(166, 1, 255, 0));
+    --primary-glow: radial-gradient(#4C4E8C, #ffbe6973);
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(255, 242, 1, 0.273),
-      rgba(255, 132, 1, 0.102)
+      #4C4E8C,
+      #ffbe69a0,
+      #4C4E8C
     );
 
     --tile-start-rgb: 2, 13, 46;
