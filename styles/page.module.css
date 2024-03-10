@@ -50,7 +50,7 @@ font-size: 1rem;
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(18%, auto));
+  grid-template-columns: repeat(3, minmax(28%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -200,7 +200,7 @@ font-size: 1rem;
   }
 
   .grid {
-    grid-template-columns: repeat(2, minmax(18%, auto));
+    grid-template-columns: repeat(3, minmax(18%, auto));
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;

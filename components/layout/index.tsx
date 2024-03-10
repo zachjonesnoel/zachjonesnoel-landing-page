@@ -51,10 +51,42 @@ export default function Layout({
             <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
                 <div className="mx-auto flex items-center justify-center space-x-5 px-5">
                     <div className={styles.grid}>
+                        <a
+                            href="https://www.theserverlessterminal.com/"
+                            className="flex items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <p className={inter.className}>
+                                The Serverless Terminal Newsletter
+                            </p>
+                        </a>
+
+                        <a
+                            href="https://blog.theserverlessterminal.com/"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <p className={inter.className}>
+                                The Serverless Terminal Blog
+                            </p>
+                        </a>
+
+                        <a
+                            href="https://www.youtube.com/@thezacsshowtalkingaws"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <p className={inter.className}>
+                                The Zacs Show Talking AWS
+                            </p>
+                        </a>
 
                         <a
                             href="https://portfolio.zachjonesnoel.com/#/"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -65,7 +97,7 @@ export default function Layout({
 
                         <a
                             href="https://twitter.com/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -76,7 +108,7 @@ export default function Layout({
 
                         <a
                             href="https://www.linkedin.com/in/jones-zachariah-noel-n"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -87,7 +119,7 @@ export default function Layout({
 
                         <a
                             href="https://github.com/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -98,7 +130,7 @@ export default function Layout({
 
                         <a
                             href="https://dev.to/zachjonesnoel"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -109,7 +141,7 @@ export default function Layout({
 
                         <a
                             href="https://www.instagram.com/zachariah_jones_noel/"
-                            className="flex max-w-fit items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
