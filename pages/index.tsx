@@ -140,7 +140,7 @@ export default function Home() {
           <div className={styles.cardCenter}>
             <div className={styles.longDescription}>
               <p >
-                A Senior Developer Advocate experiencing DevRel ecospace at <a href="https://www.freshworks.com/" target="_blank" rel="noopener noreferrer" >Freshworks</a>. Previous being part of the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless!
+                A Senior Developer Relations Engineer at <a href="https://www.newrelic.com/" target="_blank" rel="noopener noreferrer" >New Relic</a>. Previous being part of Freshworks as a DevRel and the start-up Mobil80 Solutions based in Bengaluru, India enjoyed and learnt a lot with the multiple caps that I got to wear transitioning from a full-stack developer to Cloud Architect for Serverless!
               </p>
               &nbsp;
               <p>
