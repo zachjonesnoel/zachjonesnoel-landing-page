@@ -68,7 +68,7 @@ export default function Home() {
                 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text  font-display font-bold tracking-[-0.02em] text-transparent drop-shadow-sm"
                 variants={FADE_DOWN_ANIMATION_VARIANTS}
               >
-                <Balancer>🥑 Developer Relations @ Freshworks</Balancer>
+                <Balancer>🥑 Developer Relations @ New Relic</Balancer>
               </motion.h1>
               &nbsp;
               <motion.h1
