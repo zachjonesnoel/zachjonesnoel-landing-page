@@ -2,3 +2,5 @@
 
 Built with NextJS, Tailwind and hosted on AWS Amplify with custom domain
 
+Check https://zachjonesnoel.com
+
