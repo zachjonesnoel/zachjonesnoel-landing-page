@@ -12,6 +12,18 @@ frontend:
         - mkdir -p .amplify-hosting/static
         - cp -r dist/* .amplify-hosting/static/
         - cp deploy-manifest.json .amplify-hosting/deploy-manifest.json || true
+        - |
+          echo '{
+            "version": 1,
+            "routes": [
+              {
+                "path": "/*",
+                "target": {
+                  "kind": "Static"
+                }
+              }
+            ]
+          }' > .amplify-hosting/deploy-manifest.json
   artifacts:
     baseDirectory: .amplify-hosting
     files:
