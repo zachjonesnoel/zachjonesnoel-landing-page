@@ -3,8 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 20
-        - nvm use 20
+        - nvm use $VERSION_NODE_18
         - node -v
         - npm install
     build:
