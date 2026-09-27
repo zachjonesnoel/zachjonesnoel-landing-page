@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        # PUBLIC_ prefix makes it available to the browser via import.meta.env
+        # Amplify injects env vars into the shell; we write them to .env so Astro picks them up
+        - echo "PUBLIC_STADIA_API_KEY=$PUBLIC_STADIA_API_KEY" >> .env
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

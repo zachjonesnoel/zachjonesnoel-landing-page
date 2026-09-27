@@ -1,0 +1,37 @@
+{
+  "name": "Jones Zachariah Noel",
+  "handle": "zachjonesnoel",
+  "title": "Senior Developer Relations Engineer",
+  "employer": "New Relic",
+  "bio": "Started as a full-stack engineer. Moved into solutions engineering. Now doing DevRel at New Relic — because the best thing I can do for developers is make their experience with technology genuinely better. AWS Serverless Hero. Co-organiser of AWS UG Bengaluru. Builder of communities and products developers actually want to use.",
+  "email": "hello@zachjonesnoel.com",
+  "calendly": "",
+  "socials": {
+    "twitter":   "https://twitter.com/zachjonesnoel",
+    "linkedin":  "https://www.linkedin.com/in/jones-zachariah-noel-n",
+    "github":    "https://github.com/zachjonesnoel",
+    "devto":     "https://dev.to/zachjonesnoel",
+    "instagram": "https://www.instagram.com/zachariah_jones_noel/"
+  },
+  "shows": [
+    {
+      "name": "The Serverless Terminal",
+      "type": "newsletter",
+      "url": "https://www.theserverlessterminal.com/",
+      "description": "Serverless patterns, AWS deep dives, and the people shipping production at scale."
+    },
+    {
+      "name": "The Zacs' Show",
+      "type": "youtube",
+      "url": "https://www.youtube.com/@thezacsshowtalkingaws",
+      "description": "Live conversations on DevRel, developer tools, and community building with Arshad Zackeriya."
+    }
+  ],
+  "consultAreas": [
+    "DevRel program design",
+    "Developer experience audit",
+    "Technical content strategy",
+    "Community strategy",
+    "Serverless architecture review"
+  ]
+}

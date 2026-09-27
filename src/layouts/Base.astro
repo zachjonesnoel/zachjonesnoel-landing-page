@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import profile from '../../data/profile.json';
+import talks from '../../data/talks.json';
+import writing from '../../data/writing.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = `${profile.name} · ${profile.handle}`,
+  description = profile.bio,
+} = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": profile.name,
+  "url": "https://zachjonesnoel.com",
+  "jobTitle": profile.title,
+  "worksFor": { "@type": "Organization", "name": profile.employer },
+  "sameAs": Object.values(profile.socials),
+};
+
+const eventsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": talks.map((t, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "item": {
+      "@type": "Event",
+      "name": t.title,
+      "startDate": t.date,
+      "location": {
+        "@type": "Place",
+        "name": t.conference,
+        "address": `${t.location.city}, ${t.location.country}`,
+      },
+    },
+  })),
+};
+
+const articlesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": writing.map((w, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "item": {
+      "@type": "Article",
+      "headline": w.title,
+      "datePublished": w.date,
+      "url": w.url,
+    },
+  })),
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zachjonesnoel.com" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@zachjonesnoel" />
+  <title>{title}</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <!-- Leaflet JS must be in <head> so L is defined before map.js runs -->
+  <Fragment set:html={`<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>`} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(eventsSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articlesSchema)} />
+</head>
+<body>
+  <slot />
+</body>
+</html>

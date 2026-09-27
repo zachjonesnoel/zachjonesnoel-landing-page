@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tst-issue-28",
+    "title": "Issue #28 — Lambda power tuning and what the numbers actually mean",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "url": "https://www.theserverlessterminal.com/",
+    "date": "2024-09",
+    "tags": ["lambda", "aws", "serverless"],
+    "excerpt": "A deep dive into Lambda power tuning — what the numbers actually mean for cost and latency."
+  },
+  {
+    "id": "dx-product-problem",
+    "title": "Why developer experience is a product problem, not a docs problem",
+    "type": "blog",
+    "platform": "dev.to",
+    "url": "https://dev.to/zachjonesnoel/why-developer-experience-is-a-product-problem-not-a-docs-problem",
+    "date": "2024-09",
+    "tags": ["devrel", "dx", "developer-experience"],
+    "excerpt": "DX failures aren't documentation failures. They're product failures in disguise."
+  },
+  {
+    "id": "cold-starts-2024",
+    "title": "AWS Lambda cold starts in 2024: what actually matters",
+    "type": "blog",
+    "platform": "dev.to",
+    "url": "https://dev.to/zachjonesnoel/aws-lambda-cold-starts-in-2024-what-actually-matters",
+    "date": "2024-07",
+    "tags": ["lambda", "serverless", "performance"],
+    "excerpt": "Cold starts are misunderstood. Here's what actually matters in production."
+  },
+  {
+    "id": "devrel-metrics-linkedin",
+    "title": "The DevRel metrics that actually matter to engineering leadership",
+    "type": "linkedin",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/in/jones-zachariah-noel-n",
+    "date": "2024-08",
+    "tags": ["devrel", "metrics", "career"],
+    "excerpt": "Stop reporting page views. Start reporting what engineering leadership actually cares about."
+  },
+  {
+    "id": "tst-issue-25",
+    "title": "Issue #25 — Event-driven architectures beyond SQS + Lambda",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "url": "https://www.theserverlessterminal.com/",
+    "date": "2024-06",
+    "tags": ["event-driven", "aws", "serverless"],
+    "excerpt": "EventBridge, SNS fanout, and the patterns most teams skip."
+  },
+  {
+    "id": "podcast-template",
+    "title": "TEMPLATE — Podcast episode title",
+    "type": "podcast",
+    "platform": "Podcast Show Name",
+    "url": "https://example.com/episode",
+    "date": "2024-05",
+    "tags": ["serverless", "devrel"],
+    "excerpt": "Replace with a one-line description of what this episode covers."
+  }
+]
