@@ -12,37 +12,25 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
-    backgroundSize: {
-      'auto': 'auto',
-      'cover': 'cover',
-      'contain': 'contain',
-      '50%': '50%',
-      '16': '4rem',
-    },
     extend: {
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
+      colors: {
+        bg:      '#0a0a0a',
+        bg2:     '#111111',
+        bg3:     '#181818',
+        border:  '#222222',
+        text:    '#e8e8e8',
+        muted:   '#555555',
+        accent:  '#22c55e',
+        accent2: '#f59e0b',
       },
-      borderRadius: {
-        '4xl': '2rem',
-      }
-    }
+      fontFamily: {
+        mono: ["'JetBrains Mono'", "'Fira Code'", "'Cascadia Mono'", 'ui-monospace', 'monospace'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', "'Segoe UI'", 'sans-serif'],
+      },
+      maxWidth: {
+        content: '760px',
+      },
+    },
   },
   plugins: [],
 }

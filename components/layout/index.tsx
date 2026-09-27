@@ -1,170 +1,92 @@
 import Meta from "./meta";
 import { ReactNode } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import useScroll from "@/lib/hooks/use-scroll";
-import { Inter } from '@next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-import styles from '@/styles/page.module.css'
 
 export default function Layout({
-    meta,
-    children,
+  meta,
+  children,
 }: {
-    meta?: {
-        title?: string;
-        description?: string;
-        image?: string;
-    };
-    children: ReactNode;
+  meta?: {
+    title?: string;
+    description?: string;
+    image?: string;
+  };
+  children: ReactNode;
 }) {
-    const scrolled = useScroll(50);
+  const scrolled = useScroll(50);
 
-    return (
-        <>
-            <Meta {...meta} />
-            <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
-            <div
-                className={`fixed top-0 w-full ${scrolled
-                    ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-                    : "bg-white/0"
-                    } z-30 transition-all`}
-            >
-                <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-                        <Link href="/" className="flex items-center font-display text-2xl">
-                            <Image
-                                src="/favicon.ico"
-                                alt="zachjonesnoel"
-                                width="30"
-                                height="30"
-                                className="mr-2 rounded-sm"
-                            ></Image>
-                            <p>zachjonesnoel</p>
-                        </Link>
-                    <div>
-                    </div>
-                </div>
+  return (
+    <>
+      <Meta {...meta} />
+
+      {/* NAV */}
+      <nav
+        className={`fixed top-0 w-full z-30 transition-all font-mono ${
+          scrolled
+            ? "border-b border-border bg-bg/90 backdrop-blur-md"
+            : "bg-bg/0"
+        }`}
+      >
+        <div className="mx-auto max-w-content px-5 xl:px-0 flex h-14 items-center justify-between">
+          <Link href="/" className="text-accent text-sm tracking-widest hover:opacity-80 transition-opacity">
+            <span className="text-muted">~/</span>zachjonesnoel
+          </Link>
+          <div className="flex items-center gap-1">
+            {[
+              { label: "talks", href: "#talks" },
+              { label: "writing", href: "#writing" },
+              { label: "shows", href: "#shows" },
+              { label: "speaking", href: "#speaking" },
+              { label: "consult", href: "#consult" },
+            ].map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-muted hover:text-text text-xs tracking-wider font-mono px-2.5 py-1.5 rounded transition-colors hover:bg-bg3"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      {/* MAIN */}
+      <main className="w-full min-h-screen">{children}</main>
+
+      {/* FOOTER */}
+      <footer className="border-t border-border bg-bg py-8">
+        <div className="mx-auto max-w-content px-5 xl:px-0">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <span className="font-mono text-xs text-muted tracking-wider">
+              Jones Zachariah Noel · zachjonesnoel
+            </span>
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+              {[
+                { label: "twitter", href: "https://twitter.com/zachjonesnoel" },
+                { label: "linkedin", href: "https://www.linkedin.com/in/jones-zachariah-noel-n" },
+                { label: "github", href: "https://github.com/zachjonesnoel" },
+                { label: "dev.to", href: "https://dev.to/zachjonesnoel" },
+                { label: "instagram", href: "https://www.instagram.com/zachariah_jones_noel/" },
+              ].map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-xs text-muted hover:text-accent transition-colors tracking-wider"
+                >
+                  {s.label}
+                </a>
+              ))}
             </div>
-            <main className="flex w-full flex-col items-center justify-center py-32">
-                {children}
-            </main>
-            <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
-                <div className="mx-auto flex items-center justify-center space-x-5 px-5">
-                    <div className={styles.grid}>
-                        <a
-                            href="https://www.theserverlessterminal.com/"
-                            className="flex items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                The Serverless Terminal Newsletter
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://blog.theserverlessterminal.com/"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                The Serverless Terminal Blog
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://www.youtube.com/@thezacsshowtalkingaws"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                The Zacs Show Talking AWS
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://portfolio.zachjonesnoel.com/#/"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                Portfolio
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://twitter.com/zachjonesnoel"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                Twitter
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/jones-zachariah-noel-n"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                LinkedIn
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://github.com/zachjonesnoel"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                GitHub
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://dev.to/zachjonesnoel"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                Dev.To
-                            </p>
-                        </a>
-
-                        <a
-                            href="https://www.instagram.com/zachariah_jones_noel/"
-                            className="flex  items-center justify-center space-x-2 mt-2 mb-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className={inter.className}>
-                                Instagram
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                &nbsp;
-                &nbsp;
-                <p className="text-gray-500">
-                    Built with Next.js, Tailwind and AWS Amplify 😍 😎
-                    <a
-                        className="font-medium text-gray-800 underline transition-colors"
-                        href="https://twitter.com/zachjonesnoel"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        @zachjonesnoel
-                    </a>
-                </p>
-            </div>
-        </>
-    );
+          </div>
+          <p className="mt-4 text-center font-mono text-xs text-muted/50 tracking-wider">
+            built with next.js · tailwind · aws amplify
+          </p>
+        </div>
+      </footer>
+    </>
+  );
 }
