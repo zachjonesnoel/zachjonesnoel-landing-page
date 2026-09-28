@@ -52,5 +52,192 @@
     "video": "",
     "upcoming": false,
     "cospeakers": []
+  },
+  {
+    "id": "reinvent-2026-devops-agent",
+    "title": "Autonomous Remediation with OpenTelemetry and DevOps Agent",
+    "conference": "AWS re:Invent 2026",
+    "date": "2026-11-30",
+    "abstract": "Exploring autonomous remediation and observability patterns using the AWS DevOps Agent.",
+    "location": { "city": "Las Vegas", "stateRegion": "Nevada", "country": "USA", "lat": 36.1699, "lng": -115.1398 },
+    "tags": [ "aws", "devops", "otel", "serverless" ],
+    "slides": "",
+    "video": "",
+    "upcoming": true,
+    "cospeakers": [
+      {
+        "name": "Julia Furst Morgado",
+        "linkedin": "https://www.linkedin.com/in/juliafmorgado/"
+      }
+    ]
+  },
+  {
+    "id": "acd-mumbai-2026-microvm",
+    "title": "MicroVM Patterns for On-Demand Preview Environments",
+    "conference": "AWS Community Day Mumbai 2026",
+    "date": "2026-04-23",
+    "abstract": "We’ll look at how AWS Lambda MicroVM brings in the dedicated Firecracker environment that can host the PR and application giving developers and maintainers a complete preview of the PR along with AI agent that is reviewing the code’s security vulnerabilities.",
+    "location": { "city": "Mumbai", "stateRegion": "Maharashtra", "country": "India", "lat": 19.0760, "lng": 72.8777 },
+    "tags": [ "serverless", "aws", "security", "microvm" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [{
+      "name": "Srushith Repakula",
+      "linkedin": "https://www.linkedin.com/in/srushith/"
+    }]
+  },
+  {
+    "id": "aws-north-conf-2026",
+    "title": "Monitoring the Agentic Loop: OTel-Driven Observability for AWS Strands and AgentCore",
+    "conference": "AWS North Community Conference",
+    "date": "2026-10-15",
+    "abstract": "Monitoring agents and observability practices.",
+    "location": { "city": "Gateshead", "stateRegion": "Tyne and Wear", "country": "United Kingdom", "lat": 54.9587, "lng": -1.5976 },
+    "tags": [ "observability", "aws", "agents" ],
+    "slides": "",
+    "video": "",
+    "upcoming": true,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-summit-blr-2026",
+    "title": "The Serverless Crossover: Mastering the High-Throughput Era",
+    "conference": "AWS Summit Bengaluru 2026",
+    "date": "2026-04-23",
+    "abstract": "N/A",
+    "location": { "city": "Bengaluru", "stateRegion": "Karnataka", "country": "India", "lat": 12.9716, "lng": 77.5946 },
+    "tags": [ "serverless", "aws" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "techxconf-2025",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications",
+    "conference": "TechXConf 2025",
+    "date": "2025-11-01",
+    "abstract": "N/A",
+    "location": { "city": "Chennai", "stateRegion": "Tamil Nadu", "country": "India", "lat": 13.0827, "lng": 80.2707 },
+    "tags": [ "ai", "observability" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-summit-blr-2025",
+    "title": "Lambda Extensions: The Unsung Hero for Observability",
+    "conference": "AWS Summit Bengaluru 2025",
+    "date": "2025-05-07",
+    "abstract": "N/A",
+    "location": { "city": "Bengaluru", "stateRegion": "Karnataka", "country": "India", "lat": 12.9716, "lng": 77.5946 },
+    "tags": [ "aws", "lambda", "observability" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-mumbai-2024",
+    "title": "Choosing the right architecture for your Serverless API",
+    "conference": "AWS Community Day Mumbai 2024",
+    "date": "2024-02-01",
+    "abstract": "N/A",
+    "location": { "city": "Mumbai", "stateRegion": "Maharashtra", "country": "India", "lat": 19.0760, "lng": 72.8777 },
+    "tags": [ "serverless", "aws" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-rajasthan-2023",
+    "title": "Let's orchestrate and choreograph our Serverless workloads",
+    "conference": "AWS Community Day Rajasthan 2023",
+    "date": "2023-11-04",
+    "abstract": "N/A",
+    "location": { "city": "Jaipur", "stateRegion": "Rajasthan", "country": "India", "lat": 26.9124, "lng": 75.7873 },
+    "tags": [ "serverless", "aws" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-philippines-2023",
+    "title": "Serverless & Containers Lightning Talk",
+    "conference": "AWS Community Day Philippines 2023",
+    "date": "2023-07-29",
+    "abstract": "N/A",
+    "location": { "city": "Taguig", "stateRegion": "Metro Manila", "country": "Philippines", "lat": 14.5321, "lng": 121.0361 },
+    "tags": [ "serverless", "containers" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-hyderabad-2023",
+    "title": "Amazon EventBridge integrations with SaaS product events",
+    "conference": "AWS Community Day Hyderabad 2023",
+    "date": "2023-03-18",
+    "abstract": "N/A",
+    "location": { "city": "Hyderabad", "stateRegion": "Telangana", "country": "India", "lat": 17.3850, "lng": 78.4867 },
+    "tags": [ "aws", "eventbridge" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-pune-2022",
+    "title": "Building a virtual photo booth with AWS Amplify",
+    "conference": "AWS Community Day Pune 2022",
+    "date": "2022-12-10",
+    "abstract": "N/A",
+    "location": { "city": "Pune", "stateRegion": "Maharashtra", "country": "India", "lat": 18.5204, "lng": 73.8567 },
+    "tags": [ "aws", "amplify" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-kochi-2022",
+    "title": "Building with AWS Step Functions and SDK integrations",
+    "conference": "AWS Community Day Kochi 2022",
+    "date": "2022-10-29",
+    "abstract": "N/A",
+    "location": { "city": "Kochi", "stateRegion": "Kerala", "country": "India", "lat": 9.9312, "lng": 76.2673 },
+    "tags": [ "aws", "stepfunctions" ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "apac-community-summit-2022",
+    "title": "Build better with Step Functions and SDK integrations",
+    "conference": "APAC Community Summit 2022",
+    "date": "2022-09-15",
+    "abstract": "How to orhcestrate workflows using Step Functions and SDK integrations which can elevate developer journey with minial code and the knowledge of how SDK and Amazon States Langugage (ASL)..",
+    "location": {
+      "city": "Bangkok",
+      "stateRegion": null,
+      "country": "Thailand",
+      "lat": 13.7563,
+      "lng": 100.5018
+    },
+    "tags": [
+      "community",
+      "apj",
+      "networking"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
   }
 ]
