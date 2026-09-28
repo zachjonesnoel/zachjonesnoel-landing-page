@@ -72,6 +72,28 @@
     ]
   },
   {
+    "id": "aws-summit-bengaluru-2026-licious",
+    "title": "Join New Relic × Licious to learn how AI-driven observability helps them debug 3x faster",
+    "conference": "AWS Summit Bengaluru 2026",
+    "date": "2026-04-22",
+    "abstract": "A deep dive with Licious on leveraging AI-driven observability in New Relic to accelerate root cause analysis and maintain system freshness in production microservices.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": ["aws", "observability", "ai", "new-relic", "serverless"],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [{
+      "name": "Vivek Gupta",
+      "linkedin": "https://www.linkedin.com/in/vivg/"
+    }]
+  },
+  {
     "id": "acd-mumbai-2026-microvm",
     "title": "MicroVM Patterns for On-Demand Preview Environments",
     "conference": "AWS Community Day Mumbai 2026",
@@ -140,6 +162,63 @@
     "cospeakers": []
   },
   {
+    "id": "state-of-serverless-devex-o11y-2024",
+    "title": "State of Serverless DevEx & Observability",
+    "conference": "AWS User Group / Tech Talks 2024",
+    "date": "2024-05-15",
+    "abstract": "Exploring modern developer workflows, distributed tracing, and real-time telemetry for serverless architectures across complex cloud applications.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": ["serverless", "devex", "observability", "opentelemetry"],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=oItac1VPsso",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-reinvent-recap-vegas-2025",
+    "title": "Observability at Scale with OpenTelemetry and Bedrock AgentCore",
+    "conference": "Community Session at re:Invent Vegas 2025",
+    "date": "2025-12-04",
+    "abstract": "Standardizing telemetry using OpenTelemetry across serverless resources and Bedrock AgentCore workflows without proprietary vendor lock-in.",
+    "location": {
+      "city": "Las Vegas",
+      "stateRegion": "Nevada",
+      "country": "United States",
+      "lat": 36.1716,
+      "lng": -115.1391
+    },
+    "tags": ["aws", "reinvent", "opentelemetry", "bedrock", "observability"],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-ug-chennai-meetup-2023",
+    "title": "Demystifying AWS Step Functions HTTP Tasks & Workflows",
+    "conference": "AWS User Group Chennai Meetup 2023",
+    "date": "2023-09-16",
+    "abstract": "How to orchestrate external APIs directly with Step Functions third-party HTTP task integration without spinning up intermediary AWS Lambda functions.",
+    "location": {
+      "city": "Chennai",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "tags": ["aws", "step-functions", "serverless", "orchestration"],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  }
+  {
     "id": "acd-mumbai-2024",
     "title": "Choosing the right architecture for your Serverless API",
     "conference": "AWS Community Day Mumbai 2024",
@@ -148,7 +227,7 @@
     "location": { "city": "Mumbai", "stateRegion": "Maharashtra", "country": "India", "lat": 19.0760, "lng": 72.8777 },
     "tags": [ "serverless", "aws" ],
     "slides": "",
-    "video": "",
+    "video": "https://www.youtube.com/watch?v=07uxLb7G8F4&list=PLvTCMi_PTDHUvhPX60J1yeMU7K4tB268s&index=15",
     "upcoming": false,
     "cospeakers": []
   },
