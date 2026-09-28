@@ -1,62 +1,312 @@
 [
-  {
-    "id": "tst-issue-28",
-    "title": "Issue #28 — Lambda power tuning and what the numbers actually mean",
-    "type": "newsletter",
-    "platform": "The Serverless Terminal",
-    "url": "https://www.theserverlessterminal.com/",
-    "date": "2024-09",
-    "tags": ["lambda", "aws", "serverless"],
-    "excerpt": "A deep dive into Lambda power tuning — what the numbers actually mean for cost and latency."
-  },
-  {
-    "id": "dx-product-problem",
-    "title": "Why developer experience is a product problem, not a docs problem",
-    "type": "blog",
-    "platform": "dev.to",
-    "url": "https://dev.to/zachjonesnoel/why-developer-experience-is-a-product-problem-not-a-docs-problem",
-    "date": "2024-09",
-    "tags": ["devrel", "dx", "developer-experience"],
-    "excerpt": "DX failures aren't documentation failures. They're product failures in disguise."
-  },
-  {
-    "id": "cold-starts-2024",
-    "title": "AWS Lambda cold starts in 2024: what actually matters",
-    "type": "blog",
-    "platform": "dev.to",
-    "url": "https://dev.to/zachjonesnoel/aws-lambda-cold-starts-in-2024-what-actually-matters",
-    "date": "2024-07",
-    "tags": ["lambda", "serverless", "performance"],
-    "excerpt": "Cold starts are misunderstood. Here's what actually matters in production."
-  },
-  {
-    "id": "devrel-metrics-linkedin",
-    "title": "The DevRel metrics that actually matter to engineering leadership",
-    "type": "linkedin",
-    "platform": "LinkedIn",
-    "url": "https://www.linkedin.com/in/jones-zachariah-noel-n",
-    "date": "2024-08",
-    "tags": ["devrel", "metrics", "career"],
-    "excerpt": "Stop reporting page views. Start reporting what engineering leadership actually cares about."
-  },
-  {
-    "id": "tst-issue-25",
-    "title": "Issue #25 — Event-driven architectures beyond SQS + Lambda",
-    "type": "newsletter",
-    "platform": "The Serverless Terminal",
-    "url": "https://www.theserverlessterminal.com/",
-    "date": "2024-06",
-    "tags": ["event-driven", "aws", "serverless"],
-    "excerpt": "EventBridge, SNS fanout, and the patterns most teams skip."
-  },
-  {
-    "id": "podcast-template",
-    "title": "TEMPLATE — Podcast episode title",
-    "type": "podcast",
-    "platform": "Podcast Show Name",
-    "url": "https://example.com/episode",
-    "date": "2024-05",
-    "tags": ["serverless", "devrel"],
-    "excerpt": "Replace with a one-line description of what this episode covers."
-  }
+  [
+    {
+      "id": "tst-issue-28",
+      "title": "Issue #28 — Lambda power tuning and what the numbers actually mean",
+      "type": "newsletter",
+      "platform": "The Serverless Terminal",
+      "slug": "issue-28-lambda-power-tuning-and-what-the-numbers-actually-mean",
+      "url": "https://www.theserverlessterminal.com/p/issue-28-lambda-power-tuning-and-what-the-numbers-actually-mean",
+      "date": "2024-09",
+      "tags": ["lambda", "aws", "serverless"],
+      "excerpt": "A deep dive into Lambda power tuning — what the numbers actually mean for cost and latency."
+    },
+    {
+      "id": "tst-securing-workloads-serverless",
+      "title": "Did you know you are a co-owner who secures your workloads with Serverless?",
+      "type": "blog",
+      "platform": "The Serverless Terminal",
+      "slug": "did-you-know-you-are-a-co-owner-who-secures-your-workloads-with-serverless",
+      "url": "https://blog.theserverlessterminal.com/did-you-know-you-are-a-co-owner-who-secures-your-workloads-with-serverless",
+      "date": "2025-02",
+      "tags": ["aws", "serverless", "security", "cloud"],
+      "excerpt": "Exploring shared responsibility models and best practices for securing serverless workloads."
+    },
+    {
+      "id": "tst-amazon-s3-analytics",
+      "title": "Amazon S3 is more than storage and brings in a lot for the analytics ecosystem",
+      "type": "blog",
+      "platform": "The Serverless Terminal",
+      "slug": "amazon-s3-is-more-than-storage-and-brings-in-a-lot-for-the-analytics-ecosystem",
+      "url": "https://blog.theserverlessterminal.com/amazon-s3-is-more-than-storage-and-brings-in-a-lot-for-the-analytics-ecosystem",
+      "date": "2025-01",
+      "tags": ["aws", "s3", "analytics", "data"],
+      "excerpt": "Understanding how Amazon S3 plays a critical role in modern cloud analytics beyond plain storage."
+    },
+    {
+      "id": "tst-serverless-apps-at-scale",
+      "title": "Serverless Applications at Scale? Now Go Build with Best Practices",
+      "type": "blog",
+      "platform": "The Serverless Terminal",
+      "slug": "serverless-applications-at-scale-now-go-build-with-best-practices",
+      "url": "https://blog.theserverlessterminal.com/serverless-applications-at-scale-now-go-build-with-best-practices",
+      "date": "2025-01",
+      "tags": ["aws", "serverless", "architecture", "scalability"],
+      "excerpt": "Architectural guidelines and design patterns for running production serverless applications at scale."
+    },
+    {
+      "id": "tst-dynamodb-and-ttl",
+      "title": "DynamoDB and TTL",
+      "type": "blog",
+      "platform": "The Serverless Terminal",
+      "slug": "dynamodb-and-ttl",
+      "url": "https://blog.theserverlessterminal.com/dynamodb-and-ttl",
+      "date": "2021-05",
+      "tags": ["aws", "dynamodb", "serverless", "database"],
+      "excerpt": "How to leverage DynamoDB Time to Live (TTL) for automatic data lifecycle management."
+    },
+    {
+      "id": "tst-amazon-eventbridge-missing-piece",
+      "title": "Amazon EventBridge: The missing piece to your app",
+      "type": "blog",
+      "platform": "The Serverless Terminal",
+      "slug": "amazon-eventbridge-the-missing-piece-to-your-app",
+      "url": "https://blog.theserverlessterminal.com/amazon-eventbridge-the-missing-piece-to-your-app",
+      "date": "2023-02",
+      "tags": ["aws", "eventbridge", "serverless", "eventdriven"],
+      "excerpt": "Why Amazon EventBridge is essential for decoupling distributed microservices."
+    },
+    {
+      "id": "nr-guide-to-ai-observability",
+      "title": "Guide to AI Observability: Core Components, Tools, and Best Practices",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "ai-in-observability",
+      "url": "https://newrelic.com/blog/ai/ai-in-observability",
+      "date": "2026-07",
+      "tags": ["ai", "observability", "devops", "monitoring"],
+      "excerpt": "How AI systems fail quietly and what tools and metrics are required for comprehensive AI observability."
+    },
+    {
+      "id": "nr-aws-reinvent-2025-updates",
+      "title": "AWS re:Invent 2025: AI Agents take over while core compute gets reinvented",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "aws-reinvent-2025-updates",
+      "url": "https://newrelic.com/blog/observability/aws-reinvent-2025-updates",
+      "date": "2025-12",
+      "tags": ["aws", "reinvent", "ai", "observability", "devops"],
+      "excerpt": "Key takeaways and announcements from AWS re:Invent covering agentic workflows and compute updates."
+    },
+    {
+      "id": "nr-change-tracking-post-incident",
+      "title": "Change Tracking for Better Post-Incident Monitoring",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "change-tracking-for-better-post-incident-monitoring",
+      "url": "https://newrelic.com/blog/observability/change-tracking-for-better-post-incident-monitoring",
+      "date": "2025-11",
+      "tags": ["observability", "change-tracking", "devops", "system-resilience"],
+      "excerpt": "How to leverage change tracking in New Relic to speed up post-incident analysis and troubleshooting."
+    },
+    {
+      "id": "nr-aws-outage-o11y-non-negotiable",
+      "title": "AWS Outage And Why O11y is Non Negotiable",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "aws-outage-why-o11y-is-non-negotiable",
+      "url": "https://newrelic.com/blog/infrastructure-monitoring/aws-outage-why-o11y-is-non-negotiable",
+      "date": "2025-10",
+      "tags": ["aws", "observability", "outage", "resilience"],
+      "excerpt": "Analyzing major cloud outages and why full-stack observability is crucial for operational reliability."
+    },
+    {
+      "id": "nr-sqs-monitoring-deep-dive",
+      "title": "SQS Monitoring Deep Dive",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "sqs-monitoring-deep-dive",
+      "url": "https://newrelic.com/blog/observability/sqs-monitoring-deep-dive",
+      "date": "2025-08",
+      "tags": ["aws", "sqs", "nrql", "monitoring", "serverless"],
+      "excerpt": "Exploring SQS metrics beyond basic queue health using NRQL dashboards to detect bottlenecks."
+    },
+    {
+      "id": "nr-observability-event-driven-architecture",
+      "title": "Why observability matters for Event-Driven Architecture",
+      "type": "blog",
+      "platform": "New Relic",
+      "slug": "why-observability-matters-for-event-driven-architecture",
+      "url": "https://newrelic.com/blog/infrastructure-monitoring/why-observability-matters-for-event-driven-architecture",
+      "date": "2025-05",
+      "tags": ["aws", "event-driven", "observability", "sqs", "eventbridge"],
+      "excerpt": "Understanding the unique challenges of monitoring asynchronous, distributed microservice architectures."
+    },
+    {
+      "id": "fw-freshworks-eventbridge-guide",
+      "title": "A Guide to understanding Freshworks integrations with Amazon EventBridge",
+      "type": "blog",
+      "platform": "Freshworks Medium Developer Blog",
+      "slug": "a-guide-to-understanding-freshworks-integrations-with-amazon-eventbridge",
+      "url": "https://medium.com/freshworks-developer-blog",
+      "date": "2023-08",
+      "tags": ["freshworks", "aws", "eventbridge", "integration"],
+      "excerpt": "A step-by-step guide on integrating Freshworks product events with Amazon EventBridge."
+    },
+    {
+      "id": "fw-streamlining-app-publishing",
+      "title": "Streamlining your app publishing journey for the Freshworks Marketplace: a step-by-step guide",
+      "type": "blog",
+      "platform": "Freshworks Medium Developer Blog",
+      "slug": "streamlining-your-app-publishing-journey-for-the-freshworks-marketplace-a-step-by-step-guide",
+      "url": "https://medium.com/freshworks-developer-blog",
+      "date": "2023-08",
+      "tags": ["freshworks", "marketplace", "app-development", "publishing"],
+      "excerpt": "Simplifying the process into five clear stages for a seamless app publishing experience."
+    },
+    {
+      "id": "mom-caching-at-every-layer",
+      "title": "Improve app performance by caching at every layer",
+      "type": "blog",
+      "platform": "Momento Blog",
+      "slug": "improve-app-performance-by-caching-at-every-layer",
+      "url": "https://www.gomomento.com/blog/improve-app-performance-by-caching-at-every-layer/",
+      "date": "2023-03",
+      "tags": ["caching", "momento", "performance", "architecture"],
+      "excerpt": "How to optimize application performance end-to-end using multi-layer caching strategies."
+    },
+    {
+      "id": "blog-sunset-2024-reflection",
+      "title": "Sunset 2024, Learning From It's Reflections",
+      "type": "blog",
+      "platform": "zachjonesnoel blog",
+      "slug": "sunset-2024-learning-from-its-reflections",
+      "url": "https://blog.zachjonesnoel.com/sunset-2024-learning-from-its-reflections",
+      "date": "2025-01",
+      "tags": ["career", "reflections", "devrel", "retrospective"],
+      "excerpt": "An annual retrospective reflecting on community milestones, personal achievements, and lessons learned."
+    },
+    {
+      "id": "blog-streaming-responses-aws-lambda",
+      "title": "Streaming Responses via AWS Lambda",
+      "type": "blog",
+      "platform": "zachjonesnoel blog",
+      "slug": "streaming-responses-via-aws-lambda",
+      "url": "https://blog.zachjonesnoel.com/streaming-responses-via-aws-lambda",
+      "date": "2024-07",
+      "tags": ["aws", "lambda", "serverless", "web"],
+      "excerpt": "How to implement response streaming with AWS Lambda to improve time-to-first-byte and UX."
+    },
+    {
+      "id": "blog-step-functions-http-orchestration",
+      "title": "Orchestration of HTTP invocation made possible with Step Functions",
+      "type": "blog",
+      "platform": "zachjonesnoel blog",
+      "slug": "orchestration-of-http-invocation-made-possible-with-step-functions",
+      "url": "https://blog.zachjonesnoel.com/orchestration-of-http-invocation-made-possible-with-step-functions",
+      "date": "2024-06",
+      "tags": ["aws", "step-functions", "serverless", "orchestration"],
+      "excerpt": "Leveraging HTTP Task integrations directly within AWS Step Functions workflows without extra code."
+    },
+    {
+      "id": "devto-jitter-strategy-step-functions",
+      "title": "The Jitter Strategy for Step Functions Error Retries on the New Workflow Studio",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio",
+      "url": "https://dev.to/aws-heroes/the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio-22bf",
+      "date": "2023-10",
+      "tags": ["aws", "serverless", "stepfunctions", "errors"],
+      "excerpt": "Implementing backoff and jitter retry strategies in AWS Step Functions to prevent thundering herd problems."
+    },
+    {
+      "id": "devto-buses-and-queues-head-on",
+      "title": "Buses and queues: Head-on",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "buses-and-queues-head-on",
+      "url": "https://dev.to/awscommunity-asean/buses-and-queues-head-on-21c6",
+      "date": "2023-10",
+      "tags": ["aws", "serverless", "eventbridge", "sqs"],
+      "excerpt": "A head-to-head comparison between event buses and message queues for event-driven microservices."
+    },
+    {
+      "id": "devto-lambda-performance-peak-traffic",
+      "title": "Maintaining Lambda Function Performance During Peak Traffic",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "maintaining-lambda-function-performance-during-peak-traffic",
+      "url": "https://dev.to/aws-heroes/maintaining-lambda-function-performance-during-peak-traffic-1e64",
+      "date": "2023-10",
+      "tags": ["aws", "serverless", "lambda", "performance"],
+      "excerpt": "Strategies for managing concurrency, cold starts, and scaling behavior under high load in AWS Lambda."
+    },
+    {
+      "id": "devto-rethink-rearchitect-app",
+      "title": "Re-think and Re-architect Your Application",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "re-think-and-re-architect-your-application",
+      "url": "https://dev.to/awscommunity-asean/re-think-and-re-architect-your-application-20n9",
+      "date": "2023-10",
+      "tags": ["aws", "architecture", "serverless", "monolith"],
+      "excerpt": "Deconstructing monolithic systems into scalable, event-driven serverless architectures."
+    },
+    {
+      "id": "devto-appsync-subscriptions-triggers-lambda",
+      "title": "Workarounds for AppSync Subscriptions triggers via Lambda functions",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "workarounds-for-appsync-subscriptions-triggers-via-lambda-functions",
+      "url": "https://dev.to/aws-heroes/workarounds-for-appsync-subscriptions-triggers-via-lambda-functions-3hkg",
+      "date": "2023-10",
+      "tags": ["aws", "development", "serverless", "appsync"],
+      "excerpt": "Practical workarounds for initiating AWS AppSync GraphQL real-time subscriptions directly from Lambda."
+    },
+    {
+      "id": "devto-serverless-dev-amplify-studio",
+      "title": "Serverless development with Amplify Studio",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "serverless-development-with-amplify-studio",
+      "url": "https://dev.to/aws-heroes/serverless-development-with-amplify-studio-120d",
+      "date": "2023-10",
+      "tags": ["aws", "serverless", "amplify", "javascript"],
+      "excerpt": "Accelerating frontend-to-cloud development workflows using AWS Amplify Studio."
+    },
+    {
+      "id": "devto-amazon-eventbridge-missing-piece",
+      "title": "Amazon EventBridge: The missing piece to your app",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "amazon-eventbridge-the-missing-piece-to-your-app",
+      "url": "https://dev.to/awscommunity-asean/amazon-eventbridge-the-missing-piece-to-your-app-31o1",
+      "date": "2023-03",
+      "tags": ["aws", "serverless", "eventbridge", "eventdriven"],
+      "excerpt": "Exploring how EventBridge unlocks seamless third-party integrations and event routing."
+    },
+    {
+      "id": "devto-building-serverless-apps-configurations",
+      "title": "Building Serverless apps with more configurations",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "building-serverless-apps-with-more-configurations",
+      "url": "https://dev.to/aws-heroes/building-serverless-apps-with-more-configurations-4i6d",
+      "date": "2023-02",
+      "tags": ["aws", "serverless", "configuration", "architecture"],
+      "excerpt": "Best practices for managing environment variables and secret parameters across serverless stages."
+    },
+    {
+      "id": "devto-its-time-to-rewind-2022",
+      "title": "It's time to re:Wind 2022",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "its-time-to-rewind-2022",
+      "url": "https://dev.to/aws-heroes/its-time-to-rewind-2022-29k1",
+      "date": "2022-12",
+      "tags": ["appreciation", "devrel", "rewind", "2022"],
+      "excerpt": "Reflecting on developer advocacy achievements, speaking sessions, and community growth in 2022."
+    },
+    {
+      "id": "devto-amazon-inspector-scan-lambda",
+      "title": "Amazon Inspector can now scan AWS Lambda Functions",
+      "type": "blog",
+      "platform": "DEV Community",
+      "slug": "amazon-inspector-can-now-scan-aws-lambda-functions",
+      "url": "https://dev.to/aws-heroes/amazon-inspector-can-now-scan-aws-lambda-functions-4091",
+      "date": "2022-11",
+      "tags": ["aws", "lambda", "security", "inspector"],
+      "excerpt": "Automating vulnerability scanning for AWS Lambda function code and dependencies with Amazon Inspector."
+    }
+  ]
 ]
