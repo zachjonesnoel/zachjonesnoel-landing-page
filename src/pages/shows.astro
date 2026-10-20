@@ -18,7 +18,11 @@ import profile from '../../data/profile.json';
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {profile.shows.map(s => (
-          <div class="glow-box border border-border rounded-md p-5 bg-bg2 block">
+          <div class="glow-box border border-border rounded-md bg-bg2 block overflow-hidden">
+            <div class="flex items-center justify-center h-40 bg-bg px-6 py-4 border-b border-border">
+              <img src={s.logo} alt={`${s.name} logo`} loading="lazy" decoding="async" class="max-h-full max-w-full object-contain" />
+            </div>
+            <div class="p-5">
             <p class="font-mono text-[10px] tracking-widest text-accent mb-2">// {s.type}</p>
             {s.playlist ? (
               <a href={s.playlist} target="_blank" rel="noopener noreferrer" class="block text-sm font-semibold mb-2 hover:text-accent transition-colors">{s.name}</a>
@@ -36,6 +40,7 @@ import profile from '../../data/profile.json';
               </ul>
             )}
             <a href={s.url} target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">→ visit</a>
+            </div>
           </div>
         ))}
       </div>

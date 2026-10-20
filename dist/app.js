@@ -1,4 +1,11 @@
 /* zachjonesnoel.com — GUI layer + terminal drawer bridge */
+
+// A talk is upcoming when its date is today or later. Computed on every visit,
+// so the flag never goes stale between data edits and rebuilds.
+window.isUpcomingTalk = function (talk) {
+  const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD, local time
+  return (talk.date || "") >= today;
+};
 (function () {
   'use strict';
 

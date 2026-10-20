@@ -7,24 +7,26 @@
   "email": "hi@zachjonesnoel.com",
   "calendly": "https://calendly.com/zachjonesnoel/meet-n-chat",
   "socials": {
-    "twitter": "https://twitter.com/zachjonesnoel",
     "linkedin": "https://www.linkedin.com/in/jones-zachariah-noel-n",
+    "twitter": "https://twitter.com/zachjonesnoel",
     "github": "https://github.com/zachjonesnoel",
     "devto": "https://dev.to/zachjonesnoel",
-    "instagram": "https://www.instagram.com/zachariah_jones_noel/"
+    "instagram": "https://www.instagram.com/zachjonesnoel/"
   },
   "shows": [
     {
       "name": "The Serverless Terminal",
       "type": "newsletter",
       "url": "https://www.theserverlessterminal.com/",
-      "description": "Serverless patterns, AWS deep dives, and the people shipping production at scale."
+      "description": "Serverless patterns, AWS deep dives, and the people shipping production at scale.",
+      "logo": "/The%20Serverless%20Terminal.png"
     },
     {
       "name": "The Zacs' Show",
       "type": "youtube",
       "url": "https://www.youtube.com/@thezacsshowtalkingaws",
-      "description": "Live conversations on AWS, developer tools, and community building with Arshad Zackeriya."
+      "description": "Live conversations on AWS, developer tools, and community building with Arshad Zackeriya.",
+      "logo": "/Zacs%20Show%20Talking%20AWS.png"
     },
     {
       "name": "Production Unlocked",
@@ -41,7 +43,8 @@
           "url": "https://www.youtube.com/watch?v=ZE2-Rftr7s8"
         }
       ],
-      "playlist": "https://www.youtube.com/playlist?list=PLEpaEdukYg28"
+      "playlist": "https://www.youtube.com/playlist?list=PLEpaEdukYg28",
+      "logo": "/Production%20Unlocked.png"
     }
   ],
   "consultAreas": [

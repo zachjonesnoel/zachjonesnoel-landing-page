@@ -20,6 +20,8 @@ const {
   description = profile.bio,
 } = Astro.props;
 
+const canonical = new URL(Astro.url.pathname, 'https://zachjonesnoel.com').href;
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -73,11 +75,13 @@ const articlesSchema = {
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://zachjonesnoel.com" />
+  <meta property="og:url" content={canonical} />
+  <link rel="canonical" href={canonical} />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@zachjonesnoel" />
   <title>{title}</title>
   <link rel="icon" href="/favicon.ico" />
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site index" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   <!-- Leaflet JS must be in <head> so L is defined before map.js runs -->
   <Fragment set:html={`<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>`} />

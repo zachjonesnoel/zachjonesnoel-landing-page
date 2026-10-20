@@ -57,7 +57,7 @@
       span.textContent = tag;
       tagsEl.appendChild(span);
     });
-    if (talk.upcoming) {
+    if (window.isUpcomingTalk(talk)) {
       const badge = document.createElement('span');
       badge.className = 'font-mono text-[9px] tracking-widest uppercase bg-accent text-black px-1.5 py-0.5 rounded-sm';
       badge.textContent = 'upcoming';

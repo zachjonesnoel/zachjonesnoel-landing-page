@@ -124,7 +124,7 @@
     const locations = Array.from(cityMap.values());
 
     // ── update stat counters ─────────────────────────────────────────────
-    const upcomingTalks = talks.filter(t => t.upcoming);
+    const upcomingTalks = talks.filter(t => window.isUpcomingTalk(t));
     const cityCountEl     = document.getElementById('map-city-count');
     const talkCountEl     = document.getElementById('map-talk-count');
     const upcomingCountEl = document.getElementById('map-upcoming-count');
@@ -155,16 +155,16 @@
     const bounds = [];
 
     for (const loc of locations) {
-      const hasUpcoming = loc.talks.some(t => t.upcoming);
+      const hasUpcoming = loc.talks.some(t => window.isUpcomingTalk(t));
       const marker = L.marker([loc.lat, loc.lng], {
         icon: makeIcon(hasUpcoming),
         title: `${loc.city}, ${loc.country}`,
       });
 
       const talkRows = loc.talks
-        .sort((a, b) => (b.upcoming ? 1 : 0) - (a.upcoming ? 1 : 0))
+        .sort((a, b) => (window.isUpcomingTalk(b) ? 1 : 0) - (window.isUpcomingTalk(a) ? 1 : 0))
         .map(t => {
-          const dot = t.upcoming
+          const dot = window.isUpcomingTalk(t)
             ? '<span style="color:#22c55e;margin-right:5px">●</span>'
             : '<span style="color:#444;margin-right:5px">●</span>';
           const links = [

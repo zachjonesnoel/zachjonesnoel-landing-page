@@ -9,7 +9,7 @@
   --bg3:     #181818;
   --border:  #222222;
   --txt:     #e8e8e8;
-  --muted:   #555555;
+  --muted:   #8f8f8f;
   --accent:  #22c55e;
   --accent2: #f59e0b;
   color-scheme: dark;
@@ -22,7 +22,7 @@ html.light {
   --bg3:     #e8e8e6;
   --border:  #d4d4d0;
   --txt:     #1a1a1a;
-  --muted:   #888888;
+  --muted:   #6b6b6b;
   --accent:  #16a34a;
   --accent2: #d97706;
   color-scheme: light;

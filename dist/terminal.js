@@ -17,8 +17,11 @@
   const cmdHistory = [];
   let   histIdx    = -1;
   const COMMANDS   = [
-    'help', 'whoami', 'talks', 'writing', 'shows', 'consult', 'map', 'clear', 'open',
+    'help', 'whoami', 'talks', 'writing', 'shows', 'consult', 'map', 'figlet', 'clear', 'open',
   ];
+  const BANNER = ["             _     _                               _ ","  _____ _ __| |_  (_)___ _ _  ___ ____ _  ___  ___| |"," |_ / _` / _| ' \\ | / _ \\ ' \\/ -_|_-< ' \\/ _ \\/ -_) |"," /__\\__,_\\__|_||_|/ \\___/_||_\\___/__/_||_\\___/\\___|_|","                |__/                                 "];
+  // Newest first; dates are 'YYYY-MM' or 'YYYY-MM-DD'.
+  const byDateDesc = (a, b) => String(b.date).localeCompare(String(a.date));
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ── helpers ───────────────────────────────────────────────────────────────
@@ -52,6 +55,46 @@
     row.className = 'flex gap-2 leading-relaxed';
     row.innerHTML = `<span style="color:var(--accent);user-select:none">$</span><span style="color:var(--txt)">${esc(raw)}</span>`;
     output.appendChild(row);
+    output.scrollTop = output.scrollHeight;
+  }
+
+  // Parses '--flag value with spaces --bool' into { flag: 'value with spaces' | true }.
+  function parseFlags(args) {
+    const flags = {};
+    let cur = null;
+    for (const a of args) {
+      if (a.startsWith('--')) { cur = a.slice(2).toLowerCase(); flags[cur] = true; }
+      else if (cur) { flags[cur] = flags[cur] === true ? a : flags[cur] + ' ' + a; }
+    }
+    return flags;
+  }
+  const flagStr = v => (typeof v === 'string' ? v.toLowerCase() : '');
+
+  // Types the figlet command, then scans the banner in left to right.
+  async function playBanner() {
+    const cmd = 'figlet zachjonesnoel';
+    const width = Math.max(...BANNER.map(r => r.length));
+    const row = appendLine('', '');
+    row.className = 'flex gap-2 leading-relaxed';
+    const typed = i => {
+      row.innerHTML = `<span style="color:var(--accent);user-select:none">$</span><span style="color:var(--txt)">${esc(cmd.slice(0, i))}</span>`;
+    };
+    for (let i = 1; i <= cmd.length; i++) { typed(i); await sleep(45); }
+    await sleep(250);
+    const pre = document.createElement('pre');
+    pre.className = 'whitespace-pre leading-[1.15] text-[9px] sm:text-[12px] overflow-x-auto';
+    pre.style.color = 'var(--accent)';
+    pre.setAttribute('aria-label', 'zachjonesnoel');
+    output.appendChild(pre);
+    if (reduced) { pre.textContent = BANNER.join('\n'); }
+    else {
+      for (let col = 0; col <= width; col += 2) {
+        pre.textContent = BANNER.map(r => r.slice(0, col).padEnd(col, ' ') + (col < width ? '\u258c' : '')).join('\n');
+        output.scrollTop = output.scrollHeight;
+        await sleep(22);
+      }
+      pre.textContent = BANNER.join('\n');
+    }
     output.scrollTop = output.scrollHeight;
   }
 
@@ -117,31 +160,53 @@
 
     help: async () => {
       blank();
-      const rows = [
-        ['help',             'show this help'],
-        ['whoami',           'who is Jones?'],
-        ['talks',            'recent conference talks'],
-        ['talks --upcoming', 'upcoming only'],
-        ['talks --all',      'full list'],
-        ['writing',          'recent posts & newsletters'],
-        ['writing --type X', 'filter: blog | newsletter | linkedin'],
-        ['shows',            'The Serverless Terminal & The Zacs\' Show'],
-        ['consult',          'consultation areas + contact'],
-        ['map',              'ASCII world map of talk locations'],
-        ['open <name>',      'open: twitter | linkedin | github | newsletter | calendly'],
-        ['clear',            'clear terminal'],
+      const sections = [
+        ['GENERAL', [
+          ['help',             'show this help'],
+          ['whoami',           'who is Jones?'],
+          ['shows',            'The Serverless Terminal & The Zacs\' Show'],
+          ['consult',          'consultation areas + contact'],
+          ['figlet',           'replay the zachjonesnoel banner'],
+          ['map',              'ASCII world map of talk locations'],
+          ['open <name>',      'twitter | linkedin | github | devto | instagram | newsletter | youtube | calendly | email'],
+          ['clear',            'clear terminal'],
+        ]],
+        ['TALKS  (newest first, default 5)', [
+          ['talks',                  'most recent talks'],
+          ['talks --all',            'full list'],
+          ['talks --upcoming',       'upcoming only'],
+          ['talks --city <name>',    'filter by city, e.g. --city London'],
+          ['talks --tag <tag>',      'filter by tag, e.g. --tag serverless'],
+          ['talks --slides',         'only talks with slides'],
+          ['talks --video',          'only talks with a recording'],
+          ['talks --cities | --tags','list available cities / tags'],
+        ]],
+        ['WRITING  (newest first, default 10)', [
+          ['writing',                    'latest posts & newsletters'],
+          ['writing --all',              'full list'],
+          ['writing --limit <n>',        'show n entries'],
+          ['writing --type <type>',      'blog | newsletter'],
+          ['writing --platform <name>',  'e.g. --platform New Relic'],
+          ['writing --tag <tag>',        'e.g. --tag dynamodb'],
+          ['writing --platforms | --tags','list available platforms / tags'],
+        ]],
       ];
-      const maxCmd = Math.max(...rows.map(r => r[0].length));
-      await stream(['COMMANDS', '\u2500'.repeat(maxCmd + 22)], 'color-muted', 0);
-      for (const [cmd, desc] of rows) {
-        appendLine(
-          `  <span style="color:var(--accent)">${esc(cmd.padEnd(maxCmd + 2))}</span>` +
-          `<span style="color:var(--muted)">${esc(desc)}</span>`,
-          ''
-        );
-        await sleep(16);
+      const maxCmd = Math.max(...sections.flatMap(([, r]) => r.map(x => x[0].length)));
+      const rule = '\u2500'.repeat(Math.min(maxCmd + 40, 72));
+      for (const [title, rows] of sections) {
+        await stream([title, rule], 'color-muted', 0);
+        for (const [cmd, desc] of rows) {
+          appendLine(
+            `  <span style="color:var(--accent)">${esc(cmd.padEnd(maxCmd + 2))}</span>` +
+            `<span style="color:var(--muted)">${esc(desc)}</span>`,
+            ''
+          );
+          await sleep(12);
+        }
+        blank();
       }
-      await stream(['\u2500'.repeat(maxCmd + 22)], 'color-muted', 0);
+      await stream(['Filters combine (e.g. writing --type blog --tag aws --platform New Relic).',
+                    'Tab completes commands; \u2191/\u2193 browse history.'], 'color-muted', 0);
       blank();
     },
 
@@ -167,15 +232,35 @@
     },
 
     talks: async (args) => {
-      const upcomingOnly = args.includes('--upcoming');
-      const showAll      = args.includes('--all');
-      let   list         = [...talks];
-      if (upcomingOnly) list = list.filter(t => t.upcoming);
-      if (!showAll && !upcomingOnly) list = list.slice(0, 5);
-
+      const f = parseFlags(args);
+      const countBy = (arr) => {
+        const m = {};
+        for (const x of arr) m[x] = (m[x] || 0) + 1;
+        return Object.entries(m).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+      };
       blank();
+      if (f.cities || f.tags) {
+        const rows = f.cities
+          ? countBy(talks.map(t => t.location && t.location.city).filter(Boolean))
+          : countBy(talks.flatMap(t => (t.tags || []).map(x => x.toLowerCase())));
+        await stream([f.cities ? '  CITIES' : '  TAGS'], 'color-muted', 0);
+        appendLine('  ' + rows.map(([k, n]) => `<span style="color:var(--accent)">${esc(k)}</span><span style="color:var(--muted)">(${n})</span>`).join('  '), '');
+        blank();
+        return;
+      }
+
+      let list = [...talks].sort(byDateDesc);
+      if (f.upcoming) list = list.filter(t => window.isUpcomingTalk(t));
+      if (flagStr(f.city)) list = list.filter(t => (t.location.city || '').toLowerCase().includes(flagStr(f.city)));
+      if (flagStr(f.tag))  list = list.filter(t => (t.tags || []).some(x => x.toLowerCase() === flagStr(f.tag)));
+      if (f.slides) list = list.filter(t => t.slides);
+      if (f.video)  list = list.filter(t => t.video);
+      const filtered = list.length;
+      const limited  = !f.all && !f.upcoming && !flagStr(f.city) && !flagStr(f.tag) && !f.slides && !f.video;
+      if (limited) list = list.slice(0, 5);
+
       if (!list.length) {
-        await stream(['  no talks found.'], '', 0);
+        await stream(['  no talks match those filters.'], '', 0);
         blank();
         return;
       }
@@ -187,7 +272,7 @@
       for (const t of list) {
         const conf  = t.conference.substring(0, 34).padEnd(34);
         const title = t.title.substring(0, 44);
-        const col   = t.upcoming ? 'var(--accent2)' : 'var(--txt)';
+        const col   = window.isUpcomingTalk(t) ? 'var(--accent2)' : 'var(--txt)';
         appendLine(
           `<span style="color:var(--muted)">  ${esc(t.date)}  </span>` +
           `<span style="color:${col}">${esc(conf)}  ${esc(title)}</span>` +
@@ -198,23 +283,44 @@
         await sleep(25);
       }
 
-      if (!showAll && !upcomingOnly && talks.length > 5) {
-        blank();
+      blank();
+      if (limited && talks.length > 5) {
         text(`  \u2026 and ${talks.length - 5} more. Run 'talks --all' to see everything.`, 'color-muted');
+      } else {
+        text(`  ${filtered} talk${filtered === 1 ? '' : 's'}.`, 'color-muted');
       }
       blank();
     },
 
     writing: async (args) => {
-      let list = [...writing];
-      const typeIdx = args.indexOf('--type');
-      if (typeIdx !== -1 && args[typeIdx + 1]) {
-        list = list.filter(w => w.type === args[typeIdx + 1].toLowerCase());
+      const f = parseFlags(args);
+      const countBy = (arr) => {
+        const m = {};
+        for (const x of arr) m[x] = (m[x] || 0) + 1;
+        return Object.entries(m).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+      };
+      blank();
+      if (f.platforms || f.tags) {
+        const rows = f.platforms
+          ? countBy(writing.map(w => w.platform))
+          : countBy(writing.flatMap(w => (w.tags || []).map(x => x.toLowerCase())));
+        await stream([f.platforms ? '  PLATFORMS' : '  TAGS'], 'color-muted', 0);
+        appendLine('  ' + rows.map(([k, n]) => `<span style="color:var(--accent)">${esc(k)}</span><span style="color:var(--muted)">(${n})</span>`).join('  '), '');
+        blank();
+        return;
       }
 
-      blank();
+      let list = [...writing].filter(w => !String(w.id).includes('template')).sort(byDateDesc);
+      if (flagStr(f.type))     list = list.filter(w => w.type === flagStr(f.type));
+      if (flagStr(f.platform)) list = list.filter(w => w.platform.toLowerCase().includes(flagStr(f.platform)));
+      if (flagStr(f.tag))      list = list.filter(w => (w.tags || []).some(x => x.toLowerCase() === flagStr(f.tag)));
+      const filtered = list.length;
+      const n = parseInt(f.limit, 10);
+      const limit = n > 0 ? n : (f.all ? Infinity : 10);
+      list = list.slice(0, limit);
+
       if (!list.length) {
-        await stream(['  no writing found for that filter.'], '', 0);
+        await stream(['  no writing matches those filters.'], '', 0);
         blank();
         return;
       }
@@ -225,20 +331,23 @@
         linkedin:   '#60a5fa',
       };
 
-      await stream(['  DATE      TYPE          TITLE', '  ' + '\u2500'.repeat(60)], 'color-muted', 0);
+      await stream(['  DATE        TYPE        PLATFORM                  TITLE', '  ' + '\u2500'.repeat(76)], 'color-muted', 0);
 
       for (const w of list) {
-        const typeStr = w.type.padEnd(13);
-        const title   = w.title.substring(0, 50);
-        const tc      = TYPE_COLOR[w.type] || 'var(--txt)';
+        const tc = TYPE_COLOR[w.type] || 'var(--txt)';
         appendLine(
-          `<span style="color:var(--muted)">  ${esc(w.date)}  </span>` +
-          `<span style="color:${tc}">${esc(typeStr)}</span>` +
-          `<span style="color:var(--txt)">  ${esc(title)}</span>`,
+          `<span style="color:var(--muted)">  ${esc(w.date.padEnd(10))}  </span>` +
+          `<span style="color:${tc}">${esc(w.type.padEnd(10))}  </span>` +
+          `<span style="color:var(--muted)">${esc(w.platform.substring(0, 24).padEnd(24))}  </span>` +
+          `<span style="color:var(--txt)">${esc(w.title.substring(0, 50))}</span>`,
           ''
         );
-        await sleep(25);
+        await sleep(15);
       }
+      blank();
+      text(list.length < filtered
+        ? `  showing ${list.length} of ${filtered}. Use --all or --limit <n> for more.`
+        : `  ${filtered} entr${filtered === 1 ? 'y' : 'ies'}.`, 'color-muted');
       blank();
     },
 
@@ -319,6 +428,12 @@
       blank();
     },
 
+    figlet: async () => {
+      blank();
+      await playBanner();
+      blank();
+    },
+
     clear: async () => {
       output.innerHTML = '';
     },
@@ -368,7 +483,7 @@
     // Notify GUI layer so it can scroll to the right section
     document.dispatchEvent(new CustomEvent('term:command', { detail: { cmd, args } }));
 
-    const handler = HANDLERS[cmd];
+    const handler = HANDLERS[cmd === 'banner' ? 'figlet' : cmd];
     if (handler) {
       await handler(args);
     } else {
@@ -432,6 +547,8 @@
 
   // ── boot sequence ──────────────────────────────────────────────────────────
   async function boot() {
+    await playBanner();
+    blank();
     const lines = [
       `zachjonesnoel.com  \u2014  v2.0.0`,
       `${profile.name || ''} \u00b7 ${profile.title || ''} \u00b7 ${profile.employer || ''}`,
