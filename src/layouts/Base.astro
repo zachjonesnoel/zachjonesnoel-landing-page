@@ -3,6 +3,12 @@ import '../styles/global.css';
 import profile from '../../data/profile.json';
 import talks from '../../data/talks.json';
 import writing from '../../data/writing.json';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import TerminalDrawer from '../components/TerminalDrawer.astro';
+import TalkModal from '../components/TalkModal.astro';
+
+const terminalData = JSON.stringify({ profile, talks, writing });
 
 interface Props {
   title?: string;
@@ -83,6 +89,30 @@ const articlesSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(articlesSchema)} />
 </head>
 <body>
+  <!-- Anti-flash: apply saved theme before first paint -->
+  <script is:inline>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'light' || (!saved && !prefersDark)) {
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+
+  <SiteNav />
   <slot />
+  <SiteFooter />
+  <TerminalDrawer />
+  <TalkModal />
+
+  <script type="application/json" id="terminal-data" set:html={terminalData} />
+  <script is:inline define:vars={{ stadiaKey: import.meta.env.PUBLIC_STADIA_API_KEY ?? '' }}>
+    window.STADIA_API_KEY = stadiaKey;
+  </script>
+  <script is:inline src="/terminal.js"></script>
+  <script is:inline src="/app.js"></script>
+  <script is:inline src="/map.js"></script>
+  <script is:inline src="/modal.js"></script>
 </body>
 </html>

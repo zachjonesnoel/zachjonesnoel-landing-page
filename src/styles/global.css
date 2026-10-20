@@ -60,6 +60,15 @@ a { color: inherit; text-decoration: none; }
   animation: blink 1s step-end infinite;
 }
 
+/* ── Active green glow for content boxes on hover ───────────────── */
+.glow-box {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.glow-box:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 18px -4px var(--accent);
+}
+
 /* ── Nav links ──────────────────────────────────────────────────── */
 .nav-link {
   font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;

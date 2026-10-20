@@ -4,81 +4,49 @@ import profile from '../../data/profile.json';
 import talks from '../../data/talks.json';
 import writing from '../../data/writing.json';
 
-const terminalData = JSON.stringify({ profile, talks, writing });
+const realTalks = talks.filter(t => !t.id.includes('template'));
+const realWriting = writing.filter(w => !w.id.includes('template'));
 
-const TYPE_LABEL: Record<string, string> = {
-  blog:       'blog',
-  newsletter: 'newsletter',
-  linkedin:   'linkedin',
-  podcast:    'podcast',
-};
+// Home-page summary stats. The full lists live on /talks, /writing and /shows.
+const cityCount = new Set(realTalks.filter(t => t.location.lat != null && t.location.lng != null).map(t => `${t.location.lat},${t.location.lng}`)).size;
+const upcomingCount = realTalks.filter(t => t.upcoming).length;
+const latestTalk = realTalks[0];
+const latestWriting = realWriting[0];
+const writingByType: Record<string, number> = {};
+for (const w of realWriting) writingByType[w.type] = (writingByType[w.type] ?? 0) + 1;
 
-const TYPE_COLOR: Record<string, string> = {
-  blog:       'bg-accent text-black',
-  newsletter: 'bg-accent2 text-black',
-  linkedin:   'bg-blue-500 text-white',
-  podcast:    'bg-purple-500 text-white',
+// Connect section: friendly labels, and the handle taken from each profile URL
+const socialLabel: Record<string, string> = {
+  twitter: 'X / Twitter', linkedin: 'LinkedIn', github: 'GitHub', devto: 'dev.to', instagram: 'Instagram',
 };
+const handleOf = (url: string) => '@' + (new URL(url).pathname.split('/').filter(Boolean).pop() ?? '').replace(/^@/, '');
+
+// figlet "Small" font render of "zachjonesnoel" (53 cols x 5 rows)
+const bannerRows: string[] = ["             _     _                               _ ","  _____ _ __| |_  (_)___ _ _  ___ ____ _  ___  ___| |"," |_ / _` / _| ' \\ | / _ \\ ' \\/ -_|_-< ' \\/ _ \\/ -_) |"," /__\\__,_\\__|_||_|/ \\___/_||_\\___/__/_||_\\___/\\___|_|","                |__/                                 "];
 ---
 <Base>
-
-<!-- Anti-flash: apply saved theme before first paint -->
-<script is:inline>
-  (function () {
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (saved === 'light' || (!saved && !prefersDark)) {
-      document.documentElement.classList.add('light');
-    }
-  })();
-</script>
-
-<!-- ══════════════════════════════════════════════
-     NAV
-═══════════════════════════════════════════════ -->
-<header id="site-nav" class="fixed top-0 w-full z-40 border-b border-transparent transition-all duration-200 font-mono">
-  <div class="mx-auto max-w-content px-5 flex h-14 items-center justify-between">
-    <a href="/" class="text-accent text-sm tracking-widest hover:opacity-80 transition-opacity">
-      <span class="text-muted">~/</span>zachjonesnoel
-    </a>
-    <nav class="flex items-center gap-1">
-      <a href="#talks"   class="nav-link">talks</a>
-      <a href="#writing" class="nav-link">writing</a>
-      <a href="#shows"   class="nav-link">shows</a>
-      <a href="#consult" class="nav-link">consult</a>
-      <!-- Terminal toggle button -->
-      <button
-        id="term-toggle"
-        aria-label="Toggle terminal"
-        title="Toggle terminal (Ctrl+`)"
-        class="ml-2 flex items-center gap-1.5 font-mono text-xs text-muted hover:text-accent border border-border hover:border-accent/40 px-2.5 py-1.5 rounded transition-all"
-      >
-        <span class="text-accent select-none">&gt;_</span>
-        <span>terminal</span>
-      </button>
-      <!-- Theme toggle -->
-      <button
-        id="theme-toggle"
-        aria-label="Toggle light/dark theme"
-        title="Toggle theme"
-        class="ml-1"
-      >
-        <span class="toggle-icon" id="theme-icon">🌙</span>
-        <span id="theme-label">light</span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<!-- ══════════════════════════════════════════════
-     MAIN GUI
-═══════════════════════════════════════════════ -->
 <main id="gui-main" class="pt-14">
 
   <!-- ── HERO ── -->
   <section id="about" class="border-b border-border">
     <div class="mx-auto max-w-content px-5 py-20">
       <p class="font-mono text-xs text-accent tracking-widest mb-5">// developer relations engineer</p>
+      <!-- Terminal banner: types the command, then scans the figlet banner in -->
+      <div class="glow-box mb-8 max-w-xl overflow-hidden rounded-md border border-border bg-bg2 font-mono" data-term-banner>
+        <div class="flex items-center gap-1.5 border-b border-border px-3 py-2">
+          <span class="h-2.5 w-2.5 rounded-full bg-muted/40"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-muted/40"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-accent/60"></span>
+          <span class="ml-3 text-[10px] tracking-wider text-muted">zach@nyc ~ zsh</span>
+          <button type="button" data-replay class="ml-auto text-[10px] tracking-wider text-muted transition-colors hover:text-accent">↻ replay</button>
+        </div>
+        <div class="px-4 py-4 text-[11px] leading-relaxed" aria-hidden="true">
+          <p class="whitespace-nowrap"><span class="text-accent">~</span> <span class="text-muted">$</span> <span class="text-txt" data-cmd>figlet zachjonesnoel</span></p>
+          <pre class="mt-3 overflow-x-auto whitespace-pre text-[8px] leading-[1.15] text-accent md:text-[12px]" data-banner data-rows={JSON.stringify(bannerRows)}>{bannerRows.join('\n')}</pre>
+          <p class="mt-4 whitespace-nowrap"><span class="text-accent">~</span> <span class="text-muted">$</span> <span class="cursor"></span></p>
+        </div>
+        <span class="sr-only">zachjonesnoel</span>
+      </div>
       <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
         Hi, I'm Jones Zachariah Noel (<span class="text-accent">zach</span>).<br>
         I bridge <span class="text-accent">developers</span><br>
@@ -110,114 +78,33 @@ const TYPE_COLOR: Record<string, string> = {
     </div>
   </section>
 
-  <!-- ── TALKS ── -->
+  <!-- ── TALKS (summary) ── -->
   <section id="talks" class="border-b border-border">
     <div class="mx-auto max-w-content px-5 py-12">
       <div class="flex justify-between items-center mb-6">
-        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Latest talks</span>
-        <div class="flex items-center gap-3">
-          <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="map">
-            <span class="text-accent mr-1">◎</span>map
-          </button>
-          <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="talks">$ talks</button>
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Talks</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="talks">$ talks</button>
+      </div>
+
+      <div class="flex flex-wrap gap-6 mb-6">
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt">{realTalks.length}</span>
+          <span class="font-mono text-xs text-muted ml-2">talks</span>
+        </div>
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt">{cityCount}</span>
+          <span class="font-mono text-xs text-muted ml-2">cities</span>
+        </div>
+        <div>
+          <span class="font-mono text-2xl font-bold text-accent">{upcomingCount}</span>
+          <span class="font-mono text-xs text-muted ml-2">upcoming</span>
         </div>
       </div>
-      <div class="flex flex-col">
-        {talks.filter(t => !t.id.includes('template')).slice(0, 5).map(t => (
-          <button
-            class="talk-card group text-left grid grid-cols-[1fr_auto] gap-4 items-start py-3.5 border-t border-border first:border-t-0 first:pt-0 w-full hover:bg-bg2 -mx-3 px-3 rounded transition-colors"
-            data-talk-id={t.id}
-            aria-label={`View details for: ${t.title}`}
-          >
-            <div>
-              <div class="flex flex-wrap items-center gap-1.5 mb-1">
-                <p class="font-mono text-[10px] tracking-widest uppercase text-muted">{t.conference} · {t.location.city}</p>
-                {t.upcoming && (
-                  <span class="font-mono text-[9px] tracking-widest uppercase bg-accent text-black px-1.5 py-0.5 rounded-sm">upcoming</span>
-                )}
-              </div>
-              <p class="text-sm text-txt group-hover:text-accent transition-colors leading-snug mb-1.5">{t.title}</p>
-              <div class="flex flex-wrap gap-1.5">
-                {t.tags.map((tag: string) => (
-                  <span class="font-mono text-[9px] tracking-wider text-muted border border-border px-1.5 py-0.5 rounded-sm">{tag}</span>
-                ))}
-              </div>
-            </div>
-            <div class="flex flex-col items-end gap-1.5 shrink-0">
-              <span class="font-mono text-[11px] text-muted whitespace-nowrap">{t.date}</span>
-              <span class="font-mono text-[9px] text-accent opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">details →</span>
-            </div>
-          </button>
-        ))}
-      </div>
-      {talks.filter(t => !t.id.includes('template')).length > 5 && (
-        <p class="font-mono text-[11px] text-muted mt-4">
-          … and {talks.filter((t: any) => !t.id.includes('template')).length - 5} more.
-          <button class="cli-hint text-accent hover:underline ml-1" data-cmd="talks --all">$ talks --all</button>
-        </p>
-      )}
-    </div>
-  </section>
 
-  <!-- ── WRITING ── -->
-  <section id="writing" class="border-b border-border">
-    <div class="mx-auto max-w-content px-5 py-12">
-      <div class="flex justify-between items-center mb-6">
-        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Recent writing</span>
-        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="writing">$ writing</button>
-      </div>
-      <div class="flex flex-col">
-        {writing.filter((w: any) => !w.id.includes('template')).map((w: any) => (
-          <a
-            href={w.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="grid gap-3 items-start py-3 border-t border-border first:border-t-0 first:pt-0 group hover:bg-bg2 -mx-3 px-3 rounded transition-colors"
-            style="grid-template-columns: auto 1fr auto"
-          >
-            <span class={`font-mono text-[9px] tracking-widest uppercase mt-0.5 px-1.5 py-0.5 rounded-sm shrink-0 ${TYPE_COLOR[w.type] ?? 'bg-muted text-bg'}`}>
-              {TYPE_LABEL[w.type] ?? w.type}
-            </span>
-            <div class="min-w-0">
-              <p class="text-sm text-txt group-hover:text-accent transition-colors leading-snug">{w.title}</p>
-              <div class="flex flex-wrap gap-1.5 mt-1">
-                {w.tags.map((tag: string) => (
-                  <span class="font-mono text-[9px] tracking-wider text-muted border border-border px-1.5 py-0.5 rounded-sm">{tag}</span>
-                ))}
-              </div>
-            </div>
-            <div class="flex flex-col items-end gap-1 shrink-0">
-              <span class="font-mono text-[11px] text-muted whitespace-nowrap">{w.date}</span>
-              <span class="font-mono text-[9px] text-accent opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
+      <p class="text-sm text-txt/70 leading-snug mb-1.5">Latest: {latestTalk.title}</p>
+      <p class="font-mono text-[11px] text-muted mb-5">{latestTalk.conference} · {latestTalk.location.city} · {latestTalk.date}</p>
 
-  <!-- ── SHOWS ── -->
-  <section id="shows" class="border-b border-border">
-    <div class="mx-auto max-w-content px-5 py-12">
-      <div class="flex justify-between items-center mb-6">
-        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Shows &amp; community</span>
-        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="shows">$ shows</button>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {profile.shows.map(s => (
-          <a
-            href={s.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="border border-border rounded-md p-5 bg-bg2 hover:border-accent/30 transition-colors block"
-          >
-            <p class="font-mono text-[10px] tracking-widest text-accent mb-2">// {s.type}</p>
-            <p class="text-sm font-semibold mb-2">{s.name}</p>
-            <p class="text-xs text-muted leading-relaxed mb-3">{s.description}</p>
-            <span class="font-mono text-[11px] text-muted">→ visit</span>
-          </a>
-        ))}
-      </div>
+      <a href="/talks" class="font-mono text-xs text-accent hover:underline">all talks &amp; map →</a>
     </div>
   </section>
 
@@ -283,10 +170,63 @@ const TYPE_COLOR: Record<string, string> = {
     </div>
   </section>
 
+  <!-- ── WRITING (summary) ── -->
+  <section id="writing" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Writing</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="writing">$ writing</button>
+      </div>
+
+      <div class="flex flex-wrap gap-6 mb-6">
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt">{realWriting.length}</span>
+          <span class="font-mono text-xs text-muted ml-2">pieces</span>
+        </div>
+        {Object.entries(writingByType).map(([type, count]) => (
+          <div>
+            <span class="font-mono text-2xl font-bold text-txt">{count}</span>
+            <span class="font-mono text-xs text-muted ml-2">{type}</span>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-txt/70 leading-snug mb-1.5">Latest: {latestWriting.title}</p>
+      <p class="font-mono text-[11px] text-muted mb-5">{latestWriting.platform} · {latestWriting.date}</p>
+
+      <a href="/writing" class="font-mono text-xs text-accent hover:underline">all writing →</a>
+    </div>
+  </section>
+
+  <!-- ── SHOWS (summary) ── -->
+  <section id="shows" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Shows &amp; community</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="shows">$ shows</button>
+      </div>
+
+      <div class="flex flex-wrap gap-6 mb-5">
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt">{profile.shows.length}</span>
+          <span class="font-mono text-xs text-muted ml-2">shows</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-5">
+        {profile.shows.map(s => (
+          <span class="font-mono text-[11px] text-muted border border-border px-2.5 py-1 rounded">{s.name}</span>
+        ))}
+      </div>
+
+      <a href="/shows" class="font-mono text-xs text-accent hover:underline">all shows →</a>
+    </div>
+  </section>
+
   <!-- ── CONSULT ── -->
   <section id="consult">
     <div class="mx-auto max-w-content px-5 py-12">
-      <div class="border border-amber-500/20 rounded-lg p-7 bg-amber-500/[0.02]">
+      <div class="glow-box border border-amber-500/20 rounded-lg p-7 bg-amber-500/[0.02]">
         <div class="flex justify-between items-start mb-3">
           <p class="font-mono text-[10px] tracking-widest uppercase text-accent2">// available for consultations</p>
           <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="consult">$ consult</button>
@@ -310,89 +250,79 @@ const TYPE_COLOR: Record<string, string> = {
     </div>
   </section>
 
-</main>
+  <!-- ── CONNECT ── -->
+  <section id="connect" class="border-t border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Connect</span>
+      </div>
 
-<!-- ══════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════ -->
-<footer class="border-t border-border bg-bg py-8 pb-32">
-  <div class="mx-auto max-w-content px-5">
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-      <span class="font-mono text-xs text-muted tracking-wider">Jones Zachariah Noel · zachjonesnoel</span>
-      <div class="flex flex-wrap justify-center gap-x-4 gap-y-2">
-        {Object.entries(profile.socials).map(([name, url]) => (
-          <a href={url} target="_blank" rel="noopener noreferrer"
-             class="font-mono text-xs text-muted hover:text-accent transition-colors tracking-wider">{name}</a>
+      <h2 class="text-xl font-semibold mb-2">Let's connect</h2>
+      <p class="text-sm text-txt/60 leading-relaxed max-w-lg mb-6">
+        Follow along, ask a question, or say hello on any of these channels.
+        Prefer a direct chat? Book a call or send an email.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+        {Object.entries(profile.socials).map(([key, url]) => (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glow-box group flex items-center justify-between gap-3 border border-border rounded-md px-4 py-3 bg-bg2"
+          >
+            <div class="min-w-0">
+              <p class="font-mono text-[10px] tracking-widest uppercase text-muted">{socialLabel[key] ?? key}</p>
+              <p class="font-mono text-sm text-txt truncate group-hover:text-accent transition-colors">{handleOf(url)}</p>
+            </div>
+            <span class="font-mono text-accent shrink-0">↗</span>
+          </a>
         ))}
       </div>
-    </div>
-    <p class="mt-4 text-center font-mono text-xs text-muted/40 tracking-wider">
-      built with astro · tailwind · aws amplify — type <span class="text-accent">'help'</span> in the terminal below
-    </p>
-  </div>
-</footer>
 
-<!-- ══════════════════════════════════════════════
-     TERMINAL DRAWER (embedded, slides up from bottom)
-═══════════════════════════════════════════════ -->
-<div
-  id="term-drawer"
-  class="fixed bottom-0 left-0 right-0 z-30 flex flex-col font-mono text-sm
-         bg-bg border-t-2 border-accent/40 shadow-2xl
-         transition-transform duration-300 ease-out
-         translate-y-full"
-  style="height: clamp(280px, 40vh, 480px)"
-  aria-label="Interactive terminal"
-  role="region"
->
-  <!-- drawer handle / header -->
-  <div class="flex items-center justify-between px-4 py-2 border-b border-border shrink-0 bg-bg2">
-    <div class="flex items-center gap-3">
-      <div class="flex gap-1.5">
-        <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
-        <span class="w-3 h-3 rounded-full bg-yellow-400/60"></span>
-        <span class="w-3 h-3 rounded-full bg-accent/60"></span>
+      <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-3">Shows &amp; publications</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        {profile.shows.map(s => (
+          <a
+            href={s.playlist ?? s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glow-box group flex items-center justify-between gap-3 border border-border rounded-md px-4 py-3 bg-bg2"
+          >
+            <div class="min-w-0">
+              <p class="font-mono text-[10px] tracking-widest uppercase text-muted">{s.type}</p>
+              <p class="text-sm text-txt truncate group-hover:text-accent transition-colors">{s.name}</p>
+            </div>
+            <span class="font-mono text-accent shrink-0">↗</span>
+          </a>
+        ))}
       </div>
-      <span class="text-muted text-xs tracking-wider">zachjonesnoel — terminal</span>
-    </div>
-    <div class="flex items-center gap-3">
-      <span class="text-muted/40 text-[10px] hidden sm:block">ctrl+` to toggle</span>
-      <button id="term-close" aria-label="Close terminal" class="text-muted hover:text-txt transition-colors text-lg leading-none pb-0.5">×</button>
-    </div>
-  </div>
 
-  <!-- output -->
-  <div
-    id="terminal-output"
-    class="flex-1 overflow-y-auto px-4 py-3 space-y-0"
-    aria-live="polite"
-    aria-atomic="false"
-  ></div>
-
-  <!-- input row -->
-  <div class="flex items-center gap-2 px-4 py-3 border-t border-border shrink-0 bg-bg">
-    <span class="text-accent select-none shrink-0">$</span>
-    <div class="relative flex-1 min-w-0">
-      <input
-        id="terminal-input"
-        type="text"
-        autocomplete="off"
-        autocorrect="off"
-        autocapitalize="off"
-        spellcheck="false"
-        class="w-full bg-transparent text-txt caret-accent focus:outline-none font-mono text-sm"
-        aria-label="Terminal command input"
-        placeholder="type a command…"
-      />
-      <span
-        id="tab-hint"
-        class="absolute left-0 top-0 text-muted pointer-events-none font-mono text-sm select-none opacity-35"
-        aria-hidden="true"
-      ></span>
+      <div class="flex flex-wrap gap-2">
+        <a
+          href={profile.calendly}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-accent text-black font-mono text-xs font-semibold tracking-wider px-5 py-2.5 rounded hover:opacity-90 transition-opacity"
+        >→ book a call</a>
+        <a
+          href={`mailto:${profile.email}`}
+          class="font-mono text-xs text-txt border border-border px-5 py-2.5 rounded hover:border-accent hover:text-accent transition-colors"
+        >✉ email me</a>
+        <button
+          type="button"
+          data-copy-email={profile.email}
+          class="font-mono text-xs text-muted border border-border px-4 py-2.5 rounded hover:border-accent hover:text-accent transition-colors"
+        >copy email</button>
+        <button
+          type="button"
+          data-share-page
+          class="font-mono text-xs text-muted border border-border px-4 py-2.5 rounded hover:border-accent hover:text-accent transition-colors"
+        >share this page</button>
+      </div>
     </div>
-    <span class="text-muted/30 text-[10px] hidden sm:block">tab to complete</span>
-  </div>
-</div>
+  </section>
+</main>
 
 <!-- ══════════════════════════════════════════════
      SEMANTIC FALLBACK (crawlers only)
@@ -418,83 +348,100 @@ const TYPE_COLOR: Record<string, string> = {
   </section>
 </div>
 
-<!-- ══════════════════════════════════════════════
-     TALK DETAIL MODAL
-═══════════════════════════════════════════════ -->
-<div
-  id="talk-modal-overlay"
-  class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden"
-  aria-modal="true"
-  role="dialog"
-  aria-labelledby="modal-talk-title"
->
-  <!-- backdrop -->
-  <div id="talk-modal-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+<!-- Terminal banner animation (hero) -->
+<script is:inline>
+  (function () {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-  <!-- panel -->
-  <div
-    id="talk-modal-panel"
-    class="relative w-full max-w-lg bg-bg2 border border-border rounded-lg shadow-2xl overflow-hidden"
-    style="max-height: 90vh; overflow-y: auto;"
-  >
-    <!-- header -->
-    <div class="flex items-start justify-between gap-4 p-5 border-b border-border">
-      <div class="min-w-0">
-        <p id="modal-conference" class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1.5"></p>
-        <h2 id="modal-talk-title" class="text-base font-semibold text-txt leading-snug"></h2>
-      </div>
-      <button
-        id="talk-modal-close"
-        aria-label="Close"
-        class="shrink-0 text-muted hover:text-txt transition-colors text-xl leading-none mt-0.5"
-      >×</button>
-    </div>
+    function init(root) {
+      const pre    = root.querySelector('[data-banner]');
+      const cmdEl  = root.querySelector('[data-cmd]');
+      const replay = root.querySelector('[data-replay]');
+      if (!pre || !cmdEl) return;
 
-    <!-- body -->
-    <div class="p-5 flex flex-col gap-5">
+      const rows    = JSON.parse(pre.dataset.rows || '[]');
+      const command = cmdEl.textContent || '';
+      const width   = Math.max(...rows.map(r => r.length));
+      const blank   = rows.map(() => '').join('\n');
+      let run = 0;
 
-      <!-- tags -->
-      <div id="modal-tags" class="flex flex-wrap gap-1.5"></div>
+      async function play() {
+        const id = ++run;
+        const alive = () => id === run;
 
-      <!-- abstract -->
-      <div>
-        <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-2">Abstract</p>
-        <p id="modal-abstract" class="text-sm text-txt/80 leading-relaxed"></p>
-      </div>
+        if (reduceMotion) {
+          cmdEl.textContent = command;
+          pre.textContent = rows.join('\n');
+          return;
+        }
 
-      <!-- location + date -->
-      <div class="flex gap-6">
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1">Location</p>
-          <p id="modal-location" class="font-mono text-sm text-txt"></p>
-        </div>
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1">Date</p>
-          <p id="modal-date" class="font-mono text-sm text-txt"></p>
-        </div>
-      </div>
+        // 1. type the command
+        pre.textContent = blank;
+        cmdEl.textContent = '';
+        for (let i = 1; i <= command.length; i++) {
+          if (!alive()) return;
+          cmdEl.textContent = command.slice(0, i);
+          await sleep(45);
+        }
+        await sleep(250);
 
-      <!-- co-speakers -->
-      <div id="modal-cospeakers-wrap" class="hidden">
-        <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-2">Co-speakers</p>
-        <div id="modal-cospeakers" class="flex flex-wrap gap-2"></div>
-      </div>
+        // 2. scan the banner in left to right, with a bar at the scan edge
+        for (let col = 0; col <= width; col += 2) {
+          if (!alive()) return;
+          pre.textContent = rows
+            .map(r => r.slice(0, col).padEnd(col, ' ') + (col < width ? '▌' : ''))
+            .join('\n');
+          await sleep(22);
+        }
+        pre.textContent = rows.join('\n');
+      }
 
-      <!-- CTAs -->
-      <div id="modal-ctas" class="flex flex-wrap gap-2 pt-1"></div>
+      replay?.addEventListener('click', play);
+      play();
+    }
 
-    </div>
-  </div>
-</div>
-
-<!-- data + scripts -->
-<script type="application/json" id="terminal-data" set:html={terminalData} />
-<script is:inline define:vars={{ stadiaKey: import.meta.env.PUBLIC_STADIA_API_KEY ?? '' }}>
-  window.STADIA_API_KEY = stadiaKey;
+    document.querySelectorAll('[data-term-banner]').forEach(init);
+  })();
 </script>
-<script is:inline src="/terminal.js"></script>
-<script is:inline src="/app.js"></script>
-<script is:inline src="/map.js"></script>
-<script is:inline src="/modal.js"></script>
+
+<!-- Connect buttons: copy email and share the page, with brief feedback -->
+<script is:inline>
+  (function () {
+    const flash = (btn, text) => {
+      const original = btn.dataset.label || btn.textContent;
+      btn.dataset.label = original;
+      btn.textContent = text;
+      setTimeout(() => { btn.textContent = original; }, 1800);
+    };
+
+    document.querySelectorAll('[data-copy-email]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(btn.dataset.copyEmail);
+          flash(btn, 'copied ✓');
+        } catch (e) {
+          flash(btn, 'copy failed');
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-share-page]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const data = { title: document.title, url: window.location.href };
+        try {
+          if (navigator.share) {
+            await navigator.share(data);
+          } else {
+            await navigator.clipboard.writeText(data.url);
+            flash(btn, 'link copied ✓');
+          }
+        } catch (e) {
+          // user dismissed the share sheet, or clipboard blocked: nothing to do
+        }
+      });
+    });
+  })();
+</script>
 
 </Base>

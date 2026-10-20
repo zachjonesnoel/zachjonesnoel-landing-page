@@ -1,0 +1,61 @@
+<!-- ══════════════════════════════════════════════
+     TERMINAL DRAWER (embedded, slides up from bottom)
+═══════════════════════════════════════════════ -->
+<div
+  id="term-drawer"
+  class="fixed bottom-0 left-0 right-0 z-30 flex flex-col font-mono text-sm
+         bg-bg border-t-2 border-accent/40 shadow-2xl
+         transition-transform duration-300 ease-out
+         translate-y-full"
+  style="height: clamp(280px, 40vh, 480px)"
+  aria-label="Interactive terminal"
+  role="region"
+>
+  <!-- drawer handle / header -->
+  <div class="flex items-center justify-between px-4 py-2 border-b border-border shrink-0 bg-bg2">
+    <div class="flex items-center gap-3">
+      <div class="flex gap-1.5">
+        <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-400/60"></span>
+        <span class="w-3 h-3 rounded-full bg-accent/60"></span>
+      </div>
+      <span class="text-muted text-xs tracking-wider">zachjonesnoel — terminal</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-muted/40 text-[10px] hidden sm:block">ctrl+` to toggle</span>
+      <button id="term-close" aria-label="Close terminal" class="text-muted hover:text-txt transition-colors text-lg leading-none pb-0.5">×</button>
+    </div>
+  </div>
+
+  <!-- output -->
+  <div
+    id="terminal-output"
+    class="flex-1 overflow-y-auto px-4 py-3 space-y-0"
+    aria-live="polite"
+    aria-atomic="false"
+  ></div>
+
+  <!-- input row -->
+  <div class="flex items-center gap-2 px-4 py-3 border-t border-border shrink-0 bg-bg">
+    <span class="text-accent select-none shrink-0">$</span>
+    <div class="relative flex-1 min-w-0">
+      <input
+        id="terminal-input"
+        type="text"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        class="w-full bg-transparent text-txt caret-accent focus:outline-none font-mono text-sm"
+        aria-label="Terminal command input"
+        placeholder="type a command…"
+      />
+      <span
+        id="tab-hint"
+        class="absolute left-0 top-0 text-muted pointer-events-none font-mono text-sm select-none opacity-35"
+        aria-hidden="true"
+      ></span>
+    </div>
+    <span class="text-muted/30 text-[10px] hidden sm:block">tab to complete</span>
+  </div>
+</div>

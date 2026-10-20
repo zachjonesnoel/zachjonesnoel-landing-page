@@ -1,0 +1,68 @@
+<!-- ══════════════════════════════════════════════
+     TALK DETAIL MODAL
+═══════════════════════════════════════════════ -->
+<div
+  id="talk-modal-overlay"
+  class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden"
+  aria-modal="true"
+  role="dialog"
+  aria-labelledby="modal-talk-title"
+>
+  <!-- backdrop -->
+  <div id="talk-modal-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+
+  <!-- panel -->
+  <div
+    id="talk-modal-panel"
+    class="relative w-full max-w-lg bg-bg2 border border-border rounded-lg shadow-2xl overflow-hidden"
+    style="max-height: 90vh; overflow-y: auto;"
+  >
+    <!-- header -->
+    <div class="flex items-start justify-between gap-4 p-5 border-b border-border">
+      <div class="min-w-0">
+        <p id="modal-conference" class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1.5"></p>
+        <h2 id="modal-talk-title" class="text-base font-semibold text-txt leading-snug"></h2>
+      </div>
+      <button
+        id="talk-modal-close"
+        aria-label="Close"
+        class="shrink-0 text-muted hover:text-txt transition-colors text-xl leading-none mt-0.5"
+      >×</button>
+    </div>
+
+    <!-- body -->
+    <div class="p-5 flex flex-col gap-5">
+
+      <!-- tags -->
+      <div id="modal-tags" class="flex flex-wrap gap-1.5"></div>
+
+      <!-- abstract -->
+      <div>
+        <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-2">Abstract</p>
+        <p id="modal-abstract" class="text-sm text-txt/80 leading-relaxed"></p>
+      </div>
+
+      <!-- location + date -->
+      <div class="flex gap-6">
+        <div>
+          <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1">Location</p>
+          <p id="modal-location" class="font-mono text-sm text-txt"></p>
+        </div>
+        <div>
+          <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-1">Date</p>
+          <p id="modal-date" class="font-mono text-sm text-txt"></p>
+        </div>
+      </div>
+
+      <!-- co-speakers -->
+      <div id="modal-cospeakers-wrap" class="hidden">
+        <p class="font-mono text-[10px] tracking-widest uppercase text-muted mb-2">Co-speakers</p>
+        <div id="modal-cospeakers" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <!-- CTAs -->
+      <div id="modal-ctas" class="flex flex-wrap gap-2 pt-1"></div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,311 @@
+---
+import Base from '../layouts/Base.astro';
+import profile from '../../data/profile.json';
+import talks from '../../data/talks.json';
+
+// Newest first. Upcoming status is recomputed in the browser on each visit (see app.js).
+const realTalks = talks
+  .filter(t => !t.id.includes('template'))
+  .sort((a, b) => b.date.localeCompare(a.date));
+
+const cities = [...new Set(realTalks.map(t => t.location.city))].sort();
+const allTags = [...new Set(realTalks.flatMap(t => t.tags))].sort((a, b) => a.localeCompare(b));
+const chipBase = 'font-mono text-[9px] tracking-wider text-muted border border-border px-1.5 py-0.5 rounded-sm';
+const filterInput = 'font-mono text-xs bg-bg2 border border-border rounded px-2.5 py-1.5 text-txt focus:outline-none focus:border-accent/50';
+---
+<Base title={`Talks · ${profile.name}`} description="Conference talks, speaking topics, and a map of where I've presented.">
+<main id="gui-main" class="pt-14">
+
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <a href="/" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">← home</a>
+  </div>
+
+  <!-- ── SPEAKING + MAP (summary) ── -->
+  <section id="speaking" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Speaking</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="map">
+          <span class="text-accent mr-1">◎</span>map
+        </button>
+      </div>
+
+      <p class="text-sm text-txt/60 max-w-lg leading-relaxed mb-5">
+        Available for conferences, meetups, podcasts, and panels on serverless architecture,
+        developer experience, observability, and the craft of DevRel.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-8">
+        {['Serverless & AWS','Developer Experience','Observability','DevRel craft','Community building','AWS Architecture'].map(tag => (
+          <span class="font-mono text-xs text-muted border border-border px-3 py-1.5 rounded tracking-wider">{tag}</span>
+        ))}
+      </div>
+
+      <!-- stats bar -->
+      <div class="flex flex-wrap gap-6 mb-6">
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt" id="map-city-count">—</span>
+          <span class="font-mono text-xs text-muted ml-2">cities</span>
+        </div>
+        <div>
+          <span class="font-mono text-2xl font-bold text-txt" id="map-talk-count">—</span>
+          <span class="font-mono text-xs text-muted ml-2">talks</span>
+        </div>
+        <div>
+          <span class="font-mono text-2xl font-bold text-accent" id="map-upcoming-count">—</span>
+          <span class="font-mono text-xs text-muted ml-2">upcoming</span>
+        </div>
+      </div>
+
+      <!-- Leaflet map -->
+      <div
+        id="talks-map"
+        class="w-full rounded-md border border-border"
+        style="height: 360px; background: #111111; position: relative; z-index: 0;"
+        aria-label="World map showing conference talk locations"
+        role="img"
+      ></div>
+
+      <p class="font-mono text-[10px] text-muted mt-3">
+        <span class="text-accent">●</span> upcoming &nbsp;
+        <span class="text-muted/60">●</span> past &nbsp;·&nbsp;
+        hover a pin for details
+      </p>
+
+      <!-- upcoming talks sub-list -->
+      <div id="upcoming-talks-list" class="mt-6 hidden">
+        <p class="font-mono text-[11px] tracking-widest uppercase text-accent mb-3">Upcoming</p>
+        <div id="upcoming-talks-items" class="flex flex-col"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ALL TALKS (sorted, filterable) ── -->
+  <section id="talks" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">All talks · newest first</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="talks">$ talks</button>
+      </div>
+
+      <!-- toolbar: view toggle + filters -->
+      <div class="mb-6 flex flex-col gap-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="inline-flex rounded border border-border overflow-hidden" role="group" aria-label="View">
+            <button type="button" data-view-btn="list" aria-pressed="true"
+              class="font-mono text-[11px] px-3 py-1.5 text-accent bg-bg2 transition-colors">≡ list</button>
+            <button type="button" data-view-btn="icons" aria-pressed="false"
+              class="font-mono text-[11px] px-3 py-1.5 text-muted hover:text-txt transition-colors">▦ icons</button>
+          </div>
+          <span id="f-count" class="font-mono text-[11px] text-muted" aria-live="polite"></span>
+        </div>
+
+        <div class="flex flex-wrap items-end gap-3">
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] tracking-widest uppercase text-muted">City</span>
+            <select id="f-city" class={filterInput}>
+              <option value="">All cities</option>
+              {cities.map(c => <option value={c}>{c}</option>)}
+            </select>
+          </label>
+
+          <label class="flex items-center gap-2 font-mono text-xs text-muted cursor-pointer pb-1.5">
+            <input type="checkbox" id="f-slides" class="accent-[var(--accent)]" /> has slides
+          </label>
+          <label class="flex items-center gap-2 font-mono text-xs text-muted cursor-pointer pb-1.5">
+            <input type="checkbox" id="f-video" class="accent-[var(--accent)]" /> has recording
+          </label>
+
+          <label class="flex flex-col gap-1 min-w-[12rem]">
+            <span class="font-mono text-[10px] tracking-widest uppercase text-muted">Tag</span>
+            <input id="f-tag" list="tag-options" placeholder="add a tag…" autocomplete="off" class={filterInput} />
+            <datalist id="tag-options">
+              {allTags.map(t => <option value={t}></option>)}
+            </datalist>
+          </label>
+
+          <button type="button" id="f-clear" class="font-mono text-[11px] text-muted hover:text-accent transition-colors pb-1.5">clear filters</button>
+        </div>
+
+        <div id="f-tag-chips" class="flex flex-wrap gap-1.5"></div>
+      </div>
+
+      <p id="f-empty" class="font-mono text-xs text-muted mb-4" hidden>No talks match these filters.</p>
+
+      <!-- talk list / icon grid. Both views share these cards; CSS switches the layout. -->
+      <div id="talk-list" data-view="list" class="flex flex-col">
+        {realTalks.map(t => {
+          const isUp = t.date >= new Date().toISOString().slice(0, 10);
+          return (
+          <button
+            type="button"
+            class="talk-card group text-left grid grid-cols-[1fr_auto] gap-4 items-start py-3.5 border-t border-border first:border-t-0 first:pt-0 w-full hover:bg-bg2 -mx-3 px-3 rounded transition-colors"
+            data-talk-id={t.id}
+            data-city={t.location.city}
+            data-date={t.date}
+            data-slides={t.slides ? '1' : ''}
+            data-video={t.video ? '1' : ''}
+            data-tags={JSON.stringify(t.tags)}
+            aria-label={`View details for: ${t.title}`}
+          >
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-1.5 mb-1">
+                <p class="font-mono text-[10px] tracking-widest uppercase text-muted">{t.conference} · {t.location.city}</p>
+                <span data-upcoming-badge hidden={!isUp} class="font-mono text-[9px] tracking-widest uppercase bg-accent text-black px-1.5 py-0.5 rounded-sm">upcoming</span>
+                {t.category === 'workshop' && (
+                  <span class="font-mono text-[9px] tracking-widest uppercase text-accent2 border border-amber-500/25 px-1.5 py-0.5 rounded-sm">workshop</span>
+                )}
+              </div>
+              <p class="text-sm text-txt group-hover:text-accent transition-colors leading-snug mb-1.5">{t.title}</p>
+              <div class="flex flex-wrap gap-1.5 mb-1.5">
+                {t.video && <span class="font-mono text-[9px] tracking-wider text-accent border border-accent/30 px-1.5 py-0.5 rounded-sm" title="recording available">▶ recording</span>}
+                {t.slides && <span class="font-mono text-[9px] tracking-wider text-accent2 border border-amber-500/25 px-1.5 py-0.5 rounded-sm" title="slides available">▤ slides</span>}
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+                {t.tags.map((tag: string) => (
+                  <span class={chipBase}>{tag}</span>
+                ))}
+              </div>
+            </div>
+            <div class="talk-date flex flex-col items-end gap-1.5 shrink-0">
+              <span class="font-mono text-[11px] text-muted whitespace-nowrap">{t.date}</span>
+              <span class="font-mono text-[9px] text-accent opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">details →</span>
+            </div>
+          </button>
+          );
+        })}
+      </div>
+
+    </div>
+  </section>
+
+</main>
+</Base>
+
+<!-- Icon-view layout: tiles instead of rows -->
+<style is:global>
+  #talk-list[data-view="grid"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 0.75rem;
+  }
+  #talk-list[data-view="grid"] .talk-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.375rem;
+  }
+  #talk-list[data-view="grid"] .talk-date {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  #talk-list[data-view="grid"] .talk-card {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  #talk-list[data-view="grid"] .talk-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), 0 0 18px -4px var(--accent);
+  }
+</style>
+
+<!-- Filters, view toggle, and upcoming status (runs in the browser) -->
+<script is:inline>
+  (function () {
+    const list = document.getElementById('talk-list');
+    if (!list) return;
+
+    const cards     = Array.from(list.querySelectorAll('.talk-card'));
+    const citySel   = document.getElementById('f-city');
+    const slidesBox = document.getElementById('f-slides');
+    const videoBox  = document.getElementById('f-video');
+    const tagInput  = document.getElementById('f-tag');
+    const chipsEl   = document.getElementById('f-tag-chips');
+    const countEl   = document.getElementById('f-count');
+    const emptyEl   = document.getElementById('f-empty');
+    const clearBtn  = document.getElementById('f-clear');
+    const viewBtns  = document.querySelectorAll('[data-view-btn]');
+    const knownTags = new Set(Array.from(document.querySelectorAll('#tag-options option')).map(o => o.value));
+    const selected  = new Set();
+
+    // Upcoming = date today or later, using the visitor's local date
+    function refreshUpcoming() {
+      const today = new Date().toLocaleDateString('en-CA');
+      cards.forEach(c => {
+        const up = (c.dataset.date || '') >= today;
+        const badge = c.querySelector('[data-upcoming-badge]');
+        if (badge) badge.hidden = !up;
+      });
+    }
+
+    function renderChips() {
+      chipsEl.innerHTML = '';
+      selected.forEach(tag => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'font-mono text-[10px] tracking-wider text-accent border border-accent/40 px-2 py-0.5 rounded hover:bg-accent/10';
+        chip.textContent = tag + '  ×';
+        chip.addEventListener('click', () => { selected.delete(tag); apply(); });
+        chipsEl.appendChild(chip);
+      });
+    }
+
+    function apply() {
+      const city = citySel.value;
+      let shown = 0;
+      cards.forEach(c => {
+        const tags = JSON.parse(c.dataset.tags || '[]');
+        const ok = (!city || c.dataset.city === city)
+          && (!slidesBox.checked || c.dataset.slides === '1')
+          && (!videoBox.checked || c.dataset.video === '1')
+          && (selected.size === 0 || tags.some(t => selected.has(t)));
+        c.style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      });
+      countEl.textContent = shown + ' of ' + cards.length + ' talks';
+      emptyEl.hidden = shown !== 0;
+      renderChips();
+    }
+
+    tagInput.addEventListener('change', () => {
+      const v = tagInput.value.trim();
+      if (knownTags.has(v)) { selected.add(v); tagInput.value = ''; apply(); }
+    });
+    tagInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') { e.preventDefault(); tagInput.dispatchEvent(new Event('change')); }
+    });
+    citySel.addEventListener('change', apply);
+    slidesBox.addEventListener('change', apply);
+    videoBox.addEventListener('change', apply);
+
+    clearBtn.addEventListener('click', () => {
+      citySel.value = '';
+      slidesBox.checked = false;
+      videoBox.checked = false;
+      tagInput.value = '';
+      selected.clear();
+      apply();
+    });
+
+    viewBtns.forEach(btn => btn.addEventListener('click', () => {
+      list.dataset.view = btn.dataset.viewBtn;
+      viewBtns.forEach(b => {
+        const on = b === btn;
+        b.setAttribute('aria-pressed', String(on));
+        b.classList.toggle('text-accent', on);
+        b.classList.toggle('bg-bg2', on);
+        b.classList.toggle('text-muted', !on);
+      });
+    }));
+
+    refreshUpcoming();
+    apply();
+  })();
+</script>

@@ -170,7 +170,7 @@
       const upcomingOnly = args.includes('--upcoming');
       const showAll      = args.includes('--all');
       let   list         = [...talks];
-      if (upcomingOnly) list = list.filter(t => t.upcoming);
+      if (upcomingOnly) list = list.filter(t => window.isUpcomingTalk(t));
       if (!showAll && !upcomingOnly) list = list.slice(0, 5);
 
       blank();
@@ -187,7 +187,7 @@
       for (const t of list) {
         const conf  = t.conference.substring(0, 34).padEnd(34);
         const title = t.title.substring(0, 44);
-        const col   = t.upcoming ? 'var(--accent2)' : 'var(--txt)';
+        const col   = window.isUpcomingTalk(t) ? 'var(--accent2)' : 'var(--txt)';
         appendLine(
           `<span style="color:var(--muted)">  ${esc(t.date)}  </span>` +
           `<span style="color:${col}">${esc(conf)}  ${esc(title)}</span>` +

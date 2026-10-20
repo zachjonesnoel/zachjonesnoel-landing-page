@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import profile from '../../data/profile.json';
+import writing from '../../data/writing.json';
+
+const realWriting = writing.filter((w: any) => !w.id.includes('template'));
+
+const TYPE_LABEL: Record<string, string> = {
+  blog:       'blog',
+  newsletter: 'newsletter',
+  linkedin:   'linkedin',
+  podcast:    'podcast',
+};
+
+const TYPE_COLOR: Record<string, string> = {
+  blog:       'bg-accent text-black',
+  newsletter: 'bg-accent2 text-black',
+  linkedin:   'bg-blue-500 text-white',
+  podcast:    'bg-purple-500 text-white',
+};
+---
+<Base title={`Writing · ${profile.name}`} description="Articles, newsletters, and posts by Jones Zachariah Noel.">
+<main id="gui-main" class="pt-14">
+
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <a href="/" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">← home</a>
+  </div>
+
+  <!-- ── ALL WRITING ── -->
+  <section id="writing" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">All writing</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="writing">$ writing</button>
+      </div>
+      <div class="flex flex-col">
+        {realWriting.map((w: any) => (
+          <a
+            href={w.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="grid gap-3 items-start py-3 border-t border-border first:border-t-0 first:pt-0 group hover:bg-bg2 -mx-3 px-3 rounded transition-colors"
+            style="grid-template-columns: auto 1fr auto"
+          >
+            <span class={`font-mono text-[9px] tracking-widest uppercase mt-0.5 px-1.5 py-0.5 rounded-sm shrink-0 ${TYPE_COLOR[w.type] ?? 'bg-muted text-bg'}`}>
+              {TYPE_LABEL[w.type] ?? w.type}
+            </span>
+            <div class="min-w-0">
+              <p class="text-sm text-txt group-hover:text-accent transition-colors leading-snug">{w.title}</p>
+              <div class="flex flex-wrap gap-1.5 mt-1">
+                {w.tags.map((tag: string) => (
+                  <span class="font-mono text-[9px] tracking-wider text-muted border border-border px-1.5 py-0.5 rounded-sm">{tag}</span>
+                ))}
+              </div>
+            </div>
+            <div class="flex flex-col items-end gap-1 shrink-0">
+              <span class="font-mono text-[11px] text-muted whitespace-nowrap">{w.date}</span>
+              <span class="font-mono text-[9px] text-accent opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</main>
+</Base>
