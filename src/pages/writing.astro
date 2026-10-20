@@ -1,0 +1,135 @@
+---
+import Base from '../layouts/Base.astro';
+import profile from '../../data/profile.json';
+import writing from '../../data/writing.json';
+
+// Newest first. Dates are 'YYYY-MM' or 'YYYY-MM-DD', which sort correctly as strings.
+const realWriting = writing
+  .filter((w: any) => !w.id.includes('template'))
+  .sort((a: any, b: any) => b.date.localeCompare(a.date));
+
+const platforms = [...new Set(realWriting.map((w: any) => w.platform))].sort();
+const types = [...new Set(realWriting.map((w: any) => w.type))].sort();
+const tagCounts: Record<string, number> = {};
+for (const w of realWriting) for (const t of w.tags) tagCounts[t.toLowerCase()] = (tagCounts[t.toLowerCase()] ?? 0) + 1;
+const allTags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a] || a.localeCompare(b));
+const selectCls = 'bg-bg2 border border-border rounded-sm font-mono text-[11px] text-txt px-2 py-1.5 focus:outline-none focus:border-accent';
+
+const TYPE_LABEL: Record<string, string> = {
+  blog:       'blog',
+  newsletter: 'newsletter',
+  linkedin:   'linkedin',
+  podcast:    'podcast',
+};
+
+const TYPE_COLOR: Record<string, string> = {
+  blog:       'bg-accent text-black',
+  newsletter: 'bg-accent2 text-black',
+  linkedin:   'bg-blue-500 text-white',
+  podcast:    'bg-purple-500 text-white',
+};
+---
+<Base title={`Writing · ${profile.name}`} description="Articles, newsletters, and posts by Jones Zachariah Noel.">
+<main id="gui-main" class="pt-14">
+
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <a href="/" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">← home</a>
+  </div>
+
+  <!-- ── ALL WRITING ── -->
+  <section id="writing" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">All writing</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="writing">$ writing</button>
+      </div>
+      <div class="flex flex-wrap items-center gap-2 mb-5">
+        <select id="f-platform" class={selectCls} aria-label="Filter by platform">
+          <option value="">all platforms</option>
+          {platforms.map((p: string) => <option value={p}>{p}</option>)}
+        </select>
+        <select id="f-type" class={selectCls} aria-label="Filter by type">
+          <option value="">all types</option>
+          {types.map((t: string) => <option value={t}>{TYPE_LABEL[t] ?? t}</option>)}
+        </select>
+        <select id="f-tag" class={selectCls} aria-label="Filter by tag">
+          <option value="">all tags</option>
+          {allTags.map((t: string) => <option value={t}>{t} ({tagCounts[t]})</option>)}
+        </select>
+        <button type="button" id="f-clear" class="font-mono text-[11px] text-muted hover:text-accent transition-colors" hidden>clear ✕</button>
+        <span id="f-count" class="font-mono text-[11px] text-muted ml-auto"></span>
+      </div>
+      <p id="f-empty" class="font-mono text-xs text-muted mb-4" hidden>No writing matches these filters.</p>
+      <div id="writing-list" class="flex flex-col">
+        {realWriting.map((w: any) => (
+          <a
+            href={w.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-platform={w.platform}
+            data-type={w.type}
+            data-tags={JSON.stringify(w.tags.map((t: string) => t.toLowerCase()))}
+            class="writing-item grid gap-3 items-start py-3 border-t border-border group hover:bg-bg2 -mx-3 px-3 rounded transition-colors"
+            style="grid-template-columns: auto 1fr auto"
+          >
+            <span class={`font-mono text-[9px] tracking-widest uppercase mt-0.5 px-1.5 py-0.5 rounded-sm shrink-0 ${TYPE_COLOR[w.type] ?? 'bg-muted text-bg'}`}>
+              {TYPE_LABEL[w.type] ?? w.type}
+            </span>
+            <div class="min-w-0">
+              <p class="text-sm text-txt group-hover:text-accent transition-colors leading-snug">{w.title}</p>
+              <div class="flex flex-wrap gap-1.5 mt-1">
+                {w.tags.map((tag: string) => (
+                  <span class="font-mono text-[9px] tracking-wider text-muted border border-border px-1.5 py-0.5 rounded-sm">{tag}</span>
+                ))}
+              </div>
+            </div>
+            <div class="flex flex-col items-end gap-1 shrink-0">
+              <span class="font-mono text-[11px] text-muted whitespace-nowrap">{w.date}</span>
+              <span class="font-mono text-[9px] text-accent opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</main>
+</Base>
+
+<style is:global>
+  #writing-list .writing-item[hidden] { display: none; }
+</style>
+
+<script is:inline>
+  (function () {
+    const items = Array.from(document.querySelectorAll('#writing-list .writing-item'));
+    const sel = { platform: document.getElementById('f-platform'), type: document.getElementById('f-type'), tag: document.getElementById('f-tag') };
+    const clear = document.getElementById('f-clear');
+    const count = document.getElementById('f-count');
+    const empty = document.getElementById('f-empty');
+    if (!items.length) return;
+
+    function apply() {
+      const p = sel.platform.value, t = sel.type.value, g = sel.tag.value;
+      let shown = 0;
+      for (const el of items) {
+        const ok = (!p || el.dataset.platform === p) && (!t || el.dataset.type === t) &&
+                   (!g || JSON.parse(el.dataset.tags).includes(g));
+        el.hidden = !ok;
+        // first visible row gets no top border
+        el.style.borderTopWidth = ok && shown === 0 ? '0' : '';
+        if (ok) shown++;
+      }
+      count.textContent = shown + ' of ' + items.length;
+      empty.hidden = shown !== 0;
+      clear.hidden = !(p || t || g);
+    }
+
+    Object.values(sel).forEach(function (s) { s.addEventListener('change', apply); });
+    clear.addEventListener('click', function () {
+      Object.values(sel).forEach(function (s) { s.value = ''; });
+      apply();
+    });
+    apply();
+  })();
+</script>

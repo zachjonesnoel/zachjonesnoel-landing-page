@@ -1,0 +1,3345 @@
+[
+  {
+    "id": "tst-lambda-web-functions",
+    "title": "Lambda Web Functions make a debut🚀☁️ #109",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-web-functions",
+    "url": "https://www.theserverlessterminal.com/p/lambda-web-functions",
+    "date": "2026-10-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "Strands brings in a decider model"
+  },
+  {
+    "id": "tst-cold-start-for-the-newsletter-108",
+    "title": "Cold start for the newsletter 🚀☁️ #108",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "cold-start-for-the-newsletter-108",
+    "url": "https://www.theserverlessterminal.com/p/cold-start-for-the-newsletter-108",
+    "date": "2026-09-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "EventBridge brings in an enhanced custom event bus"
+  },
+  {
+    "id": "tst-aws-lambda-now-supports-self-managed",
+    "title": "AWS Lambda now supports self-managed Amazon S3 buckets for code storage 🚀☁️ #107",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-now-supports-self-managed",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-now-supports-self-managed",
+    "date": "2026-07-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "MicroVMs have been rocking it"
+  },
+  {
+    "id": "newrelic-traces-for-ai-agents-otel-strand",
+    "title": "Bringing traces to your AI Agents with OpenTelemetry and Strands SDK",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "traces-for-ai-agents-otel-strand",
+    "url": "https://newrelic.com/blog/observability/traces-for-ai-agents-otel-strand",
+    "date": "2026-07-23",
+    "tags": [
+      "OpenTelemetry"
+    ],
+    "excerpt": "How to instrument AI agents built on the Strands SDK with OpenTelemetry traces in New Relic."
+  },
+  {
+    "id": "tst-4x-deployments-with-cf-express-mode",
+    "title": "4x Deployments with CF Express Mode 🚀☁️ #106",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "4x-deployments-with-cf-express-mode",
+    "url": "https://www.theserverlessterminal.com/p/4x-deployments-with-cf-express-mode",
+    "date": "2026-07-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "SQS turns 20 and AWS brings in Sandboxes"
+  },
+  {
+    "id": "nr-guide-to-ai-observability",
+    "title": "Guide to AI Observability: Core Components, Tools, and Best Practices",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "ai-in-observability",
+    "url": "https://newrelic.com/blog/ai/ai-in-observability",
+    "date": "2026-07",
+    "tags": [
+      "ai",
+      "observability",
+      "devops",
+      "monitoring"
+    ],
+    "excerpt": "How AI systems fail quietly and what tools and metrics are required for comprehensive AI observability."
+  },
+  {
+    "id": "tst-microvms-makes-a-debut-105",
+    "title": "MicroVMs makes a debut 🚀☁️ #105",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "microvms-makes-a-debut-105",
+    "url": "https://www.theserverlessterminal.com/p/microvms-makes-a-debut-105",
+    "date": "2026-06-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "Blocks also debuts, the real LEGO blocks of AWS"
+  },
+  {
+    "id": "tst-aws-step-functions-bedrock-agentcore",
+    "title": "AWS Step Functions + Bedrock AgentCore: The Serverless AI Blueprint 🚀☁️ #104",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-step-functions-bedrock-agentcore",
+    "url": "https://www.theserverlessterminal.com/p/aws-step-functions-bedrock-agentcore",
+    "date": "2026-06-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "Agent Toolkit for AWS comes to AWS CLI"
+  },
+  {
+    "id": "tst-opensearch-is-finally-serverless",
+    "title": "OpenSearch is finally Serverless 🚀☁️ #103",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "opensearch-is-finally-serverless",
+    "url": "https://www.theserverlessterminal.com/p/opensearch-is-finally-serverless",
+    "date": "2026-05-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "AWS brings in ExtendDB"
+  },
+  {
+    "id": "tst-not-another-serverless-ai",
+    "title": "Not another Serverless AI - LMI and EventBridge along with SAM making noise 🚀☁️ #102",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "not-another-serverless-ai",
+    "url": "https://www.theserverlessterminal.com/p/not-another-serverless-ai",
+    "date": "2026-05-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "AWS MCP goes GA"
+  },
+  {
+    "id": "tst-ai-agents-on-serverless-101",
+    "title": "AI Agents on Serverless🚀☁️ #101",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "ai-agents-on-serverless-101",
+    "url": "https://www.theserverlessterminal.com/p/ai-agents-on-serverless-101",
+    "date": "2026-04-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "Pun intended!! But we are in the world of AI Agents running on Serverless"
+  },
+  {
+    "id": "newrelic-it-infrastructure-metrics",
+    "title": "IT Infrastructure Metrics: What to Track and Best Practices",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "it-infrastructure-metrics",
+    "url": "https://newrelic.com/blog/infrastructure-monitoring/it-infrastructure-metrics",
+    "date": "2026-04-28",
+    "tags": [
+      "Infrastructure"
+    ],
+    "excerpt": "Guide to the infrastructure metrics worth tracking and best practices for monitoring them."
+  },
+  {
+    "id": "tst-s3-is-file-system",
+    "title": "S3 is object storage, vector DB and now File System. 🚀☁️ #100",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "s3-is-file-system",
+    "url": "https://www.theserverlessterminal.com/p/s3-is-file-system",
+    "date": "2026-04-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "s3",
+      "aws lambda"
+    ],
+    "excerpt": "The AWS Frontier Agents go GA! And we are 100 issues on the newsletter"
+  },
+  {
+    "id": "tst-did-we-forget-step-functions-over",
+    "title": "Did we forget Step Functions over Durable Functions?🚀☁️ #99",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "did-we-forget-step-functions-over",
+    "url": "https://www.theserverlessterminal.com/p/did-we-forget-step-functions-over",
+    "date": "2026-03-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Step Functions adds in 28 new service integrations (AgentCore included)"
+  },
+  {
+    "id": "tst-openclaw-on-lightsail-98",
+    "title": "OpenClaw on Lightsail🚀☁️ #98",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "openclaw-on-lightsail-98",
+    "url": "https://www.theserverlessterminal.com/p/openclaw-on-lightsail-98",
+    "date": "2026-03-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And S3 turns 20 this Pi Day"
+  },
+  {
+    "id": "tst-durable-functions-flooded-up-and",
+    "title": "Durable functions flooded up and Java SDK out 🚀☁️ #97",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "durable-functions-flooded-up-and",
+    "url": "https://www.theserverlessterminal.com/p/durable-functions-flooded-up-and",
+    "date": "2026-02-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Aurora DSQL is on the roll...."
+  },
+  {
+    "id": "tst-event-payload-consistency-across",
+    "title": "Event payload consistency across Serverless 🚀☁️ #96",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "event-payload-consistency-across",
+    "url": "https://www.theserverlessterminal.com/p/event-payload-consistency-across",
+    "date": "2026-02-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Valentines day, 1MB is the new limit"
+  },
+  {
+    "id": "tst-dynamodb-with-fault-injection-testing",
+    "title": "DynamoDB with fault injection testing 🚀☁️ #95",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-with-fault-injection-testing",
+    "url": "https://www.theserverlessterminal.com/p/dynamodb-with-fault-injection-testing",
+    "date": "2026-01-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-durable-functions-debut-94",
+    "title": "Durable functions debut 🚀☁️ #94",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "durable-functions-debut-94",
+    "url": "https://www.theserverlessterminal.com/p/durable-functions-debut-94",
+    "date": "2026-01-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Code over ASLs"
+  },
+  {
+    "id": "tst-aws-lambda-managed-instances-93",
+    "title": "AWS Lambda Managed Instances 🚀☁️ #93",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-managed-instances-93",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-managed-instances-93",
+    "date": "2025-12-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "re:Flections from re:Invent"
+  },
+  {
+    "id": "tst-reinvent-brings-in-some-lambda-updates",
+    "title": "reInvent brings in some Lambda updates 🚀☁️ #92",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "reinvent-brings-in-some-lambda-updates",
+    "url": "https://www.theserverlessterminal.com/p/reinvent-brings-in-some-lambda-updates",
+    "date": "2025-12-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "DevOps Agent, AWS Transform, and the list goes on..."
+  },
+  {
+    "id": "nr-aws-reinvent-2025-updates",
+    "title": "AWS re:Invent 2025: AI Agents take over while core compute gets reinvented",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "aws-reinvent-2025-updates",
+    "url": "https://newrelic.com/blog/observability/aws-reinvent-2025-updates",
+    "date": "2025-12",
+    "tags": [
+      "aws",
+      "reinvent",
+      "ai",
+      "observability",
+      "devops"
+    ],
+    "excerpt": "Key takeaways and announcements from AWS re:Invent covering agentic workflows and compute updates."
+  },
+  {
+    "id": "tst-its-almost-reinvent-with-a-good-preinvent",
+    "title": "It's almost reInvent with a good pre:Invent week 🚀☁️ #91",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "its-almost-reinvent-with-a-good-preinvent",
+    "url": "https://www.theserverlessterminal.com/p/its-almost-reinvent-with-a-good-preinvent",
+    "date": "2025-11-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "CloudFront turns 17 and brings in flat-rate pricing plans"
+  },
+  {
+    "id": "tst-aws-serverless-mcp-server-with-lambda",
+    "title": "AWS Serverless MCP Server with Lambda event-source mapping 🚀☁️ #90",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-serverless-mcp-server-with-lambda",
+    "url": "https://www.theserverlessterminal.com/p/aws-serverless-mcp-server-with-lambda",
+    "date": "2025-11-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Step Function brings in metrics dashboard"
+  },
+  {
+    "id": "nr-change-tracking-post-incident",
+    "title": "Change Tracking for Better Post-Incident Monitoring",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "change-tracking-for-better-post-incident-monitoring",
+    "url": "https://newrelic.com/blog/observability/change-tracking-for-better-post-incident-monitoring",
+    "date": "2025-11",
+    "tags": [
+      "observability",
+      "change-tracking",
+      "devops",
+      "system-resilience"
+    ],
+    "excerpt": "How to leverage change tracking in New Relic to speed up post-incident analysis and troubleshooting."
+  },
+  {
+    "id": "tst-lambda-payload-size-now-at-1mb-for",
+    "title": "Lambda payload size now at 1MB for async invocations 🚀☁️ #89",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-payload-size-now-at-1mb-for",
+    "url": "https://www.theserverlessterminal.com/p/lambda-payload-size-now-at-1mb-for",
+    "date": "2025-10-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Step Functions with Q diagnosis and Kiro waitlist ends."
+  },
+  {
+    "id": "tst-amazon-ecs-managed-instances-88",
+    "title": "Amazon ECS Managed Instances 🚀☁️ #88",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-ecs-managed-instances-88",
+    "url": "https://www.theserverlessterminal.com/p/amazon-ecs-managed-instances-88",
+    "date": "2025-10-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "AppSync and a lot of takes on Security...."
+  },
+  {
+    "id": "nr-aws-outage-o11y-non-negotiable",
+    "title": "AWS Outage And Why O11y is Non Negotiable",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "aws-outage-why-o11y-is-non-negotiable",
+    "url": "https://newrelic.com/blog/infrastructure-monitoring/aws-outage-why-o11y-is-non-negotiable",
+    "date": "2025-10",
+    "tags": [
+      "aws",
+      "observability",
+      "outage",
+      "resilience"
+    ],
+    "excerpt": "Analyzing major cloud outages and why full-stack observability is crucial for operational reliability."
+  },
+  {
+    "id": "tst-messaging-and-integrations-87",
+    "title": "Messaging and integrations 🚀☁️ #87",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "messaging-and-integrations-87",
+    "url": "https://www.theserverlessterminal.com/p/messaging-and-integrations-87",
+    "date": "2025-09-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Customer Managed Key support to rule filter patterns and input transformers on EventBridge"
+  },
+  {
+    "id": "tst-refactor-with-the-cdk-cli-86",
+    "title": "Refactor with the CDK CLI 🚀☁️ #86",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "refactor-with-the-cdk-cli-86",
+    "url": "https://www.theserverlessterminal.com/p/refactor-with-the-cdk-cli-86",
+    "date": "2025-09-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Local IDE experience elevated with LocalStack + AWS Toolkit"
+  },
+  {
+    "id": "tst-decade-of-amazon-aurora-85",
+    "title": "Decade of Amazon Aurora 🚀☁️ #85",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "decade-of-amazon-aurora-85",
+    "url": "https://www.theserverlessterminal.com/p/decade-of-amazon-aurora-85",
+    "date": "2025-08-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And also Prime Days hits records with Lambda Invocations and DDB read/write"
+  },
+  {
+    "id": "tst-lambda-deployments-and-response-streaming",
+    "title": "Lambda deployments and response streaming 🚀☁️ #84",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-deployments-and-response-streaming",
+    "url": "https://www.theserverlessterminal.com/p/lambda-deployments-and-response-streaming",
+    "date": "2025-08-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Streaming response upto 200 MB and deployments via GitHub Actions"
+  },
+  {
+    "id": "nr-sqs-monitoring-deep-dive",
+    "title": "SQS Monitoring Deep Dive",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "sqs-monitoring-deep-dive",
+    "url": "https://newrelic.com/blog/observability/sqs-monitoring-deep-dive",
+    "date": "2025-08",
+    "tags": [
+      "aws",
+      "sqs",
+      "nrql",
+      "monitoring",
+      "serverless"
+    ],
+    "excerpt": "Exploring SQS metrics beyond basic queue health using NRQL dashboards to detect bottlenecks."
+  },
+  {
+    "id": "tst-lambda-devex-and-sqs-fair-queues",
+    "title": "Lambda DevEx and SQS Fair Queues 🚀☁️ #83",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-devex-and-sqs-fair-queues",
+    "url": "https://www.theserverlessterminal.com/p/lambda-devex-and-sqs-fair-queues",
+    "date": "2025-07-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "S3 Vectors comes in preview as well"
+  },
+  {
+    "id": "tst-multi-region-consistency-in-dynamodb",
+    "title": "Multi-region consistency in DynamoDB Global Tables 🚀☁️ #82",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "multi-region-consistency-in-dynamodb",
+    "url": "https://www.theserverlessterminal.com/p/multi-region-consistency-in-dynamodb",
+    "date": "2025-07-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Oracle Database@AWS is now GA, and Kiro is out!"
+  },
+  {
+    "id": "tst-aws-lambda-kafka-supports-formatted",
+    "title": "AWS Lambda now supports formatted Kafka events 🚀☁️ #81",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-kafka-supports-formatted",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-kafka-supports-formatted",
+    "date": "2025-06-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Cloudflare Containers now in public beta"
+  },
+  {
+    "id": "tst-routing-rules-for-rest-apis-80",
+    "title": "Routing Rules for REST APIs 🚀☁️ #80",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "routing-rules-for-rest-apis-80",
+    "url": "https://www.theserverlessterminal.com/p/routing-rules-for-rest-apis-80",
+    "date": "2025-06-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And AWS CDK Toolkit library goes GA"
+  },
+  {
+    "id": "tst-aurora-dsql-goes-ga-79",
+    "title": "Aurora DSQL goes GA 🚀☁️ #79",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aurora-dsql-goes-ga-79",
+    "url": "https://www.theserverlessterminal.com/p/aurora-dsql-goes-ga-79",
+    "date": "2025-05-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "In other news, Strands Agents SDK and MCP for AWS Serverless and Containers are available"
+  },
+  {
+    "id": "tst-init-phase-pricing-makes-cold-starts",
+    "title": "INIT Phase Pricing Makes Cold Starts Expensive 🚀☁️ #78",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "init-phase-pricing-makes-cold-starts",
+    "url": "https://www.theserverlessterminal.com/p/init-phase-pricing-makes-cold-starts",
+    "date": "2025-05-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And also a change in Lambda logging tiered pricing on CloudWatch"
+  },
+  {
+    "id": "nr-observability-event-driven-architecture",
+    "title": "Why observability matters for Event-Driven Architecture",
+    "type": "blog",
+    "platform": "New Relic",
+    "slug": "why-observability-matters-for-event-driven-architecture",
+    "url": "https://newrelic.com/blog/infrastructure-monitoring/why-observability-matters-for-event-driven-architecture",
+    "date": "2025-05",
+    "tags": [
+      "aws",
+      "event-driven",
+      "observability",
+      "sqs",
+      "eventbridge"
+    ],
+    "excerpt": "Understanding the unique challenges of monitoring asynchronous, distributed microservice architectures."
+  },
+  {
+    "id": "tst-mcp-on-lambda-has-taken-over-76",
+    "title": "MCP on Lambda has taken over 🚀☁️ #77",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "mcp-on-lambda-has-taken-over-76",
+    "url": "https://www.theserverlessterminal.com/p/mcp-on-lambda-has-taken-over-76",
+    "date": "2025-04-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Streamable HTTP makes it possible for stateless and Serverless MCP on Lambda"
+  },
+  {
+    "id": "tst-cloudflare-workflows-breaking-the",
+    "title": "Cloudflare Workflows Breaking in the World of Workflows 🚀☁️ #76",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "cloudflare-workflows-breaking-the",
+    "url": "https://www.theserverlessterminal.com/p/cloudflare-workflows-breaking-the",
+    "date": "2025-04-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Cloudflare is on a developer week run and updates!"
+  },
+  {
+    "id": "tst-lambda-in-scale-of-billions-75",
+    "title": "Lambda in scale of billions 🚀☁️ #75",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-in-scale-of-billions-75",
+    "url": "https://www.theserverlessterminal.com/p/lambda-in-scale-of-billions-75",
+    "date": "2025-03-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Inferless, Fermyon,and Redpanda see dawn while Fauna sees dusk"
+  },
+  {
+    "id": "tst-happy-19th-amazon-s3-74",
+    "title": "Happy 19th Amazon S3 🚀☁️ #74",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "happy-19th-amazon-s3-74",
+    "url": "https://www.theserverlessterminal.com/p/happy-19th-amazon-s3-74",
+    "date": "2025-03-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "S3, AppSync and Amplify rolling out updates on Pi Day"
+  },
+  {
+    "id": "tst-is-fluid-compute-the-next-thing-73",
+    "title": "Is Fluid Compute the next thing? 🚀☁️ #73",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "is-fluid-compute-the-next-thing-73",
+    "url": "https://www.theserverlessterminal.com/p/is-fluid-compute-the-next-thing-73",
+    "date": "2025-02-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Vercel brings in something in the middle of Servers and Serverless"
+  },
+  {
+    "id": "tst-securing-workloads-serverless",
+    "title": "Did you know you are a co-owner who secures your workloads with Serverless?",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "did-you-know-you-are-a-co-owner-who-secures-your-workloads-with-serverless",
+    "url": "https://blog.theserverlessterminal.com/did-you-know-you-are-a-co-owner-who-secures-your-workloads-with-serverless",
+    "date": "2025-02-17",
+    "tags": [
+      "aws",
+      "serverless",
+      "security",
+      "cloud"
+    ],
+    "excerpt": "Exploring shared responsibility models and best practices for securing serverless workloads."
+  },
+  {
+    "id": "tst-serverless-containers-framework",
+    "title": "Serverless Containers Framework makes a debut 🚀☁️ #72",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-containers-framework",
+    "url": "https://www.theserverlessterminal.com/p/serverless-containers-framework",
+    "date": "2025-02-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "AppSync with a bunch of other updates"
+  },
+  {
+    "id": "tst-application-integration-and-eda-improvements",
+    "title": "Application Integration and EDA Improvements 🚀☁️ #71",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "application-integration-and-eda-improvements",
+    "url": "https://www.theserverlessterminal.com/p/application-integration-and-eda-improvements",
+    "date": "2025-01-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "SNS FIFO with high through-put and EventBridge cross account direct targets"
+  },
+  {
+    "id": "tst-amazon-s3-analytics",
+    "title": "Amazon S3 is more than storage and brings in a lot for the analytics ecosystem",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-s3-is-more-than-storage-and-brings-in-a-lot-for-the-analytics-ecosystem",
+    "url": "https://blog.theserverlessterminal.com/amazon-s3-is-more-than-storage-and-brings-in-a-lot-for-the-analytics-ecosystem",
+    "date": "2025-01-28",
+    "tags": [
+      "aws",
+      "s3",
+      "analytics",
+      "data"
+    ],
+    "excerpt": "Understanding how Amazon S3 plays a critical role in modern cloud analytics beyond plain storage."
+  },
+  {
+    "id": "tst-dynamodb-with-configurable-point",
+    "title": "DynamoDB with configurable point-in-time recovery 🚀☁️ #70",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-with-configurable-point",
+    "url": "https://www.theserverlessterminal.com/p/dynamodb-with-configurable-point",
+    "date": "2025-01-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "New AWS regions in Thailand and AWS Mexico (Central)"
+  },
+  {
+    "id": "tst-serverless-apps-at-scale",
+    "title": "Serverless Applications at Scale? Now Go Build with Best Practices",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-applications-at-scale-now-go-build-with-best-practices",
+    "url": "https://blog.theserverlessterminal.com/serverless-applications-at-scale-now-go-build-with-best-practices",
+    "date": "2025-01-09",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "scalability"
+    ],
+    "excerpt": "Architectural guidelines and design patterns for running production serverless applications at scale."
+  },
+  {
+    "id": "blog-sunset-2024-reflection",
+    "title": "Sunset 2024, Learning From It's Reflections",
+    "type": "blog",
+    "platform": "zachjonesnoel blog",
+    "slug": "sunset-2024-learning-from-its-reflections",
+    "url": "https://blog.zachjonesnoel.com/sunset-2024-learning-from-its-reflections",
+    "date": "2025-01-06",
+    "tags": [
+      "career",
+      "reflections",
+      "devrel",
+      "retrospective"
+    ],
+    "excerpt": "An annual retrospective reflecting on community milestones, personal achievements, and lessons learned."
+  },
+  {
+    "id": "tst-eventbridge-api-destinations-refresh-tokens",
+    "title": "EventBridge API destination's refresh tokens wraps up 2024 🚀☁️ #69",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "eventbridge-api-destinations-refresh-tokens",
+    "url": "https://www.theserverlessterminal.com/p/eventbridge-api-destinations-refresh-tokens",
+    "date": "2024-12-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And in other news, 10 year old AWS Lambda is on the spotlight"
+  },
+  {
+    "id": "tst-share-your-lessons-listen-to-the-heroes",
+    "title": "Share your lessons: Listen to the Heroes 🚀☁️ #68",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "share-your-lessons-listen-to-the-heroes",
+    "url": "https://www.theserverlessterminal.com/p/share-your-lessons-listen-to-the-heroes",
+    "date": "2024-12-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "DSQL and S3 Tables make a debut at reInvent 2024"
+  },
+  {
+    "id": "tst-a-decade-of-serverless-lambda-ecs",
+    "title": "A decade of Serverless, Lambda and ECS🚀☁️ #67",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "a-decade-of-serverless-lambda-ecs",
+    "url": "https://www.theserverlessterminal.com/p/a-decade-of-serverless-lambda-ecs",
+    "date": "2024-11-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Just in time for re:Invent, new AWS Heroes, DynamoDB pre-warm"
+  },
+  {
+    "id": "tst-preinvent-lambda-improves-experience",
+    "title": "pre:Invent - Lambda improves experience 🚀☁️ #66",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "preinvent-lambda-improves-experience",
+    "url": "https://www.theserverlessterminal.com/p/preinvent-lambda-improves-experience",
+    "date": "2024-10-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda console experience - Code-OSS along with CloudWatch logs and insights"
+  },
+  {
+    "id": "tst-lambda-and-s3-recursive-loop-prevention",
+    "title": "Lambda and S3 recursive loop prevention 🚀☁️ #65",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-and-s3-recursive-loop-prevention",
+    "url": "https://www.theserverlessterminal.com/p/lambda-and-s3-recursive-loop-prevention",
+    "date": "2024-10-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Metrics for Event delivery in EventBus and CloudWatch Alarms and Metrics"
+  },
+  {
+    "id": "hashnode-serverless-apis-this-will-help-you-choose-the-right-one",
+    "title": "Serverless APIs? This will help you choose the right one!",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-apis-this-will-help-you-choose-the-right-one",
+    "url": "https://blog.theserverlessterminal.com/serverless-apis-this-will-help-you-choose-the-right-one",
+    "date": "2024-10-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "api",
+      "architecture"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-is-serverless-vendor-lock-in-a-thing",
+    "title": "Is Serverless vendor lock-in a thing? 🚀☁️ #64",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "is-serverless-vendor-lock-in-a-thing",
+    "url": "https://www.theserverlessterminal.com/p/is-serverless-vendor-lock-in-a-thing",
+    "date": "2024-09-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "In other news, Cloudflare is on birthday week blast."
+  },
+  {
+    "id": "tst-lambdasqs-and-batches-63",
+    "title": "Lambda,SQS and Batches 🚀☁️ #63",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambdasqs-and-batches-63",
+    "url": "https://www.theserverlessterminal.com/p/lambdasqs-and-batches-63",
+    "date": "2024-09-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And also AppSync has improved API monitoring and new Heroes!"
+  },
+  {
+    "id": "tst-recursive-loops-and-validation-apis",
+    "title": "Recursive loops and validation APIs 🚀☁️ #62",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "recursive-loops-and-validation-apis",
+    "url": "https://www.theserverlessterminal.com/p/recursive-loops-and-validation-apis",
+    "date": "2024-08-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda recursive loop detection, Step Functions validation API, S3 HTTP error codes"
+  },
+  {
+    "id": "tst-supabase-and-databases-are-on-drumrolls",
+    "title": "Supabase and databases are on drumrolls! 🚀☁️ #61",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "supabase-and-databases-are-on-drumrolls",
+    "url": "https://www.theserverlessterminal.com/p/supabase-and-databases-are-on-drumrolls",
+    "date": "2024-08-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Supabase has been on launch week and DAX in additional regions"
+  },
+  {
+    "id": "tst-yes-serverless-is-mature-and-still",
+    "title": "Yes, Serverless is mature and still growing🚀☁️ #60",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "yes-serverless-is-mature-and-still",
+    "url": "https://www.theserverlessterminal.com/p/yes-serverless-is-mature-and-still",
+    "date": "2024-07-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "AWS Lambda, Step Functions and EventBridge continue to innovate amidst GenAI noise"
+  },
+  {
+    "id": "hashnode-streaming-responses-via-aws-lambda",
+    "title": "Streaming Responses via AWS Lambda",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "streaming-responses-via-aws-lambda",
+    "url": "https://blog.theserverlessterminal.com/streaming-responses-via-aws-lambda",
+    "date": "2024-07-29",
+    "tags": [
+      "aws",
+      "serverless",
+      "response-streaming",
+      "aws lambda",
+      "apis",
+      "lambda-function-urls"
+    ],
+    "excerpt": "Learn how to use AWS Lambda's response streaming for improved performance with large payloads and real-time applications",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/streaming-responses-via-aws-lambda"
+    }
+  },
+  {
+    "id": "tst-did-serverless-go-quiet-59",
+    "title": "Did Serverless go quiet?🚀☁️ #59",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "did-serverless-go-quiet-59",
+    "url": "https://www.theserverlessterminal.com/p/did-serverless-go-quiet-59",
+    "date": "2024-07-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "The AI buzz takes a stab at Serverless."
+  },
+  {
+    "id": "tst-eventbridge-is-event-flooding-updates",
+    "title": "EventBridge is event flooding updates🚀☁️ #58",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "eventbridge-is-event-flooding-updates",
+    "url": "https://www.theserverlessterminal.com/p/eventbridge-is-event-flooding-updates",
+    "date": "2024-06-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "EventBridge new dashboard, Scheduler with universal targets and more!"
+  },
+  {
+    "id": "hashnode-orchestration-of-http-invocation-made-possible-with-step-functions",
+    "title": "Orchestration of HTTP invocation made possible with Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "orchestration-of-http-invocation-made-possible-with-step-functions",
+    "url": "https://blog.theserverlessterminal.com/orchestration-of-http-invocation-made-possible-with-step-functions",
+    "date": "2024-06-22",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions",
+      "http",
+      "apis",
+      "events"
+    ],
+    "excerpt": "Learn about Step Functions' new capability of HTTP invocation in the world of HTTP endpoints are invoked in multiple stages of workloads",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/orchestration-of-http-invocation-made-possible-with-step-functions"
+    }
+  },
+  {
+    "id": "tst-timeouts-and-async-lambda-invocations",
+    "title": "Timeouts and async Lambda invocations 🚀☁️ #57",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "timeouts-and-async-lambda-invocations",
+    "url": "https://www.theserverlessterminal.com/p/timeouts-and-async-lambda-invocations",
+    "date": "2024-06-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "And let's retrospect if Serverless is sidelined"
+  },
+  {
+    "id": "tst-choosing-purpose-built-dbs-dynamodb",
+    "title": "Choosing purpose built DBs - DynamoDB 🚀☁️ #56",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "choosing-purpose-built-dbs-dynamodb",
+    "url": "https://www.theserverlessterminal.com/p/choosing-purpose-built-dbs-dynamodb",
+    "date": "2024-05-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "eda",
+      "dynamodb",
+      "aws lambda"
+    ],
+    "excerpt": "Hear about production (contradictory) case-study by Uber and Heroku"
+  },
+  {
+    "id": "tst-s3-fixes-billing-for-unauthorised",
+    "title": "S3 fixes billing for unauthorised APIs 🚀☁️ #55",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "s3-fixes-billing-for-unauthorised",
+    "url": "https://www.theserverlessterminal.com/p/s3-fixes-billing-for-unauthorised",
+    "date": "2024-05-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "AWS Amplify has series of updates too!"
+  },
+  {
+    "id": "tst-serverless-infrastructure-and-api",
+    "title": "Serverless Infrastructure and API 🚀☁️ #54",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-infrastructure-and-api",
+    "url": "https://www.theserverlessterminal.com/p/serverless-infrastructure-and-api",
+    "date": "2024-04-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Considerations and trade-offs, authorization and Architecture as Code to build Serverless APIs"
+  },
+  {
+    "id": "hashnode-serverless-with-orchestration-and-choreography",
+    "title": "Serverless with orchestration and choreography",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-with-orchestration-and-choreography",
+    "url": "https://blog.theserverlessterminal.com/serverless-with-orchestration-and-choreography",
+    "date": "2024-04-23",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "orchestration",
+      "eda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-serverless-apis-are-evolving-53",
+    "title": "Serverless APIs are evolving 🚀☁️ #53",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-apis-are-evolving-53",
+    "url": "https://www.theserverlessterminal.com/p/serverless-apis-are-evolving-53",
+    "date": "2024-04-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "AppSync has new updates, APIs access via AVP, CloudFront with OAC access for fURLs"
+  },
+  {
+    "id": "tst-dynamodb-rolls-out-updates-back2back",
+    "title": "DynamoDB rolls out updates back2back 🚀☁️ #52",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-rolls-out-updates-back2back",
+    "url": "https://www.theserverlessterminal.com/p/dynamodb-rolls-out-updates-back2back",
+    "date": "2024-03-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "DynamoDB supports AWS PrivateLink, Resource bases policies and also bulk upload from S3"
+  },
+  {
+    "id": "tst-serverless-infrastructure-has-been",
+    "title": "Serverless Infrastructure has been on top of my mind 🚀☁️ #51",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-infrastructure-has-been",
+    "url": "https://www.theserverlessterminal.com/p/serverless-infrastructure-has-been",
+    "date": "2024-03-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "In other news, CloudFormation stack creation is 40% faster"
+  },
+  {
+    "id": "hashnode-no-one-size-fits-all-true-also-for-selecting-iac-tool",
+    "title": "No one size fits all: True also for selecting IaC tool",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "no-one-size-fits-all-true-also-for-selecting-iac-tool",
+    "url": "https://blog.theserverlessterminal.com/no-one-size-fits-all-true-also-for-selecting-iac-tool",
+    "date": "2024-03-05",
+    "tags": [
+      "aws",
+      "iac",
+      "serverless",
+      "architecture"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-lambda-function-and-eda-sits-in-core",
+    "title": "Lambda function and EDA sits in the core #50",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-function-and-eda-sits-in-core",
+    "url": "https://www.theserverlessterminal.com/p/lambda-function-and-eda-sits-in-core",
+    "date": "2024-02-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Often Serverless is more than Lambda, but we forget how Lambda with EDA plays in well"
+  },
+  {
+    "id": "tst-rethink-cdk-and-low-latency-runtime",
+    "title": "Re:Think CDK and low latency runtime 🚀☁️ - Issue #49",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "rethink-cdk-and-low-latency-runtime",
+    "url": "https://www.theserverlessterminal.com/p/rethink-cdk-and-low-latency-runtime",
+    "date": "2024-02-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "SST moves away from CDK and there is a new birth of a low-latency runtime for Lambda"
+  },
+  {
+    "id": "hashnode-serverless-workflow-design-and-development-using-application-composer-and-step-functions",
+    "title": "Serverless workflow design and development using Application Composer and Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-workflow-design-and-development-using-application-composer-and-step-functions",
+    "url": "https://blog.theserverlessterminal.com/serverless-workflow-design-and-development-using-application-composer-and-step-functions",
+    "date": "2024-02-10",
+    "tags": [
+      "aws",
+      "step-functions",
+      "serverless",
+      "workflow"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-more-integrations-from-step-functions",
+    "title": "More integrations from Step Functions 🚀☁️ - Issue #48",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "more-integrations-from-step-functions",
+    "url": "https://www.theserverlessterminal.com/p/more-integrations-from-step-functions",
+    "date": "2024-01-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Time to elevate our Serverless/GenAI workloads with Step Functions"
+  },
+  {
+    "id": "tst-events-from-a-bus-got-a-new-destination",
+    "title": "Events from a bus got a new destination 🚀☁️ - Issue #47",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "events-from-a-bus-got-a-new-destination",
+    "url": "https://www.theserverlessterminal.com/p/events-from-a-bus-got-a-new-destination",
+    "date": "2024-01-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "EventBridge now support AppSync as a target"
+  },
+  {
+    "id": "tst-cognito-is-back-in-the-game-46",
+    "title": "Cognito is back in the game? #46",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "cognito-is-back-in-the-game-46",
+    "url": "https://www.theserverlessterminal.com/p/cognito-is-back-in-the-game-46",
+    "date": "2023-12-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Cognito and CloudWatch Alarms pushes long pending things"
+  },
+  {
+    "id": "tst-lambda-with-better-concurrency-metrics",
+    "title": "Lambda with better concurrency metrics and can also scale up 12x faster - Issue #45",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-with-better-concurrency-metrics",
+    "url": "https://www.theserverlessterminal.com/p/lambda-with-better-concurrency-metrics",
+    "date": "2023-12-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda improvements and celebrating Step Function updates"
+  },
+  {
+    "id": "hashnode-cloudy-with-a-chance-of-mind-blown-aws-reinvent-2023",
+    "title": "Cloudy with a Chance of Mind-Blown: AWS re:Invent 2023",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "cloudy-with-a-chance-of-mind-blown-aws-reinvent-2023",
+    "url": "https://blog.theserverlessterminal.com/cloudy-with-a-chance-of-mind-blown-aws-reinvent-2023",
+    "date": "2023-12-07",
+    "tags": [
+      "aws",
+      "reinvent",
+      "serverless",
+      "architecture"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-weve-always-done-it-this-way-44",
+    "title": "We've always done it this way 🚀☁️ #44",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "weve-always-done-it-this-way-44",
+    "url": "https://www.theserverlessterminal.com/p/weve-always-done-it-this-way-44",
+    "date": "2023-12-01",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "dynamodb",
+      "step-functions",
+      "aws lambda"
+    ],
+    "excerpt": "Changing perspective and also being a frugal architect with rocking the party at re:Invent '23"
+  },
+  {
+    "id": "tst-aws-lambda-9-years-of-serverless",
+    "title": "AWS Lambda, 9 years of Serverless AWSomeness 🚀☁️ #43",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-9-years-of-serverless",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-9-years-of-serverless",
+    "date": "2023-11-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "dynamodb",
+      "step-functions",
+      "aws lambda"
+    ],
+    "excerpt": "AWS Lambda celebrating 9 years and bunch of content and announcements about Lambda Functions"
+  },
+  {
+    "id": "hashnode-improved-developer-experience-of-graphql-apis-with-javascript-resolvers-for-aws-appsync-apis",
+    "title": "Improved developer experience of GraphQL APIs with JavaScript resolvers for AWS AppSync APIs",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "improved-developer-experience-of-graphql-apis-with-javascript-resolvers-for-aws-appsync-apis",
+    "url": "https://blog.theserverlessterminal.com/improved-developer-experience-of-graphql-apis-with-javascript-resolvers-for-aws-appsync-apis",
+    "date": "2023-11-02",
+    "tags": [
+      "aws",
+      "appsync",
+      "graphql",
+      "javascript",
+      "serverless"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-serverless-framework-v4-and-sns-sqs",
+    "title": "Serverless Framework v4 and SNS, SQS is rocking pre:Invent 🚀☁️ #42",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-framework-v4-and-sns-sqs",
+    "url": "https://www.theserverlessterminal.com/p/serverless-framework-v4-and-sns-sqs",
+    "date": "2023-10-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "dynamodb",
+      "step-functions",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-the-game-of-serverless-gen-ai-is-on",
+    "title": "The game of Serverless GenAI is on! 🚀☁️ #41",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "the-game-of-serverless-gen-ai-is-on",
+    "url": "https://www.theserverlessterminal.com/p/the-game-of-serverless-gen-ai-is-on",
+    "date": "2023-10-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Amazed with amazing content about Serverless using Amazon Bedrock"
+  },
+  {
+    "id": "devto-jitter-strategy-step-functions",
+    "title": "The Jitter Strategy for Step Functions Error Retries on the New Workflow Studio",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio",
+    "url": "https://dev.to/aws-heroes/the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio-22bf",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "stepfunctions",
+      "errors"
+    ],
+    "excerpt": "Implementing backoff and jitter retry strategies in AWS Step Functions to prevent thundering herd problems."
+  },
+  {
+    "id": "devto-buses-and-queues-head-on",
+    "title": "Buses and queues: Head-on",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "buses-and-queues-head-on",
+    "url": "https://dev.to/awscommunity-asean/buses-and-queues-head-on-21c6",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "eventbridge",
+      "sqs"
+    ],
+    "excerpt": "A head-to-head comparison between event buses and message queues for event-driven microservices."
+  },
+  {
+    "id": "devto-lambda-performance-peak-traffic",
+    "title": "Maintaining Lambda Function Performance During Peak Traffic",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "maintaining-lambda-function-performance-during-peak-traffic",
+    "url": "https://dev.to/aws-heroes/maintaining-lambda-function-performance-during-peak-traffic-1e64",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "lambda",
+      "performance"
+    ],
+    "excerpt": "Strategies for managing concurrency, cold starts, and scaling behavior under high load in AWS Lambda."
+  },
+  {
+    "id": "devto-rethink-rearchitect-app",
+    "title": "Re-think and Re-architect Your Application",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "re-think-and-re-architect-your-application",
+    "url": "https://dev.to/awscommunity-asean/re-think-and-re-architect-your-application-20n9",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "architecture",
+      "serverless",
+      "monolith"
+    ],
+    "excerpt": "Deconstructing monolithic systems into scalable, event-driven serverless architectures."
+  },
+  {
+    "id": "devto-appsync-subscriptions-triggers-lambda",
+    "title": "Workarounds for AppSync Subscriptions triggers via Lambda functions",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "workarounds-for-appsync-subscriptions-triggers-via-lambda-functions",
+    "url": "https://dev.to/aws-heroes/workarounds-for-appsync-subscriptions-triggers-via-lambda-functions-3hkg",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "development",
+      "serverless",
+      "appsync"
+    ],
+    "excerpt": "Practical workarounds for initiating AWS AppSync GraphQL real-time subscriptions directly from Lambda."
+  },
+  {
+    "id": "devto-serverless-dev-amplify-studio",
+    "title": "Serverless development with Amplify Studio",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "serverless-development-with-amplify-studio",
+    "url": "https://dev.to/aws-heroes/serverless-development-with-amplify-studio-120d",
+    "date": "2023-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "amplify",
+      "javascript"
+    ],
+    "excerpt": "Accelerating frontend-to-cloud development workflows using AWS Amplify Studio."
+  },
+  {
+    "id": "tst-season-of-preinvent-has-begun-40",
+    "title": "Season of pre:Invent has begun 🚀☁️ #40",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "season-of-preinvent-has-begun-40",
+    "url": "https://www.theserverlessterminal.com/p/season-of-preinvent-has-begun-40",
+    "date": "2023-09-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Ton of new updates from AWS with new features and enhancements"
+  },
+  {
+    "id": "tst-lets-focus-on-errors-39",
+    "title": "Let's focus on errors 🚀☁️ #39",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lets-focus-on-errors-39",
+    "url": "https://www.theserverlessterminal.com/p/lets-focus-on-errors-39",
+    "date": "2023-09-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Step Function enhances error handling capabilities"
+  },
+  {
+    "id": "hashnode-the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio",
+    "title": "The Jitter Strategy for Step Functions Error Retries on the New Workfl",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio",
+    "url": "https://blog.theserverlessterminal.com/the-jitter-strategy-for-step-functions-error-retries-on-the-new-workflow-studio",
+    "date": "2023-09-13",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions",
+      "error-handling"
+    ],
+    "excerpt": "In this blog, learn about the Step function's error handling and how JitterStrategy would make a difference when Step function retries."
+  },
+  {
+    "id": "tst-hello-js-resolvers-bye-vtl-resolvers",
+    "title": "Hello JS resolvers, bye VTL resolvers #38",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "hello-js-resolvers-bye-vtl-resolvers",
+    "url": "https://www.theserverlessterminal.com/p/hello-js-resolvers-bye-vtl-resolvers",
+    "date": "2023-08-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "AWS AppSync now supports JavaScript for all resolvers"
+  },
+  {
+    "id": "tst-its-time-to-trigger-a-schedule-eventbridge",
+    "title": "It's time to trigger a schedule, EventBridge #37",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "its-time-to-trigger-a-schedule-eventbridge",
+    "url": "https://www.theserverlessterminal.com/p/its-time-to-trigger-a-schedule-eventbridge",
+    "date": "2023-08-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "EventBridge schedulers, new AWS Security Heroes and DynamoDB"
+  },
+  {
+    "id": "fw-freshworks-eventbridge-guide",
+    "title": "A Guide to understanding Freshworks integrations with Amazon EventBridge",
+    "type": "blog",
+    "platform": "Freshworks Medium Developer Blog",
+    "slug": "a-guide-to-understanding-freshworks-integrations-with-amazon-eventbridge",
+    "url": "https://medium.com/freshworks-developer-blog/a-guide-to-understanding-freshworks-integrations-with-amazon-eventbridge-9782e54f1076",
+    "date": "2023-08",
+    "tags": [
+      "freshworks",
+      "aws",
+      "eventbridge",
+      "integration"
+    ],
+    "excerpt": "A step-by-step guide on integrating Freshworks product events with Amazon EventBridge."
+  },
+  {
+    "id": "tst-lambda-with-python-311-issue-36",
+    "title": "Lambda with Python 3.11🚀☁️ - Issue #36",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-with-python-311-issue-36",
+    "url": "https://www.theserverlessterminal.com/p/lambda-with-python-311-issue-36",
+    "date": "2023-07-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Python 3.11 runtime is now supported on AWS Lambda Functions"
+  },
+  {
+    "id": "tst-recursive-loops-in-aws-lambda-fns",
+    "title": "Recursive loops in AWS Lambda fns 🚀☁️ - Issue #35",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "recursive-loops-in-aws-lambda-fns",
+    "url": "https://www.theserverlessterminal.com/p/recursive-loops-in-aws-lambda-fns",
+    "date": "2023-07-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda can now detect and stop recursive loops in Lambda functions"
+  },
+  {
+    "id": "tst-step-up-with-step-functions",
+    "title": "Step-up with Step Functions 🚀☁️ - Issue #34",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "step-up-with-step-functions",
+    "url": "https://www.theserverlessterminal.com/p/step-up-with-step-functions",
+    "date": "2023-06-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Aliases and versions for Step Functions, remote invoke with SAM and Lambda Powertools"
+  },
+  {
+    "id": "hashnode-buses-and-queues-head-on",
+    "title": "Buses and queues: Head-on",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "buses-and-queues-head-on",
+    "url": "https://blog.theserverlessterminal.com/buses-and-queues-head-on",
+    "date": "2023-06-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "eventbridge",
+      "sqs",
+      "messaging"
+    ],
+    "excerpt": "Learn about Amazon EventBridge features and Amazon SQS features which sets them apart from each other and also comparison between the service.",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/buses-and-queues-head-on"
+    }
+  },
+  {
+    "id": "tst-sqs-dlq-redrive-api-dms-serverless",
+    "title": "SQS DLQ redrive API, DMS Serverless AWS Lambda updates and AWS Outages 🚀☁️ - Issue #33",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "sqs-dlq-redrive-api-dms-serverless",
+    "url": "https://www.theserverlessterminal.com/p/sqs-dlq-redrive-api-dms-serverless",
+    "date": "2023-06-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Manage your SQS DLQs better with redrive APIs, new Kafka Connect connector for EventBridge."
+  },
+  {
+    "id": "tst-latency-in-serverless",
+    "title": "Latency, Latency, Latency in Serverless 🚀☁️ - Issue #32",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "latency-in-serverless",
+    "url": "https://www.theserverlessterminal.com/p/latency-in-serverless",
+    "date": "2023-05-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Latency is real, serverless latency is getting better"
+  },
+  {
+    "id": "hashnode-maintaining-lambda-function-performance-during-peak-traffic",
+    "title": "Maintaining Lambda Function Performance During Peak Traffic",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "maintaining-lambda-function-performance-during-peak-traffic",
+    "url": "https://blog.theserverlessterminal.com/maintaining-lambda-function-performance-during-peak-traffic",
+    "date": "2023-05-26",
+    "tags": [
+      "aws",
+      "serverless",
+      "aws lambda",
+      "performance",
+      "scalability"
+    ],
+    "excerpt": "Lambda functions are highly scalable and performance can be maintained during peak traffic with some key features and AWS services."
+  },
+  {
+    "id": "tst-serverless-first-but-may-not-be-always",
+    "title": "Serverless first, but may not be always! 🚀☁️ - Issue #31",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-first-but-may-not-be-always",
+    "url": "https://www.theserverlessterminal.com/p/serverless-first-but-may-not-be-always",
+    "date": "2023-05-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Serverless architectures are the best but sometimes the otherwise is also true."
+  },
+  {
+    "id": "hashnode-re-think-and-re-architect-your-application",
+    "title": "Re-think and Re-architect Your Application",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "re-think-and-re-architect-your-application",
+    "url": "https://blog.theserverlessterminal.com/re-think-and-re-architect-your-application",
+    "date": "2023-05-12",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "scalability",
+      "cost-optimisation"
+    ],
+    "excerpt": "For applications to be scalable and effectiveness, we need to identify the right architecture that happens iteratively like how Prime Video did it."
+  },
+  {
+    "id": "tst-serverless-architectures-at-its-best",
+    "title": "Serverless architectures at it's best 🚀☁️ - Issue #30",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-architectures-at-its-best",
+    "url": "https://www.theserverlessterminal.com/p/serverless-architectures-at-its-best",
+    "date": "2023-04-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Serverless architectures could be used in multiple ways to solve different use-cases."
+  },
+  {
+    "id": "hashnode-workarounds-for-appsync-subscriptions-triggers-via-lambda-functions",
+    "title": "Workarounds for AppSync Subscriptions triggers via Lambda functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "workarounds-for-appsync-subscriptions-triggers-via-lambda-functions",
+    "url": "https://blog.theserverlessterminal.com/workarounds-for-appsync-subscriptions-triggers-via-lambda-functions",
+    "date": "2023-04-22",
+    "tags": [
+      "aws",
+      "serverless",
+      "appsync",
+      "lambda",
+      "chatgpt"
+    ],
+    "excerpt": "Learn about what ChatGPT would suggest and how relevant solution would be suggested for triggering AppSync subscriptions via Lambda functions"
+  },
+  {
+    "id": "tst-aws-lambda-is-the-talk-of-the-town",
+    "title": "AWS Lambda is the talk of the town 🚀☁️ - Issue #29",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-is-the-talk-of-the-town",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-is-the-talk-of-the-town",
+    "date": "2023-04-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda response payload streaming, developer learning and Cold Starts"
+  },
+  {
+    "id": "hashnode-serverless-development-with-amplify-studio",
+    "title": "Serverless development with Amplify Studio",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-development-with-amplify-studio",
+    "url": "https://blog.theserverlessterminal.com/serverless-development-with-amplify-studio",
+    "date": "2023-04-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "amplify",
+      "s3",
+      "appsync",
+      "dynamodb"
+    ],
+    "excerpt": "Easing full-stack development with AWS Amplify Studio and understanding how each pillar of Amplify Studio could be used in a front-end source code."
+  },
+  {
+    "id": "tst-lambda-with-different-runtimes-issue",
+    "title": "Lambda with different runtimes 🚀☁️ - Issue #28",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-with-different-runtimes-issue",
+    "url": "https://www.theserverlessterminal.com/p/lambda-with-different-runtimes-issue",
+    "date": "2023-03-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Lambda runtimes, production hurdles and Step Functions"
+  },
+  {
+    "id": "tst-serverless-in-action-and-serverless",
+    "title": "Serverless in action and Serverless testing! 🚀☁️ - Issue #27",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-in-action-and-serverless",
+    "url": "https://www.theserverlessterminal.com/p/serverless-in-action-and-serverless",
+    "date": "2023-03-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Interesting Serverless in action and the real-world cases with testing"
+  },
+  {
+    "id": "mom-caching-at-every-layer",
+    "title": "Improve app performance by caching at every layer",
+    "type": "blog",
+    "platform": "Momento Blog",
+    "slug": "improve-app-performance-by-caching-at-every-layer",
+    "url": "https://www.gomomento.com/blog/improve-app-performance-by-caching-at-every-layer/",
+    "date": "2023-03",
+    "tags": [
+      "caching",
+      "momento",
+      "performance",
+      "architecture"
+    ],
+    "excerpt": "How to optimize application performance end-to-end using multi-layer caching strategies."
+  },
+  {
+    "id": "devto-amazon-eventbridge-missing-piece",
+    "title": "Amazon EventBridge: The missing piece to your app",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "amazon-eventbridge-the-missing-piece-to-your-app",
+    "url": "https://dev.to/awscommunity-asean/amazon-eventbridge-the-missing-piece-to-your-app-31o1",
+    "date": "2023-03",
+    "tags": [
+      "aws",
+      "serverless",
+      "eventbridge",
+      "eventdriven"
+    ],
+    "excerpt": "Exploring how EventBridge unlocks seamless third-party integrations and event routing."
+  },
+  {
+    "id": "tst-messaging-services-in-serverless",
+    "title": "Messaging services in Serverless 🚀☁️ - Issue #26",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "messaging-services-in-serverless",
+    "url": "https://www.theserverlessterminal.com/p/messaging-services-in-serverless",
+    "date": "2023-02-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "We are talking about Amazon EventBridge, Amazon SNS, Amazon SQS."
+  },
+  {
+    "id": "tst-amazon-eventbridge-missing-piece",
+    "title": "Amazon EventBridge: The missing piece to your app",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-eventbridge-the-missing-piece-to-your-app",
+    "url": "https://blog.theserverlessterminal.com/amazon-eventbridge-the-missing-piece-to-your-app",
+    "date": "2023-02-26",
+    "tags": [
+      "aws",
+      "eventbridge",
+      "serverless",
+      "eventdriven"
+    ],
+    "excerpt": "Why Amazon EventBridge is essential for decoupling distributed microservices."
+  },
+  {
+    "id": "tst-lambdas-powered-with-rust-for-serverless",
+    "title": "Lambdas powered with Rust for Serverless workloads 🚀☁️ - Issue #25",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambdas-powered-with-rust-for-serverless",
+    "url": "https://www.theserverlessterminal.com/p/lambdas-powered-with-rust-for-serverless",
+    "date": "2023-02-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Rusty Lambdas with the performance of Lighting McQueen"
+  },
+  {
+    "id": "hashnode-building-serverless-apps-with-more-configurations",
+    "title": "Building Serverless apps with more configurations",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "building-serverless-apps-with-more-configurations",
+    "url": "https://blog.theserverlessterminal.com/building-serverless-apps-with-more-configurations",
+    "date": "2023-02-11",
+    "tags": [
+      "aws",
+      "serverless",
+      "applications",
+      "step-functions",
+      "eventbridge"
+    ],
+    "excerpt": "This blog post explains the up-side of using direct integrations with AWS Services and how it could be achieved with just configurations!"
+  },
+  {
+    "id": "devto-building-serverless-apps-configurations",
+    "title": "Building Serverless apps with more configurations",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "building-serverless-apps-with-more-configurations",
+    "url": "https://dev.to/aws-heroes/building-serverless-apps-with-more-configurations-4i6d",
+    "date": "2023-02",
+    "tags": [
+      "aws",
+      "serverless",
+      "configuration",
+      "architecture"
+    ],
+    "excerpt": "Best practices for managing environment variables and secret parameters across serverless stages."
+  },
+  {
+    "id": "tst-warming-up-the-lambdas-issue-23",
+    "title": "Warming up the Lambdas 🚀☁️ - Issue #24",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "warming-up-the-lambdas-issue-23",
+    "url": "https://www.theserverlessterminal.com/p/warming-up-the-lambdas-issue-23",
+    "date": "2023-01-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Cold Start issues have started to be reduced with AWS Lambda SnapStart"
+  },
+  {
+    "id": "tst-a-lot-in-pipe-for-2023-issue-23",
+    "title": "A lot in Pipe for 2023 🚀☁️ - Issue #23",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "a-lot-in-pipe-for-2023-issue-23",
+    "url": "https://www.theserverlessterminal.com/p/a-lot-in-pipe-for-2023-issue-23",
+    "date": "2023-01-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": "Amazon EventBridge Pipes changing the way we are architecting Event-driven application"
+  },
+  {
+    "id": "devto-its-time-to-rewind-2022",
+    "title": "It's time to re:Wind 2022",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "its-time-to-rewind-2022",
+    "url": "https://dev.to/aws-heroes/its-time-to-rewind-2022-29k1",
+    "date": "2022-12",
+    "tags": [
+      "appreciation",
+      "devrel",
+      "rewind",
+      "2022"
+    ],
+    "excerpt": "Reflecting on developer advocacy achievements, speaking sessions, and community growth in 2022."
+  },
+  {
+    "id": "tst-it-s-re-invent-time-issue-22-1461122",
+    "title": "It's re:Invent time!!! ☁️🚀👨‍💻 - Issue #22",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "it-s-re-invent-time-issue-22-1461122",
+    "url": "https://www.theserverlessterminal.com/p/it-s-re-invent-time-issue-22-1461122",
+    "date": "2022-11-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-amazon-inspector-can-now-scan-aws-lambda-functions",
+    "title": "Amazon Inspector can now scan AWS Lambda Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-inspector-can-now-scan-aws-lambda-functions",
+    "url": "https://blog.theserverlessterminal.com/amazon-inspector-can-now-scan-aws-lambda-functions",
+    "date": "2022-11-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "aws lambda",
+      "aws-inspector",
+      "security"
+    ],
+    "excerpt": "Amazon Inspector now scans AWS Lambda Functions for vulnerabilities. Get automated scanning for Java, NodeJS and Python runtimes"
+  },
+  {
+    "id": "tst-eventbridge-and-many-more-pre-invent-releases-issue-21-1432981",
+    "title": "EventBridge and many more pre:invent releases - Issue #21",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "eventbridge-and-many-more-pre-invent-releases-issue-21-1432981",
+    "url": "https://www.theserverlessterminal.com/p/eventbridge-and-many-more-pre-invent-releases-issue-21-1432981",
+    "date": "2022-11-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "devto-amazon-inspector-scan-lambda",
+    "title": "Amazon Inspector can now scan AWS Lambda Functions",
+    "type": "blog",
+    "platform": "DEV Community",
+    "slug": "amazon-inspector-can-now-scan-aws-lambda-functions",
+    "url": "https://dev.to/aws-heroes/amazon-inspector-can-now-scan-aws-lambda-functions-4091",
+    "date": "2022-11",
+    "tags": [
+      "aws",
+      "lambda",
+      "security",
+      "inspector"
+    ],
+    "excerpt": "Automating vulnerability scanning for AWS Lambda function code and dependencies with Amazon Inspector."
+  },
+  {
+    "id": "tst-working-with-secrets-and-security-just-got-easier-and-better-issue-20-1409790",
+    "title": "Working with secrets and security just got easier and better ☁️🚀👨‍💻 - Issue #20",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "working-with-secrets-and-security-just-got-easier-and-better-issue-20-1409790",
+    "url": "https://www.theserverlessterminal.com/p/working-with-secrets-and-security-just-got-easier-and-better-issue-20-1409790",
+    "date": "2022-10-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-why-aws-step-functions-and-sdk-integrations",
+    "title": "Why AWS Step Functions and SDK integrations",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "why-aws-step-functions-and-sdk-integrations",
+    "url": "https://blog.theserverlessterminal.com/why-aws-step-functions-and-sdk-integrations",
+    "date": "2022-10-23",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions"
+    ],
+    "excerpt": "Learn how AWS Step Functions and SDK integrations can help you architect better Serverless applications with over 200 integrations"
+  },
+  {
+    "id": "tst-easy-iam-policy-management-and-lambda-less-issue-19-1386219",
+    "title": "Easy IAM policy management and Lambda-less☁️🚀👨‍💻 - Issue #19",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "easy-iam-policy-management-and-lambda-less-issue-19-1386219",
+    "url": "https://www.theserverlessterminal.com/p/easy-iam-policy-management-and-lambda-less-issue-19-1386219",
+    "date": "2022-10-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-everything-about-aws-step-functions-issue-18-1334685",
+    "title": "Everything about AWS Step Functions ☁️🚀👨‍💻 - Issue #18",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "everything-about-aws-step-functions-issue-18-1334685",
+    "url": "https://www.theserverlessterminal.com/p/everything-about-aws-step-functions-issue-18-1334685",
+    "date": "2022-09-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-intrinsic-functions-to-level-up-your-step-functions",
+    "title": "Intrinsic functions to level-up your Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "intrinsic-functions-to-level-up-your-step-functions",
+    "url": "https://blog.theserverlessterminal.com/intrinsic-functions-to-level-up-your-step-functions",
+    "date": "2022-09-04",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions"
+    ],
+    "excerpt": "Discover AWS Step Functions intrinsic functions for serverless workflows: manipulate data using arrays, JSON objects, math operations, and more",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/intrinsic-functions-to-level-up-your-step-functions"
+    }
+  },
+  {
+    "id": "tst-imports-to-dynamodb-eased-with-s3-issue-17-1312021",
+    "title": "Imports to DynamoDB eased with S3 ☁️🚀👨‍💻 - Issue #17",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "imports-to-dynamodb-eased-with-s3-issue-17-1312021",
+    "url": "https://www.theserverlessterminal.com/p/imports-to-dynamodb-eased-with-s3-issue-17-1312021",
+    "date": "2022-08-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-aws-lambda-tiered-pricing-and-dynamodb-shoutout-issue-16-1289034",
+    "title": "AWS Lambda tiered pricing and DynamoDB shoutout ☁️🚀👨‍💻 - Issue #16",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-tiered-pricing-and-dynamodb-shoutout-issue-16-1289034",
+    "url": "https://www.theserverlessterminal.com/p/aws-lambda-tiered-pricing-and-dynamodb-shoutout-issue-16-1289034",
+    "date": "2022-08-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-amazon-cloudfront-for-your-tech-stack",
+    "title": "Amazon CloudFront for your tech stack",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-cloudfront-for-your-tech-stack",
+    "url": "https://blog.theserverlessterminal.com/amazon-cloudfront-for-your-tech-stack",
+    "date": "2022-08-11",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws-cloudfront"
+    ],
+    "excerpt": "Amazon CloudFront, a global CDN built for secure, low latency content delivery. Learn why it's a must-have in your tech stack"
+  },
+  {
+    "id": "hashnode-allow-only-what-your-lambda-code-needs",
+    "title": "Allow only what your Lambda code needs",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "allow-only-what-your-lambda-code-needs",
+    "url": "https://blog.theserverlessterminal.com/allow-only-what-your-lambda-code-needs",
+    "date": "2022-07-31",
+    "tags": [
+      "aws",
+      "serverless",
+      "aws lambda",
+      "iam",
+      "permissions",
+      "execution-role"
+    ],
+    "excerpt": "Optimize AWS Lambda Functions' security with least-privilege permissions and dedicated IAM execution roles for each function"
+  },
+  {
+    "id": "tst-lambda-powertools-now-available-for-typescript-issue-15-1268247",
+    "title": "Lambda Powertools now available for TypeScript ☁️🚀👨‍💻 - Issue #15",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-powertools-now-available-for-typescript-issue-15-1268247",
+    "url": "https://www.theserverlessterminal.com/p/lambda-powertools-now-available-for-typescript-issue-15-1268247",
+    "date": "2022-07-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-celebrating-amazon-redshift-serverless-amazon-location-service-issue-14-1252485",
+    "title": "Celebrating Amazon RedShift Serverless & Amazon Location Service ☁️🚀👨‍💻 - Issue #14",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "celebrating-amazon-redshift-serverless-amazon-location-service-issue-14-1252485",
+    "url": "https://www.theserverlessterminal.com/p/celebrating-amazon-redshift-serverless-amazon-location-service-issue-14-1252485",
+    "date": "2022-07-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-building-serverless-with-sam",
+    "title": "Building Serverless with SAM",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "building-serverless-with-sam",
+    "url": "https://blog.theserverlessterminal.com/building-serverless-with-sam",
+    "date": "2022-07-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "sam",
+      "application-development-services"
+    ],
+    "excerpt": "Learn to build Serverless applications with AWS Serverless Application Model (SAM). Understand SAM templates and SAM CLI features"
+  },
+  {
+    "id": "tst-more-of-databases-issue-13-1224626",
+    "title": "More of databases ☁️🚀👨‍💻 - Issue #13",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "more-of-databases-issue-13-1224626",
+    "url": "https://www.theserverlessterminal.com/p/more-of-databases-issue-13-1224626",
+    "date": "2022-07-03",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-cloud9-environments-status-monitoring-with-step-functions",
+    "title": "Cloud9 environments status monitoring with Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "cloud9-environments-status-monitoring-with-step-functions",
+    "url": "https://blog.theserverlessterminal.com/cloud9-environments-status-monitoring-with-step-functions",
+    "date": "2022-06-19",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions"
+    ],
+    "excerpt": "Cloud9 environment status monitoring using Step Functions & SES email notification for AWS administrators",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/cloud9-environments-status-monitoring-with-step-functions"
+    }
+  },
+  {
+    "id": "tst-we-are-talking-apis-issue-12-1201542",
+    "title": "We are talking APIs ☁️🚀👨‍💻 - Issue #12",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "we-are-talking-apis-issue-12-1201542",
+    "url": "https://www.theserverlessterminal.com/p/we-are-talking-apis-issue-12-1201542",
+    "date": "2022-06-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-revolving-around-lambda-functions-issue-11-1180573",
+    "title": "Revolving around Lambda Functions☁️🚀👨‍💻 - Issue #11",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "revolving-around-lambda-functions-issue-11-1180573",
+    "url": "https://www.theserverlessterminal.com/p/revolving-around-lambda-functions-issue-11-1180573",
+    "date": "2022-05-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-lambda-functions-and-step-functions-powered-up-issue-10-1159103",
+    "title": "Lambda functions and Step Functions powered up ☁️🚀👨‍💻 - Issue #10",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-functions-and-step-functions-powered-up-issue-10-1159103",
+    "url": "https://www.theserverlessterminal.com/p/lambda-functions-and-step-functions-powered-up-issue-10-1159103",
+    "date": "2022-05-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-serverless-apps-why-iac-should-be-the-direction",
+    "title": "Serverless apps : Why IaC should be the direction",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "serverless-apps-why-iac-should-be-the-direction",
+    "url": "https://blog.theserverlessterminal.com/serverless-apps-why-iac-should-be-the-direction",
+    "date": "2022-05-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "iac"
+    ],
+    "excerpt": "Discover how IaC simplifies Serverless app management, handling configurations and AWS IAM permissions for Lambda, API Gateway, and beyond",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/serverless-apps-why-iac-should-be-the-direction"
+    }
+  },
+  {
+    "id": "tst-lambda-functions-everywhere-issue-9-1136636",
+    "title": "Lambda functions everywhere ☁️🚀👨‍💻 - Issue #9",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-functions-everywhere-issue-9-1136636",
+    "url": "https://www.theserverlessterminal.com/p/lambda-functions-everywhere-issue-9-1136636",
+    "date": "2022-04-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "tst-it-s-all-about-compute-over-http-endpoint-issue-8-1110967",
+    "title": "It's all about compute over HTTP endpoint ☁️🚀👨‍💻 - Issue #8",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "it-s-all-about-compute-over-http-endpoint-issue-8-1110967",
+    "url": "https://www.theserverlessterminal.com/p/it-s-all-about-compute-over-http-endpoint-issue-8-1110967",
+    "date": "2022-04-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-lambda-functions-over-urls",
+    "title": "Lambda functions over URLs",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "lambda-functions-over-urls",
+    "url": "https://blog.theserverlessterminal.com/lambda-functions-over-urls",
+    "date": "2022-04-10",
+    "tags": [
+      "aws",
+      "serverless",
+      "aws lambda",
+      "functions"
+    ],
+    "excerpt": "Learn about AWS Lambda's new feature: Lambda URLs! Invoke Lambda functions directly with an HTTP API",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/lambda-functions-over-urls"
+    }
+  },
+  {
+    "id": "tst-storage-on-serverless-issue-7-1086976",
+    "title": "Storage on Serverless ☁️ - Issue #7",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "storage-on-serverless-issue-7-1086976",
+    "url": "https://www.theserverlessterminal.com/p/storage-on-serverless-issue-7-1086976",
+    "date": "2022-03-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-share-events-for-your-lambda-functions",
+    "title": "Share events for your Lambda functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "share-events-for-your-lambda-functions",
+    "url": "https://blog.theserverlessterminal.com/share-events-for-your-lambda-functions",
+    "date": "2022-03-22",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Recently, AWS Lambda functions enabled the feature of sharing events for Lambda functions amongst different IAM users. You can read about the announcement…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/share-events-for-your-lambda-functions"
+    }
+  },
+  {
+    "id": "tst-it-s-pi-week-issue-6-1062552",
+    "title": "It's Pi Week!! 🥧 - Issue #6",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "it-s-pi-week-issue-6-1062552",
+    "url": "https://www.theserverlessterminal.com/p/it-s-pi-week-issue-6-1062552",
+    "date": "2022-03-15",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-step-functions-to-check-if-you-have-public-s3-buckets",
+    "title": "Step Functions to check if you have public S3 buckets",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "step-functions-to-check-if-you-have-public-s3-buckets",
+    "url": "https://blog.theserverlessterminal.com/step-functions-to-check-if-you-have-public-s3-buckets",
+    "date": "2022-03-11",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions"
+    ],
+    "excerpt": "Use Step Functions to check for public S3 buckets in AWS. Ensure your buckets are not publicly accessible for security purposes",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/step-functions-to-check-if-you-have-public-s3-buckets"
+    }
+  },
+  {
+    "id": "hashnode-iam-credentials-rotation-automation-with-step-functions",
+    "title": "IAM Credentials Rotation Automation with Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "iam-credentials-rotation-automation-with-step-functions",
+    "url": "https://blog.theserverlessterminal.com/iam-credentials-rotation-automation-with-step-functions",
+    "date": "2022-03-03",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "The best practices of using IAM credentials is to have them rotated frequently (eg. every 90 days, every 6 months). This is because if credentials are…"
+  },
+  {
+    "id": "tst-building-better-with-serverless-issue-5-1038942",
+    "title": "Building better with Serverless - Issue #5",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "building-better-with-serverless-issue-5-1038942",
+    "url": "https://www.theserverlessterminal.com/p/building-better-with-serverless-issue-5-1038942",
+    "date": "2022-02-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-handling-errors-with-stepfunctions-sns-sdk-integration",
+    "title": "Handling errors with StepFunctions SNS SDK integration",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "handling-errors-with-stepfunctions-sns-sdk-integration",
+    "url": "https://blog.theserverlessterminal.com/handling-errors-with-stepfunctions-sns-sdk-integration",
+    "date": "2022-02-21",
+    "tags": [
+      "aws",
+      "serverless",
+      "step-functions",
+      "error-handling"
+    ],
+    "excerpt": "Handle errors with StepFunctions SNS SDK in AWS, gracefully terminate or retry execution based on error names"
+  },
+  {
+    "id": "tst-love-for-serverless-issue-4-1013463",
+    "title": "Love for Serverless ❤️☁️- Issue #4",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "love-for-serverless-issue-4-1013463",
+    "url": "https://www.theserverlessterminal.com/p/love-for-serverless-issue-4-1013463",
+    "date": "2022-02-14",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-aws-lambda-functions-in-vpc",
+    "title": "AWS Lambda functions in VPC",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-functions-in-vpc",
+    "url": "https://blog.theserverlessterminal.com/aws-lambda-functions-in-vpc",
+    "date": "2022-02-14",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS Lambda functions is one of the popular Compute service for Serverless which provides powerful executions for your business logic. Lambda functions have…"
+  },
+  {
+    "id": "hashnode-creating-users-on-dynamodb-with-step-functions",
+    "title": "Creating users on DynamoDB with Step Functions",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "creating-users-on-dynamodb-with-step-functions",
+    "url": "https://blog.theserverlessterminal.com/creating-users-on-dynamodb-with-step-functions",
+    "date": "2022-02-06",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Step-Functions has enabled endless serverless orchestrations with the 200+ SDK integrations. In this blog-post we will look into a simple DynamoDB…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/creating-users-on-dynamodb-with-step-functions"
+    }
+  },
+  {
+    "id": "tst-a-lot-has-happened-on-serverless-issue-3-982076",
+    "title": "A lot has happened on Serverless!☁️🚀👨‍💻 - Issue #3",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "a-lot-has-happened-on-serverless-issue-3-982076",
+    "url": "https://www.theserverlessterminal.com/p/a-lot-has-happened-on-serverless-issue-3-982076",
+    "date": "2022-01-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-looking-back-at-my-serverless-advocacy",
+    "title": "Looking back at my Serverless Advocacy",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "looking-back-at-my-serverless-advocacy",
+    "url": "https://blog.theserverlessterminal.com/looking-back-at-my-serverless-advocacy",
+    "date": "2022-01-30",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "It has been less than an year that I've got started on Dev.To platform and last week I celebrated a milestone of 500+ reactions and 35,000+ views across…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/looking-back-at-my-serverless-advocacy"
+    }
+  },
+  {
+    "id": "hashnode-step-functions-for-making-your-text-based-images-searchable",
+    "title": "Step Functions for making your text based images searchable",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "step-functions-for-making-your-text-based-images-searchable",
+    "url": "https://blog.theserverlessterminal.com/step-functions-for-making-your-text-based-images-searchable",
+    "date": "2022-01-23",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS Step Functions helps with workflow orchestration with low-code and visual editor available on the AWS web-console. Step Functions had an important…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/step-functions-for-making-your-text-based-images-searchable"
+    }
+  },
+  {
+    "id": "hashnode-cloudwatch-rum-for-all-insights",
+    "title": "CloudWatch RUM for all insights",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "cloudwatch-rum-for-all-insights",
+    "url": "https://blog.theserverlessterminal.com/cloudwatch-rum-for-all-insights",
+    "date": "2022-01-16",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "CloudWatch RUM was recently launched during re:Invent 2021 which provides insights to your web-application about certain metrics based on user-actions and…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/cloudwatch-rum-for-all-insights"
+    }
+  },
+  {
+    "id": "tst-everything-aws-serverless-and-architectures-issue-2-981426",
+    "title": "Everything AWS, Serverless and Architectures ☁️🚀👨‍💻 - Issue #2",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "everything-aws-serverless-and-architectures-issue-2-981426",
+    "url": "https://www.theserverlessterminal.com/p/everything-aws-serverless-and-architectures-issue-2-981426",
+    "date": "2022-01-11",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-aws-sam-app-with-mongodb-atlas-data-apis",
+    "title": "AWS SAM app with MongoDB Atlas Data APIs",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-sam-app-with-mongodb-atlas-data-apis",
+    "url": "https://blog.theserverlessterminal.com/aws-sam-app-with-mongodb-atlas-data-apis",
+    "date": "2022-01-09",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "This is the implementation of a typical web app backend where the MongoDB Atlas is leveraged to store data. The SAM app uses MongoDB Atlas for database…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/aws-sam-app-with-mongodb-atlas-data-apis"
+    }
+  },
+  {
+    "id": "hashnode-save-more-with-dynamodb-table-class",
+    "title": "Save more with DynamoDB table class",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "save-more-with-dynamodb-table-class",
+    "url": "https://blog.theserverlessterminal.com/save-more-with-dynamodb-table-class",
+    "date": "2022-01-02",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "During re:Invent 2021, an announcement was made about Amazon DynamoDB with table classes which helps in saving cost for infrequently accessed items. Read…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/save-more-with-dynamodb-table-class"
+    }
+  },
+  {
+    "id": "tst-zachjonesnoel-s-writings-about-aws-serverless-and-architectures-issue-1-941431",
+    "title": "zachjonesnoel's writings about AWS, Serverless and architectures - Issue #1",
+    "type": "newsletter",
+    "platform": "The Serverless Terminal",
+    "slug": "zachjonesnoel-s-writings-about-aws-serverless-and-architectures-issue-1-941431",
+    "url": "https://www.theserverlessterminal.com/p/zachjonesnoel-s-writings-about-aws-serverless-and-architectures-issue-1-941431",
+    "date": "2021-12-30",
+    "tags": [
+      "aws",
+      "serverless",
+      "architecture",
+      "aws lambda"
+    ],
+    "excerpt": ""
+  },
+  {
+    "id": "hashnode-standard-vs-fifo-sns-and-sqs",
+    "title": "Standard v/s FIFO : SNS & SQS",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "standard-vs-fifo-sns-and-sqs",
+    "url": "https://blog.theserverlessterminal.com/standard-vs-fifo-sns-and-sqs",
+    "date": "2021-12-19",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon SNS and Amazon SQS both offer Standard and FIFO variants of topics and queues respectively which helps you build better micro-service focused…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/standard-vs-fifo-sns-and-sqs"
+    }
+  },
+  {
+    "id": "hashnode-deep-dive-into-lambda-event-filters-for-dyanmodb",
+    "title": "Deep dive into Lambda event-filters for DyanmoDB",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "deep-dive-into-lambda-event-filters-for-dyanmodb",
+    "url": "https://blog.theserverlessterminal.com/deep-dive-into-lambda-event-filters-for-dyanmodb",
+    "date": "2021-12-12",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Lambda Functions with the event-filtering for DynamoDB Streams enables ease of integration and application development. There are a couple of good…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/deep-dive-into-lambda-event-filters-for-dyanmodb"
+    }
+  },
+  {
+    "id": "hashnode-using-github-actions-deploy-to-aws-and-sns-publish",
+    "title": "Using GitHub actions - Deploy to AWS & SNS Publish",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "using-github-actions-deploy-to-aws-and-sns-publish",
+    "url": "https://blog.theserverlessterminal.com/using-github-actions-deploy-to-aws-and-sns-publish",
+    "date": "2021-12-04",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "GitHub actions enables developers/DevOps engineers to smartly incorporate CI/CD pipelines, perform tasks on actions on different branches and many more…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/using-github-actions-deploy-to-aws-and-sns-publish"
+    }
+  },
+  {
+    "id": "hashnode-trigger-lambda-functions-with-event-filtering",
+    "title": "Trigger Lambda Functions with event filtering",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "trigger-lambda-functions-with-event-filtering",
+    "url": "https://blog.theserverlessterminal.com/trigger-lambda-functions-with-event-filtering",
+    "date": "2021-11-28",
+    "tags": [
+      "aws",
+      "serverless",
+      "event-filtering",
+      "lambda",
+      "events"
+    ],
+    "excerpt": "AWS Lambda functions recently announced an enhancement with event-triggers for DynamoDB, Amazon SQS, Amazon Kinesis as event sources which makes it easier…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/trigger-lambda-functions-with-event-filtering"
+    }
+  },
+  {
+    "id": "hashnode-when-to-sns-or-sqs",
+    "title": "When to: SNS or SQS",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "when-to-sns-or-sqs",
+    "url": "https://blog.theserverlessterminal.com/when-to-sns-or-sqs",
+    "date": "2021-11-21",
+    "tags": [
+      "aws",
+      "serverless",
+      "sns",
+      "sqs",
+      "serverless-architecture"
+    ],
+    "excerpt": "Understand when to use Amazon SNS or Amazon SQS in your Serverless architectures.",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/when-to-sns-or-sqs"
+    }
+  },
+  {
+    "id": "hashnode-getting-started-with-sns-and-sqs",
+    "title": "Getting started with SNS and SQS",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "getting-started-with-sns-and-sqs",
+    "url": "https://blog.theserverlessterminal.com/getting-started-with-sns-and-sqs",
+    "date": "2021-11-14",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Simple Notification Service (SNS) and Amazon Simple Queue Service (SQS) are the famous services which is leveraged to architect applications which…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/getting-started-with-sns-and-sqs"
+    }
+  },
+  {
+    "id": "hashnode-getting-into-aws-sdk-js-v3-mindset",
+    "title": "Getting into AWS SDK JS v3 mindset",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "getting-into-aws-sdk-js-v3-mindset",
+    "url": "https://blog.theserverlessterminal.com/getting-into-aws-sdk-js-v3-mindset",
+    "date": "2021-11-02",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS SDK for JavaScript v3 is an upgraded version of v2 with features which will have you wanting to get started with JS SDK v3. But coming from SDK v2…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/getting-into-aws-sdk-js-v3-mindset"
+    }
+  },
+  {
+    "id": "hashnode-configuring-inbound-rules-on-ses",
+    "title": "Configuring inbound rules on SES",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "configuring-inbound-rules-on-ses",
+    "url": "https://blog.theserverlessterminal.com/configuring-inbound-rules-on-ses",
+    "date": "2021-10-24",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Simple Email Service (SES) not only addresses the use-case of outbound emails to users but also have inbound emails where you can receive emails…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/configuring-inbound-rules-on-ses"
+    }
+  },
+  {
+    "id": "hashnode-amazon-textract-with-expense-analyzing",
+    "title": "Amazon Textract with expense analyzing",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-textract-with-expense-analyzing",
+    "url": "https://blog.theserverlessterminal.com/amazon-textract-with-expense-analyzing",
+    "date": "2021-10-17",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Textract now supports receipts and invoices processing which makes expense management systems analyze better with only receipt's or invoice's image…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/amazon-textract-with-expense-analyzing"
+    }
+  },
+  {
+    "id": "hashnode-sqs-queue-with-a-cross-account-lambda-triggers",
+    "title": "SQS Queue with a cross-account Lambda triggers",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "sqs-queue-with-a-cross-account-lambda-triggers",
+    "url": "https://blog.theserverlessterminal.com/sqs-queue-with-a-cross-account-lambda-triggers",
+    "date": "2021-10-10",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS SQS was limited to AWS Lambda functions triggers which belonged to the same account where the SQS Queue is created. Now with the recent announcement…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/sqs-queue-with-a-cross-account-lambda-triggers"
+    }
+  },
+  {
+    "id": "hashnode-aws-lambda-powered-up-by-aws-graviton2",
+    "title": "AWS Lambda powered up by AWS Graviton2",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-lambda-powered-up-by-aws-graviton2",
+    "url": "https://blog.theserverlessterminal.com/aws-lambda-powered-up-by-aws-graviton2",
+    "date": "2021-10-03",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS Lambda recently announced the launch of AWS Graviton2 processor (arm64 architecture) for Lambda functions which would not only make your Lambda…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/aws-lambda-powered-up-by-aws-graviton2"
+    }
+  },
+  {
+    "id": "hashnode-securing-access-to-s3-bucket",
+    "title": "Securing access to S3 bucket",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "securing-access-to-s3-bucket",
+    "url": "https://blog.theserverlessterminal.com/securing-access-to-s3-bucket",
+    "date": "2021-09-23",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon S3 has become one of the most popular object storage on cloud. This is available for various use-cases, to know more about why S3 is popular you can…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/securing-access-to-s3-bucket"
+    }
+  },
+  {
+    "id": "hashnode-amazon-ses-and-everything-to-set-it-up",
+    "title": "Amazon SES and everything to set it up",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amazon-ses-and-everything-to-set-it-up",
+    "url": "https://blog.theserverlessterminal.com/amazon-ses-and-everything-to-set-it-up",
+    "date": "2021-09-12",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Simple Email Service (SES) is a AWS provisioned Email service which is available for cloud native applications to integrate and implementing…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/amazon-ses-and-everything-to-set-it-up"
+    }
+  },
+  {
+    "id": "hashnode-custom-domain-on-amplify-with-route53",
+    "title": "Custom Domain on Amplify with Route53",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "custom-domain-on-amplify-with-route53",
+    "url": "https://blog.theserverlessterminal.com/custom-domain-on-amplify-with-route53",
+    "date": "2021-09-06",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Learn how to set up custom domains for Amplify hosted web apps using Route53 for better control, security, and monitoring",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/custom-domain-on-amplify-with-route53"
+    }
+  },
+  {
+    "id": "hashnode-aws-cognito-hosted-ui",
+    "title": "AWS Cognito Hosted UI",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-cognito-hosted-ui",
+    "url": "https://blog.theserverlessterminal.com/aws-cognito-hosted-ui",
+    "date": "2021-08-29",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS Cognito which is used for authentication and authorization features Hosted UIs for Cognito User Pool. {% post…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/aws-cognito-hosted-ui"
+    }
+  },
+  {
+    "id": "hashnode-dynamodb-operations-scan-vs-query-with-cloudwatch-custom-metrics",
+    "title": "DynamoDB Operations Scan vs Query with CloudWatch Custom Metrics",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-operations-scan-vs-query-with-cloudwatch-custom-metrics",
+    "url": "https://blog.theserverlessterminal.com/dynamodb-operations-scan-vs-query-with-cloudwatch-custom-metrics",
+    "date": "2021-08-22",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS DynamoDB offers Scan and Query operations for retrieval of data items. Both the operations work differently not only in the terms how the data…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/dynamodb-operations-scan-vs-query-with-cloudwatch-custom-metrics"
+    }
+  },
+  {
+    "id": "hashnode-dynamodb-with-partiql-part-2",
+    "title": "DynamoDB with PartiQL (Part - 2)",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-with-partiql-part-2",
+    "url": "https://blog.theserverlessterminal.com/dynamodb-with-partiql-part-2",
+    "date": "2021-07-25",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "In the previous post, an overview of DynamoDB with PartiQL was provided. In this post, you will be understanding how PartiQL works with NodeJS code with…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/dynamodb-with-partiql-part-2"
+    }
+  },
+  {
+    "id": "hashnode-dynamodb-with-partiql",
+    "title": "DynamoDB with PartiQL",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-with-partiql",
+    "url": "https://blog.theserverlessterminal.com/dynamodb-with-partiql",
+    "date": "2021-07-11",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "PartiQL was introduced to AWS DynamoDB, with AWS making the announcement in 2020 making the life of developers easier, with the comfort of executing…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/dynamodb-with-partiql"
+    }
+  },
+  {
+    "id": "hashnode-understanding-aws-amplify",
+    "title": "Understanding AWS Amplify",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "understanding-aws-amplify",
+    "url": "https://blog.theserverlessterminal.com/understanding-aws-amplify",
+    "date": "2021-07-04",
+    "tags": [
+      "aws",
+      "serverless",
+      "amplify",
+      "aws-amplify"
+    ],
+    "excerpt": "AWS Amplify simplifies AWS app development with commands and interactive CLI walk-throughs for front-end and back-end"
+  },
+  {
+    "id": "hashnode-aws-appsync-101",
+    "title": "Introductory to AWS AppSync",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-appsync-101",
+    "url": "https://blog.theserverlessterminal.com/aws-appsync-101",
+    "date": "2021-06-26",
+    "tags": [
+      "aws",
+      "serverless",
+      "appsync",
+      "graphql"
+    ],
+    "excerpt": "Going through the basics of AWS AppSync and the understanding of GraphQL features offered by AppSync"
+  },
+  {
+    "id": "hashnode-aws-amplify-and-front-end-development",
+    "title": "AWS Amplify and Front-end Development",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-amplify-and-front-end-development",
+    "url": "https://blog.theserverlessterminal.com/aws-amplify-and-front-end-development",
+    "date": "2021-06-12",
+    "tags": [
+      "aws",
+      "serverless",
+      "amplify",
+      "frontend-development"
+    ],
+    "excerpt": "AWS Amplify simplifies front-end dev with low-code or no-code libraries for Auth, Storage, API, and more. Easy setup with CLI"
+  },
+  {
+    "id": "tst-dynamodb-and-ttl",
+    "title": "DynamoDB and TTL",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "dynamodb-and-ttl",
+    "url": "https://blog.theserverlessterminal.com/dynamodb-and-ttl",
+    "date": "2021-05-30",
+    "tags": [
+      "aws",
+      "dynamodb",
+      "serverless",
+      "database"
+    ],
+    "excerpt": "How to leverage DynamoDB Time to Live (TTL) for automatic data lifecycle management."
+  },
+  {
+    "id": "hashnode-message-customization-on-cognito",
+    "title": "Message Customization on Cognito",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "message-customization-on-cognito",
+    "url": "https://blog.theserverlessterminal.com/message-customization-on-cognito",
+    "date": "2021-05-22",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "AWS Cognito has become one of the most adapted ways to authenticate your Modern applications (Click here to know more). The emails and SMS messages…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/message-customization-on-cognito"
+    }
+  },
+  {
+    "id": "hashnode-modern-apps-going-cognito",
+    "title": "Modern apps going Cognito",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "modern-apps-going-cognito",
+    "url": "https://blog.theserverlessterminal.com/modern-apps-going-cognito",
+    "date": "2021-05-16",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Modern mobile and web applications have a variety of options for implementing user management such as authorization, authentication, password management…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/modern-apps-going-cognito"
+    }
+  },
+  {
+    "id": "hashnode-amplify-your-web-hosting",
+    "title": "Amplify your web hosting",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "amplify-your-web-hosting",
+    "url": "https://blog.theserverlessterminal.com/amplify-your-web-hosting",
+    "date": "2021-05-08",
+    "tags": [
+      "aws",
+      "serverless",
+      "amplify",
+      "web-hosting"
+    ],
+    "excerpt": "Amplify on AWS offers diverse web-hosting options, such as EC2 instance, S3 static web-hosting, and Amplify CLI deployment",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/amplify-your-web-hosting"
+    }
+  },
+  {
+    "id": "hashnode-aws-s3-and-its-popularity",
+    "title": "AWS S3 and it's popularity",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "aws-s3-and-its-popularity",
+    "url": "https://blog.theserverlessterminal.com/aws-s3-and-its-popularity",
+    "date": "2021-04-25",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Amazon Web Services' Simple Storage Service, popularly known as AWS S3 is a cloud storage service providing high scalability, availability, affordable…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/aws-s3-and-its-popularity"
+    }
+  },
+  {
+    "id": "hashnode-the-serverless-swag",
+    "title": "The Serverless SWAG!",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "the-serverless-swag",
+    "url": "https://blog.theserverlessterminal.com/the-serverless-swag",
+    "date": "2021-04-19",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Serverless architecture has been on trending application architecture for the last couple of years with giant streaming applications such as Netflix…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/the-serverless-swag"
+    }
+  },
+  {
+    "id": "hashnode-what-why-when-event-driven-architecture",
+    "title": "What? Why? When? Event-driven architecture",
+    "type": "blog",
+    "platform": "The Serverless Terminal",
+    "slug": "what-why-when-event-driven-architecture",
+    "url": "https://blog.theserverlessterminal.com/what-why-when-event-driven-architecture",
+    "date": "2021-04-16",
+    "tags": [
+      "aws",
+      "serverless"
+    ],
+    "excerpt": "Event driven architecture(EDA) is a more adopted nowadays as the whole event driven architecture based applications are only computed/triggers a business…",
+    "cross-post": {
+      "zachjonesnoel blog": "https://blog.zachjonesnoel.com/what-why-when-event-driven-architecture"
+    }
+  }
+]

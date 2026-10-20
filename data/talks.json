@@ -1,0 +1,1300 @@
+[
+  {
+    "id": "reinvent-26",
+    "title": "Autonomous remediation with OpenTelemetry and AWS DevOps Agent (Session COM328)",
+    "conference": "AWS re:Invent 2026",
+    "date": "2026-11-30",
+    "abstract": "How OpenTelemetry traces feed the AWS DevOps Agent to drive autonomous, safe remediation of production incidents — delivered twice during the conference (Mon 12pm Caesars Forum / Wed 4:30pm MGM Grand). NEEDS REVIEW: exact calendar dates inferred from 'Monday'/'Wednesday' wording, not stated directly.",
+    "location": {
+      "city": "Las Vegas",
+      "stateRegion": "Nevada",
+      "country": "United States",
+      "lat": 36.1699,
+      "lng": -115.1398
+    },
+    "tags": [
+      "AWS DevOps Agent",
+      "OpenTelemetry",
+      "Autonomous Remediation",
+      "AIOps"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": true,
+    "cospeakers": [
+      {
+        "name": "Julia Furst Morgado",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "acd-mum-26",
+    "title": "MicroVM Patterns for On-Demand Preview Environments",
+    "conference": "AWS Community Day Mumbai 2026",
+    "date": "2026-10-17",
+    "abstract": "A real use case from Hacktoberfest — needing isolated test environments for incoming pull requests — and how Lambda's MicroVM model addresses it well. First time two AWS Serverless Heroes shared the AWS UG Mumbai stage together.",
+    "location": {
+      "city": "Mumbai",
+      "stateRegion": "Maharashtra",
+      "country": "India",
+      "lat": 19.076,
+      "lng": 72.8777
+    },
+    "tags": [
+      "AWS Lambda",
+      "MicroVM",
+      "Preview Environments",
+      "Serverless",
+      "CI/CD"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Srushith Repakula",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "awsnorth-26",
+    "title": "Monitoring the Agentic Loop: OTel-Driven Observability for AWS Strands and AgentCore",
+    "conference": "AWS North Community Conference 2026",
+    "date": "2026-10-15",
+    "abstract": "Insights on using the Strands SDK and OpenTelemetry to monitor AI agents, with visibility into agent loops, tool calls, latency, token cost and hallucinations in serverless environments.",
+    "location": {
+      "city": "Gateshead",
+      "stateRegion": "England",
+      "country": "United Kingdom",
+      "lat": 54.9526,
+      "lng": -1.6033
+    },
+    "tags": [
+      "OpenTelemetry",
+      "AWS Strands",
+      "AgentCore",
+      "AI Agents",
+      "Observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "kafka-blr-26",
+    "title": "EDA at scale? Kafka and OpenTelemetry to the rescue",
+    "conference": "Bangalore Apache Kafka®, Data & AI Meetup",
+    "date": "2026-09-26",
+    "abstract": "Focused on consumer lag in Kafka as an early warning sign of outages, and how OpenTelemetry metrics plus New Relic alerting/visualization turn that signal into action — static thresholds, baseline alerts for spiky workloads, rate-of-change detection, and per-partition faceting.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "Apache Kafka",
+      "OpenTelemetry",
+      "Observability",
+      "Event-Driven Architecture",
+      "New Relic"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "platformhabba-blr-26",
+    "title": "(Session TBD — listed on Sessionize, not shown in public agenda) NEEDS REVIEW",
+    "conference": "The Platform Habba: Bengaluru Tech Week 2026",
+    "date": "2026-09-05",
+    "abstract": "Sessionize lists this as one of Jones's events, but the organizers' published agenda only shows a 'TBD by Freshworks' slot and doesn't name him directly.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "Bengaluru Tech Week",
+      "Platform Engineering"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-sg-26",
+    "title": "Meet Your New On-Call Peer: AI-Powered EKS Troubleshooting with AWS DevOps Agent",
+    "conference": "AWS Community Day Singapore 2026",
+    "date": "2026-08-22",
+    "abstract": "When production breaks, standard monitoring isn't enough. SREs waste critical time untangling metrics and IAM policies, while developers struggle to isolate application code issues from infrastructure limits. Join us to discover how the AWS DevOps Agent bridges this gap by shifting from reactive monitoring to autonomous troubleshooting. We will demonstrate real-world scenarios from EKS failures to application layer bottlenecks and show how the agent correlates siloed telemetry data to instantly surface root causes. Learn how to leverage autonomous remediations to slash your MTTR and elevate your team's incident response.",
+    "location": {
+      "city": "Singapore",
+      "stateRegion": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3521,
+      "lng": 103.8198
+    },
+    "tags": [
+      "AWS DevOps Agent",
+      "AI Frontier Agnets",
+      "EKS",
+      "observability",
+      "code pipeline"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Arshad Zackeriya",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "renderatl-atl-26",
+    "title": "Agents, The Superhuman Layer for Your Telemetry",
+    "conference": "RenderATL 2026",
+    "date": "2026-08-12",
+    "abstract": "Microservices or AI distributed systems, they all break, they have the same challenges with ensuring performance and reliability. However, the role of AI in observability has fundamentally evolved. We have transitioned from basic telemetry scraping and passive querying to autonomous AI agents capable of predicting downtimes, executing root-cause analysis (RCA), recommending code refactors, and driving automated remediation. In this session we will understand how the evolution has impacted observability space along with extended MCP and integrations that can help you with faster MTTR.",
+    "location": {
+      "city": "Atlanta",
+      "stateRegion": "Georgia",
+      "country": "United States",
+      "lat": 33.749,
+      "lng": -84.388
+    },
+    "tags": [],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "renderatl-atl-26-workshop",
+    "title": "Alerts Quality Management Workshop",
+    "category": "workshop",
+    "conference": "RenderATL 2026",
+    "date": "2026-08-11",
+    "abstract": "Step into the shoes of a newly hired Site Reliability Engineer tasked with a critical mission: using guided missiles to protect spaceships from asteroids. In this hands-on workshop, you will master New Relic Alerts to survive the chaos. We will dive into Alert Quality Management, explore strategies to prevent alert fatigue and \"alert storms,\" and leverage metrics, events, logs, and traces for superior signal acquisition. You will also get a foundational introduction to Observability as Code, equipping you with the vital skills needed to keep humanity's space travels safe.",
+    "location": {
+      "city": "Atlanta",
+      "stateRegion": "Georgia",
+      "country": "United States",
+      "lat": 33.749,
+      "lng": -84.388
+    },
+    "tags": [],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Zameer Fouzan",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "resilience-5-blr-26",
+    "title": "Taking Control of the Firehose: Routing, Sampling, and Cost Control with OTel",
+    "conference": "Resilience Testing and Platform Engineering Meetup (5th Edition)",
+    "date": "2026-07-25",
+    "abstract": "Managing high-volume OpenTelemetry data with routing, sampling and cost-control strategies to keep observability pipelines affordable at scale.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "OpenTelemetry",
+      "OTel Collector",
+      "Cost Control",
+      "Observability",
+      "Platform Engineering"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "sreday-blr-26-q2",
+    "title": "Beyond the Hype: Building a Self-Healing Pipeline with Agentic AI",
+    "conference": "SREday Bangalore Q2 2026",
+    "date": "2026-06-20",
+    "abstract": "Why if-this-then-that remediation is brittle, and how an Agentic Observability Loop (Observe / Reason / Act) can perform safe, scoped autonomous remediation.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "Agentic AI",
+      "AIOps",
+      "Observability",
+      "Incident Remediation",
+      "SRE"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "llmday-blr-26-q2",
+    "title": "Monitoring the Agentic Loop: OTel-Driven Observability for AWS Strands on Lambda",
+    "conference": "LLMday Bangalore Q2 2026",
+    "date": "2026-06-19",
+    "abstract": "Instrumenting AWS Strands agents with OpenTelemetry (via ADOT) to gain visibility into agentic loops, tool calls and LLM reasoning steps on AWS Lambda.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS Strands",
+      "OpenTelemetry",
+      "AWS Lambda",
+      "AI Agents",
+      "Observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "platformeng-blr-26-may",
+    "title": "How Agentic AI with AWS DevOps Agent and Telemetry Closed our 2 AM Incident",
+    "conference": "Platform Engineering Meetup Bengaluru Edition (May 2026)",
+    "date": "2026-05-09",
+    "abstract": "A real incident walkthrough showing how telemetry plus the AWS DevOps Agent let an agentic workflow diagnose and close a 2 AM production incident autonomously.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS DevOps Agent",
+      "Agentic AI",
+      "Incident Response",
+      "Observability",
+      "Telemetry"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-summit-blr-2026",
+    "title": "The Serverless Crossover: Mastering the High-Throughput Era",
+    "conference": "AWS Summit Bengaluru 2026",
+    "date": "2026-04-23",
+    "abstract": "N/A",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "serverless",
+      "aws"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-summit-bengaluru-2026-licious",
+    "title": "Join New Relic × Licious to learn how AI-driven observability helps them debug 3x faster",
+    "conference": "AWS Summit Bengaluru 2026",
+    "date": "2026-04-22",
+    "abstract": "A deep dive with Licious on leveraging AI-driven observability in New Relic to accelerate root cause analysis and maintain system freshness in production microservices.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "aws",
+      "observability",
+      "ai",
+      "new-relic",
+      "serverless"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Vivek Gupta",
+        "linkedin": "https://www.linkedin.com/in/vivg/"
+      }
+    ]
+  },
+  {
+    "id": "nextgencloud-blr-26",
+    "title": "Agents, the Superhuman for Your Telemetry and Observability Practices",
+    "conference": "Next-Gen Cloud & Agent Builders — Bangalore (ASI:ONE Community Launch)",
+    "date": "2026-03-28",
+    "abstract": "How AI agents can act as a force-multiplier on top of existing telemetry and observability practices, presented at the launch of the ASI:ONE community. NEEDS REVIEW: exact venue not specified in source.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AI Agents",
+      "Observability",
+      "Telemetry",
+      "ASI:ONE"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-kochi-25",
+    "title": "(Specific talk title not confirmed) NEEDS REVIEW",
+    "conference": "AWS Community Day Kochi 2025 — AI/ML Edition",
+    "date": "2025-12-20",
+    "abstract": "Jones confirmed via Instagram that he spoke at this edition, but the exact session title couldn't be verified.",
+    "location": {
+      "city": "Kochi",
+      "stateRegion": "Kerala",
+      "country": "India",
+      "lat": 9.9312,
+      "lng": 76.2673
+    },
+    "tags": [
+      "AWS Community Day",
+      "AI/ML"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-reinvent-recap-vegas-2025",
+    "title": "Observability at Scale with OpenTelemetry and Bedrock AgentCore",
+    "conference": "Community Session at re:Invent Vegas 2025",
+    "date": "2025-12-04",
+    "abstract": "Standardizing telemetry using OpenTelemetry across serverless resources and Bedrock AgentCore workflows without proprietary vendor lock-in.",
+    "location": {
+      "city": "Las Vegas",
+      "stateRegion": "Nevada",
+      "country": "United States",
+      "lat": 36.1716,
+      "lng": -115.1391
+    },
+    "tags": [
+      "aws",
+      "reinvent",
+      "opentelemetry",
+      "bedrock",
+      "observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "techxconf-2025",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications",
+    "conference": "TechXConf 2025",
+    "date": "2025-11-01",
+    "abstract": "N/A",
+    "location": {
+      "city": "Chennai",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "tags": [
+      "ai",
+      "observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "apidays-ind-25",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications with Amazon Bedrock",
+    "conference": "apidays India 2025",
+    "date": "2025-10-09",
+    "abstract": "Why monitoring is key for AI applications built on Amazon Bedrock / Amazon Nova, and how AI monitoring surfaces errors and model-performance insights.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "Amazon Bedrock",
+      "AI Observability",
+      "Amazon Nova",
+      "Generative AI",
+      "Monitoring"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=xMTLcKGI7Xo",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "apidays-ind-25-workshop",
+    "title": "Hands-on guide to monitor your API-driven AI/LLM applications (Workshop)",
+    "conference": "apidays India 2025",
+    "date": "2025-10-08",
+    "abstract": "50-minute hands-on workshop on monitoring, distributed tracing, telemetry and log aggregation for API-driven AI/LLM applications.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "API Observability",
+      "Distributed Tracing",
+      "LLM",
+      "Telemetry",
+      "Workshop"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=-nxAq-c4jAE",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Zameer Fouzan",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "acd-oceanic-25",
+    "title": "SQS Monitoring Deep Dive: Advanced Techniques and Observability in Action",
+    "conference": "AWS Community Day Oceanic (inaugural virtual edition)",
+    "date": "2025-10-08",
+    "abstract": "Diagnosing message bottlenecks and DLQs, end-to-end message tracing, and configuring intelligent alerts to move SQS monitoring from reactive to proactive.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "",
+      "country": "New Zealand",
+      "lat": -40.9006,
+      "lng": 174.886
+    },
+    "tags": [
+      "Amazon SQS",
+      "Observability",
+      "Dead Letter Queue",
+      "Serverless",
+      "Monitoring"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "o11y-sf-25",
+    "title": "Intelligent observability with GitHub Copilot Coding Agent",
+    "conference": "O11y & Infrastructure AI Marathon — San Francisco '25",
+    "date": "2025-09-16",
+    "abstract": "Using the GitHub Copilot coding agent alongside observability tooling to make infrastructure and application telemetry easier to act on.",
+    "location": {
+      "city": "San Francisco",
+      "stateRegion": "California",
+      "country": "United States",
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    "tags": [
+      "GitHub Copilot",
+      "AI Coding Agent",
+      "Observability",
+      "DevEx"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "o11y-pdx-25",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications with Amazon Bedrock",
+    "conference": "O11y & Infrastructure AI Marathon — Portland '25",
+    "date": "2025-09-11",
+    "abstract": "Same Amazon Bedrock observability talk delivered at the Portland edition of this touring meetup series.",
+    "location": {
+      "city": "Portland",
+      "stateRegion": "Oregon",
+      "country": "United States",
+      "lat": 45.5152,
+      "lng": -122.6784
+    },
+    "tags": [
+      "Amazon Bedrock",
+      "AI Observability",
+      "Generative AI",
+      "Monitoring"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-seattle-sep-25",
+    "title": "Challenges with Serverless Monitoring",
+    "conference": "AWS Seattle Meetup (Operationalizing Observability), Sep 2025",
+    "date": "2025-09-08",
+    "abstract": "AWS Lambda has evolved over the last decade but the age-old problem about monitoring them still exists. Let's understand the challenges with AWS Lambda monitoring and how coupled it is with AWS native offerings such as CloudWatch and X-Ray and also extending the capabilities of sending telemetry data to other tools. In this session, we will also look at how Lambda layers, Lambda extensions play a vital role with OpenTelemetry and monitoring with third-party observability tools like New Relic.",
+    "location": {
+      "city": "Seattle",
+      "stateRegion": "Washington",
+      "country": "United States",
+      "lat": 47.61613,
+      "lng": -122.332886
+    },
+    "tags": [
+      "AWS Lambda",
+      "Serverless Monitoring",
+      "CloudWatch",
+      "X-Ray",
+      "OpenTelemetry",
+      "Lambda Extensions",
+      "New Relic"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Hazel Weakly",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "o11y-nyc-25",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications with Amazon Bedrock",
+    "conference": "O11y & Infrastructure AI Marathon — NYC '25",
+    "date": "2025-09-04",
+    "abstract": "Same Amazon Bedrock observability talk delivered at the NYC edition of this touring meetup series.",
+    "location": {
+      "city": "New York",
+      "stateRegion": "New York",
+      "country": "United States",
+      "lat": 40.7128,
+      "lng": -74.006
+    },
+    "tags": [
+      "Amazon Bedrock",
+      "AI Observability",
+      "Generative AI",
+      "Monitoring"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "o11y-atl-25",
+    "title": "Beyond the Black Box: Gaining Observability into AI-Powered Applications with Amazon Bedrock",
+    "conference": "O11y & Infrastructure AI Marathon — Atlanta '25",
+    "date": "2025-09-02",
+    "abstract": "Same Bedrock observability talk delivered at this Atlanta meetup, which Jones also co-hosted/organized.",
+    "location": {
+      "city": "Atlanta",
+      "stateRegion": "Georgia",
+      "country": "United States",
+      "lat": 33.749,
+      "lng": -84.388
+    },
+    "tags": [
+      "Amazon Bedrock",
+      "AI Observability",
+      "Generative AI",
+      "Monitoring"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "goto-serverless-blr-25",
+    "title": "State of Serverless DevEx and Observability (Keynote, Serverless Heroes panel)",
+    "conference": "GOTO Serverless Bengaluru 2025",
+    "date": "2025-08-08",
+    "abstract": "The DevEx evolution of Lambda and Step Functions over the last decade, and how DevEx + Observability close the dev/production monitoring loop today.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS Lambda",
+      "AWS Step Functions",
+      "Developer Experience",
+      "Serverless",
+      "Observability"
+    ],
+    "slides": "https://conferences.gotopia.tech/goto-serverless-bengaluru-2025/sessions/3847",
+    "video": "https://www.youtube.com/watch?v=oItac1VPsso",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-madurai-25",
+    "title": "Wish I Had Enabled Monitoring and Observability for My Serverless App Earlier!",
+    "conference": "AWS UG Madurai — \"Builders Skill Sprint: Serverless Month\"",
+    "date": "2025-07-19",
+    "abstract": "The critical need for observability in cloud-native serverless apps — logs, metrics, traces, and debugging distributed event-driven services.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 9.9252,
+      "lng": 78.1198
+    },
+    "tags": [
+      "Serverless",
+      "Observability",
+      "Monitoring",
+      "Event-Driven Architecture"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=YrGZPoB94OE",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "o11y-blr-25",
+    "title": "Challenges with Serverless monitoring with AWS Lambda",
+    "conference": "Observability Marathon — Bangalore '25",
+    "date": "2025-06-14",
+    "abstract": "Common monitoring challenges specific to AWS Lambda-based serverless applications, as part of the Bangalore edition of this touring meetup series. NEEDS REVIEW: exact venue not specified in source.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS Lambda",
+      "Serverless Monitoring",
+      "Observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-summit-blr-2025",
+    "title": "Lambda Extensions: The Unsung Hero for Observability",
+    "conference": "AWS Summit Bengaluru 2025",
+    "date": "2025-05-07",
+    "abstract": "N/A",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "aws",
+      "lambda",
+      "observability"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-uae-24",
+    "title": "Architectural choice while building Serverless APIs",
+    "conference": "AWS Community Day UAE 2024",
+    "date": "2024-10-19",
+    "abstract": "",
+    "location": {
+      "city": "Dubai",
+      "stateRegion": "Dubai",
+      "country": "United Arab Emirates",
+      "lat": 25.2048,
+      "lng": 55.2708
+    },
+    "tags": [],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "heroes-lightning-24",
+    "title": "(Lightning talk — Serverless + GenAI adoption) NEEDS REVIEW",
+    "conference": "AWS Serverless Heroes of India — Lightning Talks",
+    "date": "2024-07-30",
+    "abstract": "Panel of 4 AWS Serverless Heroes; Jones's segment touched on serverless enabling GenAI adoption. Individual segment title not listed.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "",
+      "country": "India",
+      "lat": 20.5937,
+      "lng": 78.9629
+    },
+    "tags": [
+      "Serverless",
+      "Generative AI",
+      "AWS Heroes"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=SM_sXp03344",
+    "upcoming": false,
+    "cospeakers": [
+      {
+        "name": "Dhaval Nagar",
+        "linkedin": ""
+      },
+      {
+        "name": "Prashanth HN",
+        "linkedin": ""
+      },
+      {
+        "name": "Srushith Repakula",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "id": "awssummit-blr-24",
+    "title": "How AWS Application Composer optimizes Developer Experience and improves Developer Productivity",
+    "conference": "AWS Summit Bengaluru 2024",
+    "date": "2024-05-16",
+    "abstract": "The impact of AWS Application Composer on DevEx and productivity when building serverless apps.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS Application Composer",
+      "Developer Experience",
+      "Serverless",
+      "Productivity"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/how-aws-application-composer-optimizes-developer-experience-and-improves-developer-productivity",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "state-of-serverless-devex-o11y-2024",
+    "title": "State of Serverless DevEx & Observability",
+    "conference": "AWS User Group / Tech Talks 2024",
+    "date": "2024-05-15",
+    "abstract": "Exploring modern developer workflows, distributed tracing, and real-time telemetry for serverless architectures across complex cloud applications.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "serverless",
+      "devex",
+      "observability",
+      "opentelemetry"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=oItac1VPsso",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-mumbai-24",
+    "title": "Choosing the right architect for your Serverless API",
+    "conference": "AWS Community Day Mumbai",
+    "date": "2024-04-06",
+    "abstract": "Deciding between Amazon API Gateway, AWS AppSync, or an AWS Lambda function URL for a serverless API workload.",
+    "location": {
+      "city": "Mumbai",
+      "stateRegion": "Maharashtra",
+      "country": "India",
+      "lat": 19.076,
+      "lng": 72.8777
+    },
+    "tags": [
+      "API Gateway",
+      "AWS AppSync",
+      "Lambda Function URLs",
+      "Serverless API"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/choosing-the-right-architect-for-your-serverless-api",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "clouddevxchange-24",
+    "title": "Serverless with more infrastructure code and less application code",
+    "conference": "Cloud devXchange 2024",
+    "date": "2024-04-01",
+    "abstract": "An end-to-end solution with Amazon EventBridge + AWS Step Functions SDK integrations minimizing application code via IaC.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "",
+      "country": "",
+      "lat": null,
+      "lng": null
+    },
+    "tags": [
+      "Amazon EventBridge",
+      "AWS Step Functions",
+      "Infrastructure as Code",
+      "Serverless"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=YYbzpcPO25U",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-pune-24",
+    "title": "Let's secure our Serverless applications",
+    "conference": "AWS Community Day — DevSecOps Edition, Pune",
+    "date": "2024-01-06",
+    "abstract": "AWS Serverless security practices and considerations for production applications.",
+    "location": {
+      "city": "Pune",
+      "stateRegion": "Maharashtra",
+      "country": "India",
+      "lat": 18.5204,
+      "lng": 73.8567
+    },
+    "tags": [
+      "Serverless Security",
+      "DevSecOps",
+      "AWS Lambda"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/lets-secure-our-serverless-applications",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "azconf-23",
+    "title": "Building on AWS Serverless with the lens of orchestration and choreography",
+    "conference": "AZ Conf '23",
+    "date": "2023-11-18",
+    "abstract": "Comparing orchestration and choreography approaches for building on AWS Serverless.",
+    "location": {
+      "city": "Chennai",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "tags": [
+      "Orchestration",
+      "Choreography",
+      "AWS Serverless",
+      "Architecture"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/building-on-aws-serverless-with-the-lens-of-orchestration-and-choreography",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-rajasthan-2023",
+    "title": "Let's orchestrate and choreograph our Serverless workloads",
+    "conference": "AWS Community Day Rajasthan 2023",
+    "date": "2023-11-04",
+    "abstract": "N/A",
+    "location": {
+      "city": "Jaipur",
+      "stateRegion": "Rajasthan",
+      "country": "India",
+      "lat": 26.9124,
+      "lng": 75.7873
+    },
+    "tags": [
+      "serverless",
+      "aws"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "aws-ug-chennai-meetup-2023",
+    "title": "Demystifying AWS Step Functions HTTP Tasks & Workflows",
+    "conference": "AWS User Group Chennai Meetup 2023",
+    "date": "2023-09-16",
+    "abstract": "How to orchestrate external APIs directly with Step Functions third-party HTTP task integration without spinning up intermediary AWS Lambda functions.",
+    "location": {
+      "city": "Chennai",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "tags": [
+      "aws",
+      "step-functions",
+      "serverless",
+      "orchestration"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-philippines-2023",
+    "title": "Serverless & Containers Lightning Talk",
+    "conference": "AWS Community Day Philippines 2023",
+    "date": "2023-07-29",
+    "abstract": "N/A",
+    "location": {
+      "city": "Taguig",
+      "stateRegion": "Metro Manila",
+      "country": "Philippines",
+      "lat": 14.5321,
+      "lng": 121.0361
+    },
+    "tags": [
+      "serverless",
+      "containers"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-philippines-23",
+    "title": "Amazon EventBridge integrations with SaaS product events",
+    "conference": "AWS Community Day Philippines",
+    "date": "2023-07-29",
+    "abstract": "Integrating Amazon EventBridge with SaaS product events, illustrated with Freshworks product events.",
+    "location": {
+      "city": "Manila",
+      "stateRegion": "",
+      "country": "Philippines",
+      "lat": 14.5995,
+      "lng": 120.9842
+    },
+    "tags": [
+      "Amazon EventBridge",
+      "SaaS Integration",
+      "Serverless"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/amazon-eventbridge-integrations-with-saas-product-events",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-madurai-23",
+    "title": "Using event filtering on Lambda triggers",
+    "conference": "AWS UG Madurai — \"3 Hours of Serverless Saturday\"",
+    "date": "2023-06-24",
+    "abstract": "How event filtering on Lambda triggers can make serverless architectures more performant and cost-effective.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "Tamil Nadu",
+      "country": "India",
+      "lat": 9.9252,
+      "lng": 78.1198
+    },
+    "tags": [
+      "AWS Lambda",
+      "Event Filtering",
+      "Serverless",
+      "Cost Optimization"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/using-event-filtering-on-lambda-triggers",
+    "video": "https://www.youtube.com/watch?v=8d7YEdAejc8",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-hyderabad-2023",
+    "title": "Amazon EventBridge integrations with SaaS product events",
+    "conference": "AWS Community Day Hyderabad 2023",
+    "date": "2023-03-18",
+    "abstract": "N/A",
+    "location": {
+      "city": "Hyderabad",
+      "stateRegion": "Telangana",
+      "country": "India",
+      "lat": 17.385,
+      "lng": 78.4867
+    },
+    "tags": [
+      "aws",
+      "eventbridge"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-pune-2022",
+    "title": "Building a virtual photo booth with AWS Amplify",
+    "conference": "AWS Community Day Pune 2022",
+    "date": "2022-12-10",
+    "abstract": "N/A",
+    "location": {
+      "city": "Pune",
+      "stateRegion": "Maharashtra",
+      "country": "India",
+      "lat": 18.5204,
+      "lng": 73.8567
+    },
+    "tags": [
+      "aws",
+      "amplify"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsdevday-blr-22",
+    "title": "Amazon EventBridge Integration with SaaS product events",
+    "conference": "AWS Dev Day Bengaluru 2022",
+    "date": "2022-11-04",
+    "abstract": "Integrating SaaS product events (demoed with Freshworks/Freshdesk) via Amazon EventBridge, including a Step Functions execution triggered by API Destinations.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "Amazon EventBridge",
+      "Step Functions",
+      "SaaS Integration",
+      "Serverless"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/amazon-eventbridge-integration-with-saas-product-events",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "acd-kochi-2022",
+    "title": "Building with AWS Step Functions and SDK integrations",
+    "conference": "AWS Community Day Kochi 2022",
+    "date": "2022-10-29",
+    "abstract": "N/A",
+    "location": {
+      "city": "Kochi",
+      "stateRegion": "Kerala",
+      "country": "India",
+      "lat": 9.9312,
+      "lng": 76.2673
+    },
+    "tags": [
+      "aws",
+      "stepfunctions"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "apac-community-summit-2022",
+    "title": "Build better with Step Functions and SDK integrations",
+    "conference": "APAC Community Summit 2022",
+    "date": "2022-09-15",
+    "abstract": "How to orhcestrate workflows using Step Functions and SDK integrations which can elevate developer journey with minial code and the knowledge of how SDK and Amazon States Langugage (ASL)..",
+    "location": {
+      "city": "Bangkok",
+      "stateRegion": null,
+      "country": "Thailand",
+      "lat": 13.7563,
+      "lng": 100.5018
+    },
+    "tags": [
+      "community",
+      "apj",
+      "networking"
+    ],
+    "slides": "",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-nmp-22",
+    "title": "Serverless - Building APIs with AWS AppSync",
+    "conference": "AWS User Group Nashik-Mumbai-Pune",
+    "date": "2022-06-12",
+    "abstract": "AWS Amplify, AWS Cognito and AWS AppSync best practices for building serverless APIs.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "Maharashtra",
+      "country": "India",
+      "lat": 19.076,
+      "lng": 72.8777
+    },
+    "tags": [
+      "AWS AppSync",
+      "AWS Amplify",
+      "Amazon Cognito",
+      "Serverless API"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=sEJWCagJahU",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awssummit-ind-22",
+    "title": "Build serverless apps with SAM Accelerate and SAM Pipelines",
+    "conference": "AWS Summit India 2022",
+    "date": "2022-05-25",
+    "abstract": "Treating infrastructure and application as code with AWS SAM, using SAM Accelerate and SAM Pipelines.",
+    "location": {
+      "city": "Bengaluru",
+      "stateRegion": "Karnataka",
+      "country": "India",
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "tags": [
+      "AWS SAM",
+      "SAM Accelerate",
+      "SAM Pipelines",
+      "Infrastructure as Code",
+      "Serverless"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/build-serverless-apps-with-sam-accelerate-and-sam-pipelines-aws-summit-india-2022",
+    "video": "",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-colombo-22",
+    "title": "Building Serverless apps with IaC",
+    "conference": "AWS UG Colombo — monthly meet-up",
+    "date": "2022-04-28",
+    "abstract": "Building serverless apps with AWS SAM for IaC, covering development and deployment phases.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "Western Province",
+      "country": "Sri Lanka",
+      "lat": 6.9271,
+      "lng": 79.8612
+    },
+    "tags": [
+      "AWS SAM",
+      "Infrastructure as Code",
+      "Serverless"
+    ],
+    "slides": "https://speakerdeck.com/zachjonesnoel/building-serverless-apps-with-iac",
+    "video": "https://www.youtube.com/watch?v=4mAaPF4L-ec",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-reskill-sns-sqs-22",
+    "title": "Decoupling with SNS and SQS",
+    "conference": "AWS User Group India (re:Skill)",
+    "date": "2022-03-27",
+    "abstract": "Decoupled architecture patterns using Amazon SNS and Amazon SQS, with a companion re:Skill quiz.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "",
+      "country": "India",
+      "lat": 20.5937,
+      "lng": 78.9629
+    },
+    "tags": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Decoupled Architecture",
+      "Serverless"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=dl9cMeEoXGQ",
+    "upcoming": false,
+    "cospeakers": []
+  },
+  {
+    "id": "awsug-reskill-stepfn-22",
+    "title": "Getting Started with Step Functions",
+    "conference": "AWS User Group India (re:Skill)",
+    "date": "2022-03-27",
+    "abstract": "An introduction to AWS Step Functions, with a companion re:Skill quiz.",
+    "location": {
+      "city": "Virtual",
+      "stateRegion": "",
+      "country": "India",
+      "lat": 20.5937,
+      "lng": 78.9629
+    },
+    "tags": [
+      "AWS Step Functions",
+      "Serverless",
+      "Workflow Orchestration"
+    ],
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=GAaqV1cMDxk",
+    "upcoming": false,
+    "cospeakers": []
+  }
+]

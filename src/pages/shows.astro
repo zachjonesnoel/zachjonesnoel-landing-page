@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import profile from '../../data/profile.json';
+---
+<Base title={`Shows & community · ${profile.name}`} description="Shows and community groups run by Jones Zachariah Noel.">
+<main id="gui-main" class="pt-14">
+
+  <div class="mx-auto max-w-content px-5 pt-10">
+    <a href="/" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">← home</a>
+  </div>
+
+  <!-- ── ALL SHOWS ── -->
+  <section id="shows" class="border-b border-border">
+    <div class="mx-auto max-w-content px-5 py-12">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-mono text-[11px] tracking-[0.12em] uppercase text-muted">Shows &amp; community</span>
+        <button class="cli-hint font-mono text-[10px] text-muted/50 hover:text-accent transition-colors" data-cmd="shows">$ shows</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {profile.shows.map(s => (
+          <div class="glow-box border border-border rounded-md bg-bg2 block overflow-hidden">
+            <div class="flex items-center justify-center h-40 bg-bg px-6 py-4 border-b border-border">
+              <img src={s.logo} alt={`${s.name} logo`} loading="lazy" decoding="async" class="max-h-full max-w-full object-contain" />
+            </div>
+            <div class="p-5">
+            <p class="font-mono text-[10px] tracking-widest text-accent mb-2">// {s.type}</p>
+            {s.playlist ? (
+              <a href={s.playlist} target="_blank" rel="noopener noreferrer" class="block text-sm font-semibold mb-2 hover:text-accent transition-colors">{s.name}</a>
+            ) : (
+              <p class="text-sm font-semibold mb-2">{s.name}</p>
+            )}
+            <p class="text-xs text-muted leading-relaxed mb-3">{s.description}</p>
+            {s.episodes && (
+              <ul class="flex flex-col gap-2 mb-3 border-t border-border pt-3">
+                {s.episodes.map(ep => (
+                  <li>
+                    <a href={ep.url} target="_blank" rel="noopener noreferrer" class="text-xs text-txt hover:text-accent transition-colors">▶ {ep.title}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <a href={s.url} target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-muted hover:text-accent transition-colors">→ visit</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</main>
+</Base>

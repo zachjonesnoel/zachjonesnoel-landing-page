@@ -1,0 +1,57 @@
+{
+  "name": "Jones Zachariah Noel",
+  "handle": "zachjonesnoel",
+  "title": "Senior Developer Relations Engineer",
+  "employer": "New Relic",
+  "bio": "Started as a full-stack engineer. Moved into solutions engineering. Now doing DevRel at New Relic — because the best thing I can do for developers is make their experience with technology genuinely better. \n AWS Serverless Hero. Co-organiser of AWS UG Bengaluru. Builder of communities and products developers actually want to use.",
+  "email": "hi@zachjonesnoel.com",
+  "calendly": "https://calendly.com/zachjonesnoel/meet-n-chat",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/jones-zachariah-noel-n",
+    "twitter": "https://twitter.com/zachjonesnoel",
+    "github": "https://github.com/zachjonesnoel",
+    "devto": "https://dev.to/zachjonesnoel",
+    "instagram": "https://www.instagram.com/zachjonesnoel/"
+  },
+  "shows": [
+    {
+      "name": "The Serverless Terminal",
+      "type": "newsletter",
+      "url": "https://www.theserverlessterminal.com/",
+      "description": "Serverless patterns, AWS deep dives, and the people shipping production at scale.",
+      "logo": "/The%20Serverless%20Terminal.png"
+    },
+    {
+      "name": "The Zacs' Show",
+      "type": "youtube",
+      "url": "https://www.youtube.com/@thezacsshowtalkingaws",
+      "description": "Live conversations on AWS, developer tools, and community building with Arshad Zackeriya.",
+      "logo": "/Zacs%20Show%20Talking%20AWS.png"
+    },
+    {
+      "name": "Production Unlocked",
+      "type": "livestream",
+      "url": "https://www.youtube.com/@NewRelicInc",
+      "description": "Livestreamed by New Relic Developers on LinkedIn and the New Relic YouTube channel. I host.",
+      "episodes": [
+        {
+          "title": "Production Unlocked: Deploying the Disaster Response with Eric Johnson, AWS",
+          "url": "https://www.youtube.com/watch?v=n3YEEkyHzsQ"
+        },
+        {
+          "title": "Production Unlocked episode 2: AI Running Coach with Adam Gordon Bell, Pulumi",
+          "url": "https://www.youtube.com/watch?v=ZE2-Rftr7s8"
+        }
+      ],
+      "playlist": "https://www.youtube.com/playlist?list=PLEpaEdukYg28",
+      "logo": "/Production%20Unlocked.png"
+    }
+  ],
+  "consultAreas": [
+    "DevRel program design",
+    "Developer experience audit",
+    "Technical content strategy",
+    "Community strategy",
+    "Serverless architecture review"
+  ]
+}
